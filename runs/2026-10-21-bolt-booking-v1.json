@@ -1,0 +1,68 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-10-21-bolt-booking-v1",
+  "spec": "booking-app-v1",
+  "status": "published",
+  "started_at": "2026-10-21T15:49:39Z",
+  "deployed_at": "2026-10-21T16:06:00Z",
+  "minutes_to_deploy": 16,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; token usage not shown per build",
+  "criteria": {
+    "A1": true,
+    "A2": true,
+    "A3": true,
+    "A4": true,
+    "A5": false,
+    "A6": true,
+    "A7": true,
+    "A8": true,
+    "A9": true
+  },
+  "failures": [
+    "A5: The admin view exists only at /#/admin. The /admin address from the brief returns 200 and serves the landing page, so it cannot be bookmarked or shared."
+  ],
+  "artifacts": [
+    {
+      "label": "Landing page, 1440 px",
+      "path": "/artifacts/bolt-booking-v1/landing.png"
+    },
+    {
+      "label": "Booking form with the three services",
+      "path": "/artifacts/bolt-booking-v1/booking-form.png"
+    },
+    {
+      "label": "Confirmation with booking reference SP-KJZJBA",
+      "path": "/artifacts/bolt-booking-v1/confirmation.png"
+    },
+    {
+      "label": "Admin list at /#/admin after the booking",
+      "path": "/artifacts/bolt-booking-v1/admin.png"
+    },
+    {
+      "label": "What /admin actually serves: the landing page",
+      "path": "/artifacts/bolt-booking-v1/admin-path-broken.png"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/bolt-booking-v1/mobile-390.png"
+    },
+    {
+      "label": "Admin after the follow-up prompt",
+      "path": "/artifacts/bolt-booking-v1/retest-admin.png"
+    }
+  ],
+  "notes": "One prompt, one build, 7 of 8. Bolt built the app as a single-page site with hash routing: the booking form lives at /#/book and the admin view at /#/admin, so the /admin path in the brief does not resolve. The booking data does survive a completely new browser session, so it is stored server-side. Email is not configured and the confirmation screen says so explicitly, naming the missing RESEND_API_KEY secret. Bolt also asked its own onboarding survey before the first message could run, which had to be dismissed. The prompt was submitted twice by the automation (editor retained the text), which Bolt handled as one build.",
+  "affiliate_url": null,
+  "public_url": "https://still-point-massage-vpgx.bolt.host/",
+  "criterion_notes": {
+    "A9": "Follow-up prompt changed the 90-minute price from $130 to $120; booking form, reference and the hash-routed admin view still worked afterwards."
+  },
+  "retest": {
+    "prompt": "Change the price of the 90-Minute Massage from $130 to $120. Change nothing else: keep the layout, the booking form and the admin page exactly as they are.",
+    "outcome": "pass",
+    "note": "Applied in one build, then Publish > Update pushed it live. Public site shows $90/$120/$150, the booking form offers $120, a test booking returned SP-NJB2XC and the admin view lists it. /admin still does not resolve (hash routing), unchanged from the original run."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-07-bolt-nonprofit-v1",
+  "spec": "nonprofit-site-v1",
+  "status": "published",
+  "started_at": "2026-11-07T00:26:00Z",
+  "deployed_at": "2026-11-07T00:48:00Z",
+  "minutes_to_deploy": 22,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan",
+  "public_url": "https://harbour-lights-found-1evx.bolt.host/",
+  "criteria": {
+    "N1": true,
+    "N2": false,
+    "N3": false,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N7": true,
+    "N8": true
+  },
+  "failures": [
+    "N2: The donation form accepts an amount, name and email and offers a 'Pledge €50.00' button, but nothing is stored: the admin page reports 0 pledges and €0.00, and no reference number is shown to the donor.",
+    "N3: The volunteer form behaves the same way — filled in, submitted, no confirmation, and 0 sign-ups in the admin view.",
+    "N6 note: the admin page works (it renders the tables), which makes the empty result visible rather than silent. That is how the failure was proven."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/bolt-nonprofit-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Donation page with preset amounts",
+      "path": "/artifacts/bolt-nonprofit-v1/donate.jpg"
+    },
+    {
+      "label": "Admin after two submissions: zero pledges, zero sign-ups",
+      "path": "/artifacts/bolt-nonprofit-v1/admin-empty.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/bolt-nonprofit-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Bolt built seven pages in one prompt, but uses hash routing: every page lives at /#/donate, /#/volunteer and so on, so the server returns the same document for any path. Navigation works in a browser; a shared link to /donate does not. The preview also showed a Tailwind build error ('@tailwind base' directive) that did not stop publishing. The decisive failure is data: both forms accept input and write nothing, which the admin view proves by staying at zero."
+}

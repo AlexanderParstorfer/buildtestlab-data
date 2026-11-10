@@ -1,0 +1,40 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-07-bolt-restaurant-v1",
+  "spec": "restaurant-site-v1",
+  "status": "published",
+  "started_at": "2026-11-07T12:56:00Z",
+  "deployed_at": "2026-11-07T13:22:00Z",
+  "minutes_to_deploy": 26,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan",
+  "public_url": "https://still-point-kitchen-4343.bolt.host/",
+  "criteria": {
+    "R1": true,
+    "R2": true,
+    "R3": true,
+    "R4": true,
+    "R5": false,
+    "R6": false,
+    "R7": true,
+    "R8": true
+  },
+  "failures": [
+    "R5: The reservation form at /#/reserve has name, email, date and one time dropdown, but pressing the reserve button leaves the page unchanged — no confirmation, no reference number.",
+    "R6: Without a stored reservation there is nothing for the admin page to list; we could not verify it either.",
+    "The brief asked for a guest count field; the form has none."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/bolt-restaurant-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/bolt-restaurant-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "The menu is the strongest part: twelve dishes, twelve prices in euro and twenty dietary markers (V/VG/GF) with allergen lines. Same hash-routing pattern as the other Bolt runs: /#/menu and /#/reserve work, plain paths do not. The reservation flow is where it stops — the form renders but does not submit, and the guest-count field is missing."
+}

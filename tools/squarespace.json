@@ -1,0 +1,62 @@
+{
+  "slug": "squarespace",
+  "name": "Squarespace",
+  "website": "https://www.squarespace.com",
+  "category": "Design-led website builder",
+  "summary": "Polished templates and a strong editor; the AI builder generates a first draft of the site.",
+  "pricing": {
+    "free_plan": "No free plan; a 14-day trial without publishing",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Basic (annual)",
+        "price": 16,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported US price, annual billing"
+      },
+      {
+        "name": "Core (annual)",
+        "price": 23,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported US price"
+      },
+      {
+        "name": "Plus (annual)",
+        "price": 39,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported US price"
+      },
+      {
+        "name": "Advanced (annual)",
+        "price": 99,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported US price"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.squarespace.com/pricing",
+    "unverified": true
+  },
+  "capabilities": [
+    "Template-driven design with a built-in AI site generator",
+    "Commerce, scheduling and email campaigns on higher plans",
+    "Very strong typography and image handling"
+  ],
+  "limits": [
+    "A trial site answers HTTP 401 \"Private Website\" for visitors, so nothing can be measured on a published page without paying.",
+    "No free plan, so nothing can be published without paying",
+    "The pricing page serves regional prices; the US numbers here come from third-party reports, not the vendor page",
+    "Signup is guarded by reCAPTCHA Enterprise, so account creation cannot be automated (checked 06.11.2026)"
+  ],
+  "sources": [
+    {
+      "label": "Vendor pricing page (regional)",
+      "url": "https://www.squarespace.com/pricing"
+    }
+  ],
+  "run_blocker": "trial site stays private (HTTP 401) — publishing needs a paid plan (verified 09.11.2026)"
+}

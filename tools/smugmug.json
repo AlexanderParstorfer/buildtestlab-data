@@ -1,0 +1,56 @@
+{
+  "name": "SmugMug",
+  "website": "https://www.smugmug.com",
+  "category": "Photo hosting and sales platform",
+  "pricing": {
+    "free_plan": "14-day trial. No free plan; storage and gallery features start at the Direct tier.",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Direct",
+        "price": 20,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually; unlimited storage, private galleries, digital delivery"
+      },
+      {
+        "name": "Portfolio",
+        "price": 23.5,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually; website templates, print and download sales"
+      },
+      {
+        "name": "Pro",
+        "price": 37,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually; pricelists, coupons, client favouriting"
+      }
+    ],
+    "checked_at": "2026-11-06",
+    "source_url": "https://www.smugmug.com/plans/"
+  },
+  "capabilities": [
+    "Unlimited photo storage on every tier",
+    "Print and digital sales with fulfilment handled by SmugMug",
+    "Lightroom integration and client galleries",
+    "24/7 human support"
+  ],
+  "limits": [
+    "No free plan: nothing is public without paying",
+    "Website templates are less flexible than a design tool",
+    "RAW storage is a paid add-on",
+    "Onboarding is a seven-step survey before the first site exists; automated signup stalls there (checked 06.11.2026)"
+  ],
+  "sources": [
+    {
+      "label": "Plans and pricing",
+      "url": "https://www.smugmug.com/plans/"
+    }
+  ],
+  "slug": "smugmug",
+  "summary": "Hosting-first platform: unlimited storage and print sales, website as a side product.",
+  "logo": "/logos/smugmug.png",
+  "run_blocker": "onboarding survey blocks automation"
+}

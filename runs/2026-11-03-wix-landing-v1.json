@@ -1,0 +1,66 @@
+{
+  "tool": "wix",
+  "tool_name": "Wix AI",
+  "run_id": "2026-11-03-wix-landing-v1",
+  "spec": "landing-page-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-02T22:10:00Z",
+  "deployed_at": "2026-11-03T01:05:00Z",
+  "minutes_to_deploy": 55,
+  "prompts_used": 5,
+  "cost_usd": 0,
+  "credits_spent": "free plan; no build credits shown",
+  "criteria": {
+    "L1": false,
+    "L2": false,
+    "L5": false,
+    "L6": false,
+    "L7": false,
+    "L4": true
+  },
+  "criterion_notes": {
+    "L1": "The published page is empty. Body text is only the Wix badge (\"Erstellt mit WIX Harmony\"), no studio name, no services, no prices.",
+    "L2": "No form on the published page.",
+    "L5": "The address https://haldenmiraa.wixsite.com/still-point answers, but the root shows \"FEHLER: SEITE NICHT GEFUNDEN / 404\" and the published page is blank. There is a URL, not a website.",
+    "L6": "No navigation anchors, nothing to click.",
+    "L7": "No footer content.",
+    "L4": "No horizontal scroll — trivially, because there is no content."
+  },
+  "failures": [
+    "The AI-built site publishes as an empty page; the root URL returns 404.",
+    "No services, prices, form or footer on the live page."
+  ],
+  "artifacts": [
+    {
+      "label": "Published page: empty except the Wix badge",
+      "path": "/artifacts/wix-landing-v1/published-empty.jpg"
+    },
+    {
+      "label": "Root URL: 404",
+      "path": "/artifacts/wix-landing-v1/root-404.jpg"
+    },
+    {
+      "label": "Dashboard after publishing",
+      "path": "/artifacts/wix-landing-v1/dashboard.jpg"
+    }
+  ],
+  "notes": "Wix ran the longest setup interview in the set (business type, tone, audience, apps, domain), generated a complete site in the editor where the preview looked right, and published. What went live is empty: the wixsite address shows only the Wix badge, and the root URL returns \"SEITE NICHT GEFUNDEN\". The editor preview and the live site disagree, which is the worst failure mode for a beginner: it looks finished until someone opens the link.",
+  "affiliate_url": null,
+  "public_url": "https://haldenmiraa.wixsite.com/still-point",
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": null,
+    "axe_violations": null
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "Free plan publishes to a wixsite.com address with a Wix badge",
+    "publish_requires_paid": false,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-03",
+    "source_url": "https://www.wix.com/plans"
+  }
+}

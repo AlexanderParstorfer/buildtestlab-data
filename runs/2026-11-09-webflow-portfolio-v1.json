@@ -1,0 +1,46 @@
+{
+  "tool": "webflow",
+  "tool_name": "Webflow",
+  "run_id": "2026-11-09-webflow-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-09T12:22:00Z",
+  "deployed_at": "2026-11-09T14:14:00Z",
+  "minutes_to_deploy": 112,
+  "prompts_used": 2,
+  "cost_usd": 0,
+  "credits_spent": "free plan, two projects (one abandoned draft, one published)",
+  "public_url": "https://still-point-studio-7fc2c9.webflow.io/",
+  "criteria": {
+    "P1": true,
+    "P2": false,
+    "P3": false,
+    "P4": false,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true
+  },
+  "failures": [
+    "P2: The gallery holds eight cards with titles, not nine. Duplicating a card did not work, and the cards show round portrait crops instead of large photographs.",
+    "P3: No series pages. The free plan allows two static pages; the AI project came with five, so publishing failed with HTTP 409 STATIC_PAGE_LIMIT_EXCEEDED. Pages could not be deleted in the designer (trash icon inert, no context menu, DELETE /api/pages/:id returns 412), so a second one-page project had to be generated. The three series exist only as cards on the home page.",
+    "P4: The about block is a single quote and the photographer name, not two paragraphs of bio.",
+    "P7: Images come from the Webflow CDN at 1216x832 and 1024x1024 with no lightbox or full-size viewer.",
+    "The navigation still carries the demo labels (Solutions, About, Blog, Support) and the footer still says Dataway with placeholder links. Text edits inside link and component children did not take in the designer."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/webflow-portfolio-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Gallery section at 1440 px",
+      "path": "/artifacts/webflow-portfolio-v1/gallery.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/webflow-portfolio-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "No gallery template was used: the Webflow designer is not realistically automatable from scratch, so the AI site builder served as the template. Prompt one asked for a seven-page portfolio, prompt two deliberately for a single page after the page limit blocked publishing. Sections for pricing, testimonials, events and team were removed, a contact form with name and email survived. Images come from the Webflow asset set rather than picsum, because the designer only offers upload or asset picker on image replace. Published to the staging domain on the free plan with the Made in Webflow badge. No horizontal scroll at 320, 390 or 430 px. Runtime blew past the 50 minute budget: 184 minutes in total, first successful publish after 112."
+}

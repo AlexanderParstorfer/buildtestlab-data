@@ -1,0 +1,58 @@
+{
+  "tool": "base44",
+  "tool_name": "Base44",
+  "run_id": "2026-10-21-base44-booking-v1",
+  "spec": "booking-app-v1",
+  "status": "published",
+  "started_at": "2026-10-21T15:13:32Z",
+  "deployed_at": "2026-10-21T15:24:30Z",
+  "minutes_to_deploy": 11,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "not displayed on the free plan",
+  "criteria": {
+    "A1": true,
+    "A2": true,
+    "A3": true,
+    "A4": true,
+    "A5": true,
+    "A6": true,
+    "A7": true,
+    "A8": true,
+    "A9": true
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Landing page, 1440 px",
+      "path": "/artifacts/base44-booking-v1/landing.png"
+    },
+    {
+      "label": "Booking form with the three sessions",
+      "path": "/artifacts/base44-booking-v1/booking-form.png"
+    },
+    {
+      "label": "Confirmation with booking reference SP-6XHJZK",
+      "path": "/artifacts/base44-booking-v1/confirmation.png"
+    },
+    {
+      "label": "Admin list after the booking",
+      "path": "/artifacts/base44-booking-v1/admin.png"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/base44-booking-v1/mobile-390.png"
+    }
+  ],
+  "notes": "One prompt, one build, 8 of 8. Base44 created the backend entities itself (Booking with create/list) and ran its own end-to-end check in the editor. The app was only reachable after clicking Publish — before that the public URL answered 'This app is not available yet'. The subdomain is auto-generated (inescapable-still-point-flow.base44.app); Base44 suggests buying stillpointbooking.com. Email delivery requires a paid plan and a verified domain and the confirmation screen says so explicitly. Same limitation as Lovable, same pass under A6.",
+  "affiliate_url": null,
+  "public_url": "https://inescapable-still-point-flow.base44.app",
+  "criterion_notes": {
+    "A9": "Follow-up prompt changed the 90-minute price from $130 to $120; booking form, reference and admin ledger still worked afterwards."
+  },
+  "retest": {
+    "prompt": "Change the price of the 90-minute massage from $130 to $120. Change nothing else: keep the layout, the booking form and the /admin table exactly as they are.",
+    "outcome": "pass",
+    "note": "Applied in one build. Public app shows $90/$120/$150, the session dropdown reads $120, a test booking returned reference SP-98VPKW and the admin list shows it with the new price. Publishing required an explicit Publish click."
+  }
+}

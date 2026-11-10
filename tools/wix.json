@@ -1,0 +1,70 @@
+{
+  "name": "Wix AI",
+  "website": "https://www.wix.com",
+  "category": "Website builder with AI",
+  "pricing": {
+    "free_plan": "Free plan publishes to a wixsite.com address with a Wix badge",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "wixsite.com address with a Wix badge"
+      },
+      {
+        "name": "Light",
+        "price": 17,
+        "currency": "USD",
+        "period": "month",
+        "note": "free domain for a year, 2 GB storage"
+      },
+      {
+        "name": "Core",
+        "price": 29,
+        "currency": "USD",
+        "period": "month",
+        "note": "50 GB, accepts payments"
+      },
+      {
+        "name": "Business",
+        "price": 39,
+        "currency": "USD",
+        "period": "month",
+        "note": "100 GB, standard ecommerce"
+      },
+      {
+        "name": "Business Elite",
+        "price": 159,
+        "currency": "USD",
+        "period": "month",
+        "note": "unlimited storage"
+      }
+    ],
+    "checked_at": "2026-11-08",
+    "source_url": "https://www.wix.com/plans"
+  },
+  "capabilities": [
+    "Longest setup interview of the tools we tried (business, tone, audience, apps)",
+    "Generates a full site in the editor",
+    "Publishes to a free wixsite.com address"
+  ],
+  "limits": [
+    "The published page was empty in our run, the root URL returned 404",
+    "Editor preview and live site can disagree"
+  ],
+  "sources": [
+    {
+      "label": "Plans page",
+      "url": "https://www.wix.com/plans"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/wix-review"
+    }
+  ],
+  "slug": "wix",
+  "summary": "The longest AI interview in the set; our published page came out empty.",
+  "logo": "/logos/wix.png"
+}

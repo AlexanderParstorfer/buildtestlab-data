@@ -1,0 +1,60 @@
+{
+  "name": "Format",
+  "website": "https://format.com",
+  "category": "Portfolio builder for photographers",
+  "pricing": {
+    "free_plan": "14-day trial, no credit card. No permanent free plan.",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": 10,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 14 if billed monthly; 10 pages, 70 images"
+      },
+      {
+        "name": "Pro",
+        "price": 24,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually; unlimited pages, 1500 images, custom domain, 50 client galleries"
+      },
+      {
+        "name": "Pro Plus",
+        "price": 36,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually; unlimited images, 1 TB storage, 250 galleries"
+      }
+    ],
+    "checked_at": "2026-11-06",
+    "source_url": "https://format.com/pricing"
+  },
+  "capabilities": [
+    "Portfolio themes built for photography, not adapted from a generic builder",
+    "Client galleries with password protection on paid plans",
+    "Commission-free store and Lightroom integration",
+    "Custom domain included in the first year on Pro and Pro Plus"
+  ],
+  "limits": [
+    "Trial only: nothing can stay online without a paid plan",
+    "Client galleries are capped by tier (3 / 50 / 250)",
+    "Not a general app builder: no database, no custom logic",
+    "Verified 06.11.2026: a trial site cannot go live — portfolio-uzarbjj.format.com shows 'Website Launching Soon' and there is no publish control before a plan is active"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://format.com/pricing"
+    },
+    {
+      "label": "Photography landing page",
+      "url": "https://format.com/professions/photography"
+    }
+  ],
+  "slug": "format",
+  "summary": "Portfolio platform built for photographers, with client galleries and a store.",
+  "logo": "/logos/format.png",
+  "run_blocker": "trial cannot publish (verified 06.11.)"
+}

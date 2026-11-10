@@ -1,0 +1,57 @@
+{
+  "tool": "softr",
+  "tool_name": "Softr",
+  "run_id": "2026-11-08-softr-booking-v1",
+  "spec": "booking-app-v1",
+  "status": "published",
+  "started_at": "2026-11-08T11:20:00Z",
+  "deployed_at": "2026-11-08T11:45:00Z",
+  "minutes_to_deploy": 25,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free trial, last day of the 7-day window",
+  "public_url": "https://lorraine40518.mysoftr.app/",
+  "criteria": {
+    "A1": true,
+    "A2": true,
+    "A3": true,
+    "A4": true,
+    "A5": true,
+    "A6": true,
+    "A7": true,
+    "A8": true,
+    "A9": false,
+    "A10": false,
+    "A11": true,
+    "A12": false
+  },
+  "failures": [
+    "A9: The follow-up prompt never reached the builder. Both attempts ('make the button dark green', 'change the headline') came back with 'Something went wrong' and the message stayed in the input box.",
+    "A10: No export. Softr has no way to download the app or sync it to Git — the app only exists inside Softr.",
+    "A12: axe reports one serious violation on the landing page: the account button in the header is labelled 'Your account' while it shows the initials 'MH'.",
+    "Not a criterion: the 'Services' link in the navigation returns a 404. The booking page itself is fine."
+  ],
+  "artifacts": [
+    {
+      "label": "Landing page at 1440 px",
+      "path": "/artifacts/softr-booking-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Booking form",
+      "path": "/artifacts/softr-booking-v1/booking-form.jpg"
+    },
+    {
+      "label": "Booking confirmed with reference BK-11",
+      "path": "/artifacts/softr-booking-v1/booking-confirmation.jpg"
+    },
+    {
+      "label": "Admin list of all bookings",
+      "path": "/artifacts/softr-booking-v1/admin-bookings.jpg"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/softr-booking-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Softr AI built the whole app from one prompt: landing page with three services and prices, booking form, admin area with search and filters, seeded with ten sample bookings. The form stores the booking under reference BK-11 and the admin list shows it in a fresh session, so the data is real and persistent. Sign-in is by emailed code; our own address was already the admin. Weak points: the follow-up chat is broken, there is no export, and the navigation link to /services is dead. Prices are radio buttons rather than a dropdown, which the brief asked for — same information, different control."
+}

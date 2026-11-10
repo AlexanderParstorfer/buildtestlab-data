@@ -1,0 +1,57 @@
+{
+  "name": "Hostinger AI",
+  "website": "https://www.hostinger.com/website-builder",
+  "category": "Hosting with an AI builder",
+  "pricing": {
+    "free_plan": "AI Builder trial only; the site expires and cannot be published",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Premium (intro)",
+        "price": 1.99,
+        "currency": "USD",
+        "period": "month",
+        "note": "intro rate, renews at 12.99"
+      },
+      {
+        "name": "Premium (renewal)",
+        "price": 12.99,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Business",
+        "price": 18.99,
+        "currency": "USD",
+        "period": "month",
+        "note": "intro rate"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.hostinger.com/pricing"
+  },
+  "capabilities": [
+    "Signup without captcha or email confirmation",
+    "Agent builds a page from one prompt",
+    "Preview inside the builder"
+  ],
+  "limits": [
+    "Publishing opens \"Get a plan to publish your project\"",
+    "Trial site is deleted after the trial"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.hostinger.com/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/hostinger-review"
+    }
+  ],
+  "slug": "hostinger",
+  "summary": "Agent builds a page in one prompt; publishing opens a plan dialog.",
+  "logo": "/logos/hostinger.png",
+  "run_blocker": "free plan cannot publish"
+}

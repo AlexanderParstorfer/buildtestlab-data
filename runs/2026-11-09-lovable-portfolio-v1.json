@@ -1,0 +1,48 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-09-lovable-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-09T11:10:00Z",
+  "deployed_at": "2026-11-09T11:45:00Z",
+  "minutes_to_deploy": 35,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free daily credits, one prompt, no fixes needed",
+  "public_url": "https://still-point-photo-stories.lovable.app/",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": true,
+    "P8": true
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/lovable-portfolio-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Gallery with twelve photographs and three series",
+      "path": "/artifacts/lovable-portfolio-v1/gallery.jpg"
+    },
+    {
+      "label": "One series page: Harbour Light",
+      "path": "/artifacts/lovable-portfolio-v1/series-page.jpg"
+    },
+    {
+      "label": "Image opened at full resolution",
+      "path": "/artifacts/lovable-portfolio-v1/lightbox.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/lovable-portfolio-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "First clean Lovable run: one prompt, no fixes, every criterion met. Home with the studio name and a tagline, a gallery of twelve photographs, three series pages (Harbour Light, Interiors, Quiet Portraits) with six images each, an about page with a real bio, and a contact form that answers with a thank-you. Clicking an image opens it at 2400x1600 in a lightbox. No horizontal scroll at 320, 390 or 430 px. Published free at still-point-photo-stories.lovable.app."
+}

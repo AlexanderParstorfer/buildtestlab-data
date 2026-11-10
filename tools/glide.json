@@ -1,0 +1,64 @@
+{
+  "name": "Glide",
+  "website": "https://www.glideapps.com",
+  "category": "Internal app builder",
+  "pricing": {
+    "free_plan": "Free plan builds apps, but publishing an app that needs sign-in is blocked",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "no publishing for apps with access control"
+      },
+      {
+        "name": "Maker",
+        "price": 25,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Team",
+        "price": 50,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Business",
+        "price": 125,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.glideapps.com/pricing"
+  },
+  "capabilities": [
+    "Builds internal tools from a prompt",
+    "Reads a spreadsheet or its own tables",
+    "Status chips, search and detail screens"
+  ],
+  "limits": [
+    "Free plan says \"Upgrade to publish\" for any app with sign-in",
+    "Access model stays invite-only unless changed by hand"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.glideapps.com/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/glide-review"
+    }
+  ],
+  "slug": "glide",
+  "summary": "Internal apps that build well, but publishing needs a paid plan.",
+  "logo": "/logos/glide.png",
+  "run_blocker": "free plan cannot publish"
+}

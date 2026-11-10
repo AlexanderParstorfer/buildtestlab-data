@@ -1,0 +1,65 @@
+{
+  "slug": "shopify",
+  "name": "Shopify",
+  "website": "https://www.shopify.com",
+  "category": "E-commerce platform",
+  "summary": "The default for online shops: payments, inventory and themes out of the box.",
+  "pricing": {
+    "free_plan": "Trial only; a paid plan is required to run a shop",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": 5,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported US price"
+      },
+      {
+        "name": "Basic (yearly)",
+        "price": 29,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported; 39 if billed monthly"
+      },
+      {
+        "name": "Grow (yearly)",
+        "price": 79,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported; 105 if billed monthly"
+      },
+      {
+        "name": "Advanced (yearly)",
+        "price": 299,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported; 399 if billed monthly"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.shopify.com/pricing",
+    "unverified": true
+  },
+  "capabilities": [
+    "Complete shop system: payments, shipping, inventory, tax",
+    "Large theme and app ecosystem",
+    "Point-of-sale for physical shops"
+  ],
+  "limits": [
+    "No free plan; you pay before anything goes live",
+    "Transaction fees on top of the subscription for external payment providers",
+    "The pricing page renders plan prices per region; the US numbers here come from third-party reports"
+  ],
+  "sources": [
+    {
+      "label": "Vendor pricing page (regional)",
+      "url": "https://www.shopify.com/pricing"
+    },
+    {
+      "label": "Reported US prices (third party)",
+      "url": "https://www.20northmarketing.com/"
+    }
+  ],
+  "run_blocker": "no free plan"
+}

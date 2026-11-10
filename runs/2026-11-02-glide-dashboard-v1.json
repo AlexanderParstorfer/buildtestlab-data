@@ -1,0 +1,47 @@
+{
+  "tool": "glide",
+  "tool_name": "Glide",
+  "run_id": "2026-11-02-glide-dashboard-v1",
+  "spec": "dashboard-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-02T21:05:00Z",
+  "deployed_at": "2026-11-02T21:38:00Z",
+  "minutes_to_deploy": 33,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; no build credits shown",
+  "criteria": {
+    "D1": false,
+    "D2": true,
+    "D8": false
+  },
+  "criterion_notes": {
+    "D1": "Glide manages sign-in itself. The assistant said plainly that it cannot create a custom login screen or a shared demo@stillpoint.studio / demo1234 account.",
+    "D2": "The built app shows 20 sample bookings with customer, email, date, treatment, price and a status badge.",
+    "D8": "No public URL. After rebuilding as a public demo, Glide keeps the app on \"Invite only\" and the publish dialog says \"Upgrade to publish\". The free plan does not ship an app that has any access control."
+  },
+  "failures": [
+    "D1: no demo account possible — Glide owns the sign-in.",
+    "D8: the free plan cannot publish a shareable app, so there is no public URL to test."
+  ],
+  "artifacts": [],
+  "notes": "Glide asked four setup questions, built a convincing dashboard with 20 fictional bookings, search, status filter and a detail screen with a status that saves, and then could not publish: the free plan refuses any app that is not strictly private, and private means \"invite only\" plus \"Upgrade to publish\". The assistant also kept the access model on invite-only even after being told to make it public. The builder screenshot referenced earlier is no longer available (file missing on disk and in the backup); the artefact link was removed on 2026-11-05 rather than left broken.",
+  "affiliate_url": null,
+  "public_url": null,
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": null,
+    "axe_violations": null
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "Free plan, but publishing an app with sign-in requires a paid plan",
+    "publish_requires_paid": true,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-02",
+    "source_url": "https://www.glideapps.com/pricing"
+  }
+}

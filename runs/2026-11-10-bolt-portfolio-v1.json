@@ -1,0 +1,63 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-10-bolt-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-10T10:18:00Z",
+  "deployed_at": "2026-11-10T10:46:00Z",
+  "minutes_to_deploy": 28,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan's daily token allowance",
+  "public_url": "https://photography-portfoli-sm3z.bolt.host/",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": true,
+    "P8": true
+  },
+  "criterion_notes": {
+    "P2": "Twelve photographs on the home page, each with a title, its series and the year.",
+    "P3": "Harbour Light, Interiors and Quiet Portraits are separate views behind the top navigation and behind 'View series' under every image; the address bar stays on / because Bolt routes in the client.",
+    "P5": "The form takes name, email and message and answers 'Thank you — your message has been received.' The address and studio@stillpointphoto.com sit next to it.",
+    "P7": "Clicking any photograph opens a full-screen layer and loads the same picture at 1600x2000 instead of the 341 px card."
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/bolt-portfolio-v1/home-1440.jpg"
+    },
+    {
+      "label": "Gallery: twelve photographs with title, series and year",
+      "path": "/artifacts/bolt-portfolio-v1/gallery.jpg"
+    },
+    {
+      "label": "One series page: Harbour Light",
+      "path": "/artifacts/bolt-portfolio-v1/series-harbour-light.jpg"
+    },
+    {
+      "label": "A photograph opened at full resolution",
+      "path": "/artifacts/bolt-portfolio-v1/lightbox.jpg"
+    },
+    {
+      "label": "About page with the studio bio",
+      "path": "/artifacts/bolt-portfolio-v1/about.jpg"
+    },
+    {
+      "label": "Contact page after submitting the form",
+      "path": "/artifacts/bolt-portfolio-v1/contact-sent.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/bolt-portfolio-v1/home-390.jpg"
+    }
+  ],
+  "notes": "One prompt, one build, every criterion met — the second clean 8 of 8 on this brief, and the first one that cost nothing but tokens. Bolt wrote a client-side app: the three series pages are views, not addresses, so a search engine only ever sees the home page, and the contact form confirms without storing anything. The design is the strongest of the Bolt runs so far (serif headings, hairline rules, no cards), and the photographs are picsum images — plausible in a grid, but a laptop and a mountain range give away that nobody curated them. No horizontal scroll at 320, 390 or 430 px, no console errors; axe reports 22 contrast findings on the grey caption text, which is the one visible weakness.",
+  "affiliate_url": null
+}

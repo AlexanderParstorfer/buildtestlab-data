@@ -1,0 +1,46 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-07-lovable-nonprofit-v1",
+  "spec": "nonprofit-site-v1",
+  "status": "published",
+  "started_at": "2026-11-07T01:12:00Z",
+  "deployed_at": "2026-11-07T01:36:00Z",
+  "minutes_to_deploy": 24,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan",
+  "public_url": "https://harbour-lights-youth-circle.lovable.app/",
+  "criteria": {
+    "N1": true,
+    "N2": true,
+    "N3": false,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N7": true,
+    "N8": true
+  },
+  "failures": [
+    "N3: The volunteer form accepts name, email, phone and availability and shows no error, but the admin page reports 0 volunteer sign-ups. The donation pledge right next to it was stored correctly, so the failure is specific to this form."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/lovable-nonprofit-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Donation confirmed with reference",
+      "path": "/artifacts/lovable-nonprofit-v1/donate.jpg"
+    },
+    {
+      "label": "Admin: one pledge, zero volunteers",
+      "path": "/artifacts/lovable-nonprofit-v1/admin-list.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/lovable-nonprofit-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Nine pages in one prompt: home, programmes, volunteer, about, contact, donate, privacy, imprint and admin. The donation flow worked end to end: 25 euro pledge stored, reference HLF-D30B56E6, listed with timestamp in the admin area after email confirmation. The volunteer form did not store anything. This is the mirror image of the Bolt run on the same brief, where both forms failed — here one of two works."
+}

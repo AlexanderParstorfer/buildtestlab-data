@@ -1,0 +1,49 @@
+{
+  "tool": "10web",
+  "tool_name": "10Web",
+  "run_id": "2026-10-21-10web-landing-v1",
+  "spec": "landing-page-v1",
+  "status": "published",
+  "started_at": "2026-10-21T17:40:44Z",
+  "deployed_at": "2026-10-21T17:56:00Z",
+  "minutes_to_deploy": 15,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free trial; no per-build credits shown",
+  "criteria": {
+    "L1": false,
+    "L2": true,
+    "L3": false,
+    "L4": true,
+    "L5": true,
+    "L6": true,
+    "L7": true,
+    "L8": false
+  },
+  "failures": [
+    "L1: The public root URL shows 'No posts found'. The generated landing page exists at /home but was never set as the front page, so the address a visitor receives is empty.",
+    "L3: The contact form accepts input and the Send Inquiry button does nothing — no success message, no error, no request.",
+    "L8: The footer shows '[Studio Address — to be updated by studio]' and '[Opening Hours — to be updated by studio]'."
+  ],
+  "artifacts": [
+    {
+      "label": "The public root URL: \"No posts found\"",
+      "path": "/artifacts/10web-landing-v1/root-empty.png"
+    },
+    {
+      "label": "The generated page at /home",
+      "path": "/artifacts/10web-landing-v1/home-page.png"
+    },
+    {
+      "label": "After submitting the contact form: nothing changes",
+      "path": "/artifacts/10web-landing-v1/form-submitted.png"
+    },
+    {
+      "label": "Generated page at 390 px",
+      "path": "/artifacts/10web-landing-v1/mobile-390.png"
+    }
+  ],
+  "notes": "10Web needs no company data — email, first name, last name, password were enough. The AI first presents a plan that has to be approved before generation starts; that approval step blocked the build until it was clicked. The result is a WordPress site on a 10web.cloud subdomain, and the generated content itself is solid: all three services with prices, a contact section, studio text. But the front page was never assigned, so the shared URL is empty, and the contact form is inert. Both are setup failures a normal user would hit too. Scored against all eight landing criteria after the spec was aligned to the same eight-point scale as the booking tests. Added 2026-11-05: the free trial has since ended. my.10web.io logs in but every website route redirects to /upgrade-plan, and app.10web.io no longer resolves, so the 10web.cloud URL from the run cannot be retrieved. The screenshots in /artifacts remain the only evidence of the published page.",
+  "affiliate_url": null,
+  "public_url": null
+}

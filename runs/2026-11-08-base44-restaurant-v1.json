@@ -1,0 +1,48 @@
+{
+  "tool": "base44",
+  "tool_name": "Base44",
+  "run_id": "2026-11-08-base44-restaurant-v1",
+  "spec": "restaurant-site-v1",
+  "status": "published",
+  "started_at": "2026-11-08T12:35:00Z",
+  "deployed_at": "2026-11-08T13:20:00Z",
+  "minutes_to_deploy": 45,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan, app slot freed by deleting the never-published Still Point draft",
+  "public_url": "https://still-point-dine.base44.app/",
+  "criteria": {
+    "R1": true,
+    "R2": true,
+    "R3": true,
+    "R4": true,
+    "R5": true,
+    "R6": null,
+    "R7": true,
+    "R8": true
+  },
+  "failures": [
+    "R6: Not verified. The staff page exists at /admin and is linked in the footer, but it sits behind a login, and registering our address there was not accepted, so we could not see the reservation list itself.",
+    "Not a criterion: axe finds two colour-contrast problems on the home page. The footer links to 'Staff' rather than to the menu, which is where a guest would expect the link.",
+    "Not a criterion: the reservation reference is a random code (SPK-4CD2E8), not a running number."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page with hero and opening hours",
+      "path": "/artifacts/base44-restaurant-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Menu with twelve dishes, markers and allergens",
+      "path": "/artifacts/base44-restaurant-v1/menu.jpg"
+    },
+    {
+      "label": "Reservation confirmed with reference SPK-4CD2E8",
+      "path": "/artifacts/base44-restaurant-v1/reservation-confirmation.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/base44-restaurant-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Second attempt at the restaurant brief after the first one never published. This time the build was clean: home with name, hero and opening hours by weekday, a twelve-dish menu in three sections with prices, dietary markers and allergens on every dish, and a reservation form with date, time and party size. The reservation was accepted and answered with the reference SPK-4CD2E8. Address and phone are in the footer; the phone number is also a tap-to-call link in the reservation column."
+}

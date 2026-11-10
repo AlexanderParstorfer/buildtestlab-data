@@ -1,0 +1,54 @@
+{
+  "name": "Jane",
+  "website": "https://jane.app",
+  "category": "Practice management and booking for therapists",
+  "pricing": {
+    "free_plan": "No free plan; 14-day trial on request.",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Balance",
+        "price": 59,
+        "currency": "USD",
+        "period": "month",
+        "note": "per practitioner, billed monthly"
+      },
+      {
+        "name": "Practice",
+        "price": 79,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Thrive",
+        "price": 99,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-07",
+    "source_url": "https://jane.app/pricing"
+  },
+  "capabilities": [
+    "Online booking with intake forms and reminders",
+    "Charting, telehealth and insurance billing for practitioners",
+    "Client-facing booking site included"
+  ],
+  "limits": [
+    "No free plan: a solo practice pays from 59 USD per month",
+    "Built for clinics, not for a marketing site",
+    "Not an AI builder: you configure a product, not a page"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://jane.app/pricing"
+    }
+  ],
+  "slug": "jane",
+  "summary": "Clinic software with online booking; the therapist equivalent of a booking site.",
+  "logo": "/logos/jane.png",
+  "run_blocker": "no free plan, trial by request"
+}

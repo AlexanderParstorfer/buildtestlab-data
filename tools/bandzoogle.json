@@ -1,0 +1,55 @@
+{
+  "name": "Bandzoogle",
+  "website": "https://bandzoogle.com",
+  "category": "Website builder for musicians",
+  "pricing": {
+    "free_plan": "14-day trial without a credit card; the site is public on <name>.bandzoogle.com during the trial",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": 9.16,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 11 if billed monthly"
+      },
+      {
+        "name": "Standard",
+        "price": 14.16,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 17 if billed monthly"
+      },
+      {
+        "name": "Pro",
+        "price": 20.79,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 24.95 if billed monthly"
+      }
+    ],
+    "checked_at": "2026-11-09",
+    "source_url": "https://bandzoogle.com/"
+  },
+  "capabilities": [
+    "Built for bands: tour dates, mailing list, music player and merch built in",
+    "Mailing list and fan CRM included rather than bolted on",
+    "Templates aimed at musicians, not adapted from business themes"
+  ],
+  "limits": [
+    "The 14-day trial publishes on a bandzoogle.com address without a card — verified 09.11.2026 with a live site.",
+    "Trial only: nothing stays online without a paid plan",
+    "No AI prompt: you pick a template and fill it",
+    "Payment for merch depends on the tier",
+    "Content build was not completed in our automated run: the page editor needs a custom date picker, block panels and per-form saves that resisted scripted input. The trial page carries a bio and a contact form; tour dates and releases are incomplete. No score was issued."
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://bandzoogle.com/pricing"
+    }
+  ],
+  "slug": "bandzoogle",
+  "summary": "Musician-specific site builder with tour dates, mailing list and music built in.",
+  "logo": "/logos/bandzoogle.png"
+}

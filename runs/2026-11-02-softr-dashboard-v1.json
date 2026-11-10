@@ -1,0 +1,68 @@
+{
+  "tool": "softr",
+  "tool_name": "Softr",
+  "run_id": "2026-11-02-softr-dashboard-v1",
+  "spec": "dashboard-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-02T19:30:00Z",
+  "deployed_at": "2026-11-02T19:52:00Z",
+  "minutes_to_deploy": 22,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "trial; 7 days left, no credits shown",
+  "criteria": {
+    "D1": false,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true,
+    "D7": true,
+    "D8": true,
+    "D11": true,
+    "D12": false,
+    "D14": true
+  },
+  "criterion_notes": {
+    "D1": "There is no password login. Softr sends a one-time code to the email address instead, so the demo account from the brief cannot be used with a password.",
+    "D7": "A wrong code shows \"That code didn't work. Try again.\" and a search without matches shows an empty state with Clear filters.",
+    "D12": "axe found five issues: colour contrast (serious, 9 nodes), a main landmark that is not top level, a duplicate main landmark, a non-unique landmark and four nodes outside landmarks."
+  },
+  "failures": [
+    "D1: the demo account password is not implemented — login is email-code only.",
+    "D12: colour contrast fails on nine nodes, plus landmark structure (axe)."
+  ],
+  "artifacts": [
+    {
+      "label": "Bookings table with 20 rows",
+      "path": "/artifacts/softr-dashboard-v1/page-1440.jpg"
+    },
+    {
+      "label": "Table at 390 px",
+      "path": "/artifacts/softr-dashboard-v1/d11-390.jpg"
+    },
+    {
+      "label": "Table at 320 px",
+      "path": "/artifacts/softr-dashboard-v1/page-320.jpg"
+    }
+  ],
+  "notes": "Softr built a working internal tool from one prompt: 20 seeded bookings, search that drives a URL parameter, a working status filter (10 of 20 Confirmed), a detail page per booking with a Back to list link, an editable notes field that really saves, and a CSV export with 21 lines. It added a service filter nobody asked for. The gap against the brief is the login: Softr only does email codes, so a demo password cannot exist. The design is the calmest of the four, but accessibility suffers — nine colour-contrast failures on the table badges.",
+  "affiliate_url": null,
+  "public_url": "https://don17549.mysoftr.app/",
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": 0,
+    "axe_violations": 5
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "Free trial (7 days left at test time); publishes to a free mysoftr.app domain",
+    "publish_requires_paid": false,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-02",
+    "source_url": "https://www.softr.io/pricing"
+  }
+}

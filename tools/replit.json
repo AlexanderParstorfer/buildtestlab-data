@@ -1,0 +1,33 @@
+{
+  "name": "Replit Agent",
+  "website": "https://replit.com",
+  "category": "Full-stack app builder (cloud IDE)",
+  "pricing": {
+    "free_plan": "Free workspace with limited agent usage; apps publish to a replit.app address",
+    "publish_requires_paid": false,
+    "tiers": [],
+    "unverified": true,
+    "checked_at": "2026-11-08",
+    "source_url": "https://replit.com/pricing"
+  },
+  "capabilities": [
+    "Builds and runs a full app inside the browser IDE",
+    "Own database and auth through Replit services",
+    "Deploys from the same workspace"
+  ],
+  "limits": [
+    "Phone verification by WhatsApp before the first build (checked 08.11.2026).",
+    "Agent usage on the free plan is capped",
+    "Apps stop when the workspace sleeps on some plans"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://replit.com/pricing"
+    }
+  ],
+  "slug": "replit",
+  "summary": "Builds and hosts a whole app in one cloud workspace — documented from its pricing page, not yet measured on a brief.",
+  "logo": null,
+  "run_blocker": "WhatsApp code required before the first build (checked 08.11.2026)"
+}

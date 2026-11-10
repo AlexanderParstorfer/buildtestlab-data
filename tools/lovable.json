@@ -1,0 +1,57 @@
+{
+  "name": "Lovable",
+  "website": "https://lovable.dev",
+  "category": "Full-stack app builder",
+  "pricing": {
+    "free_plan": "Free plan with a daily credit allowance; publishes to a lovable.app subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "EUR",
+        "period": "month",
+        "note": "daily credits, lovable.app domain"
+      },
+      {
+        "name": "Pro",
+        "price": 25,
+        "currency": "EUR",
+        "period": "month",
+        "note": "100 monthly credits"
+      },
+      {
+        "name": "Business",
+        "price": 50,
+        "currency": "EUR",
+        "period": "month",
+        "note": "100 credits, roles, design systems"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://lovable.dev/pricing"
+  },
+  "capabilities": [
+    "Prompt to full-stack app with database and login",
+    "Own subdomain, publish without a paid plan",
+    "GitHub sync and code export",
+    "Custom domain on paid plans"
+  ],
+  "limits": [
+    "Email sending needs a paid plan and a verified domain",
+    "Credits are consumed per build and per fix"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://lovable.dev/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/lovable-review"
+    }
+  ],
+  "slug": "lovable",
+  "summary": "Prompt to a full-stack app with database and login; the fastest of the app builders in our booking run.",
+  "logo": "/logos/lovable.png"
+}

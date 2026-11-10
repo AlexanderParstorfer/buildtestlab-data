@@ -1,0 +1,75 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-10-bolt-artist-site-v1",
+  "spec": "artist-site-v1",
+  "status": "published",
+  "started_at": "2026-11-10T10:50:00Z",
+  "deployed_at": "2026-11-10T11:22:00Z",
+  "minutes_to_deploy": 32,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan's daily token allowance (about 100k tokens)",
+  "public_url": "https://mira-halden-artist-p-8mte.bolt.host/",
+  "criteria": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "T5": true,
+    "T6": true,
+    "T7": true,
+    "T8": true
+  },
+  "criterion_notes": {
+    "T2": "Ten works, each with title, year, medium, dimensions and a price in euro, from €1,800 to €5,200.",
+    "T3": "Every work opens its own view with medium, dimensions, price and a paragraph on how the piece was painted.",
+    "T4": "Adding a work, pressing 'Proceed to checkout', filling name, email, address, city and country and placing the order returns reference MH-VKJU-5OZ0 with a dated confirmation. The order itself lives only in the browser: there is no orders table in the project database, and a reload loses the confirmation.",
+    "T6": "The message appears as one row in the project's contact_messages table — checked in Bolt's database view, not just in the confirmation text."
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/bolt-artist-site-v1/home-1440.jpg"
+    },
+    {
+      "label": "The catalogue: ten works with year, medium and price",
+      "path": "/artifacts/bolt-artist-site-v1/works.jpg"
+    },
+    {
+      "label": "One work detail page",
+      "path": "/artifacts/bolt-artist-site-v1/work-detail.jpg"
+    },
+    {
+      "label": "Cart with one work",
+      "path": "/artifacts/bolt-artist-site-v1/cart.jpg"
+    },
+    {
+      "label": "Checkout form",
+      "path": "/artifacts/bolt-artist-site-v1/checkout.jpg"
+    },
+    {
+      "label": "Order confirmation with reference MH-VKJU-5OZ0",
+      "path": "/artifacts/bolt-artist-site-v1/order-confirmation.jpg"
+    },
+    {
+      "label": "About / CV with the exhibition list",
+      "path": "/artifacts/bolt-artist-site-v1/about.jpg"
+    },
+    {
+      "label": "Contact form answered",
+      "path": "/artifacts/bolt-artist-site-v1/contact-sent.jpg"
+    },
+    {
+      "label": "The same message as a row in the project database",
+      "path": "/artifacts/bolt-artist-site-v1/database-contact-message.png"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/bolt-artist-site-v1/home-390.jpg"
+    }
+  ],
+  "notes": "One prompt, one run of the plan, 32 minutes, 8 of 8 — and the first run in this set where the storefront half and the admin half both work in the same build. Bolt wrote a real database table and wired the contact form to it: the message shows up as a row in contact_messages, which is the check that most builders fail. The catalogue is the strongest content in any Bolt run (ten works, dimensions, a paragraph per painting, curated-looking picsum images), and the cart, checkout and reference number all hold. Two honest limits: the order is not stored anywhere server-side, so the confirmation disappears on reload although the brief asked for it to survive; and the site is a client-side app, so all ten works live behind /#/ and only the home page is visible to a crawler. No horizontal scroll at 320, 390 or 430 px, no console errors; axe finds contrast on the small caps labels.",
+  "affiliate_url": null
+}

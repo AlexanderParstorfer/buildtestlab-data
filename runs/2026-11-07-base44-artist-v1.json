@@ -1,0 +1,51 @@
+{
+  "tool": "base44",
+  "tool_name": "Base44",
+  "run_id": "2026-11-07-base44-artist-v1",
+  "spec": "artist-site-v1",
+  "status": "published",
+  "started_at": "2026-11-06T23:58:00Z",
+  "deployed_at": "2026-11-07T00:18:00Z",
+  "minutes_to_deploy": 20,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan",
+  "public_url": "https://mira-clay-curated.base44.app/",
+  "criteria": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "T5": true,
+    "T6": false,
+    "T7": true,
+    "T8": true
+  },
+  "failures": [
+    "T6: The contact form accepts name, email and message but shows no confirmation after sending, and the admin area renders as a blank page after login — so neither the sender nor the studio can tell whether the message arrived.",
+    "T4 note: the order itself worked and returned a reference (MH-2026-JWM27FE), but the same blank admin page means the studio cannot see orders or messages in the app. The order record only exists in the database."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/base44-artist-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Work detail with title, year, medium and price",
+      "path": "/artifacts/base44-artist-v1/work-detail.jpg"
+    },
+    {
+      "label": "Order confirmation with reference",
+      "path": "/artifacts/base44-artist-v1/order-confirmation.jpg"
+    },
+    {
+      "label": "Gallery at 390 px",
+      "path": "/artifacts/base44-artist-v1/gallery-mobile-390.jpg"
+    },
+    {
+      "label": "Admin area after login: blank",
+      "path": "/artifacts/base44-artist-v1/admin-blank.jpg"
+    }
+  ],
+  "notes": "One prompt produced nine pages: home, gallery with 10 works, shop, cart, checkout, work detail, about, contact and an admin area. Every work carries title, year, medium and price in euro (e.g. 'Vessel, Ash Ridge, 2023, stoneware, ash glaze, 420 euro'). The shop flow is real: add to cart, checkout with name, email and shipping address, order stored, reference MH-2026-JWM27FE returned, cart emptied. The weakness is the admin side: after creating an account and confirming a six-digit code, /admin renders blank, so the studio owner sees neither orders nor messages. Publishing needed the hidden Publish action in the editor menu; the app went live at mira-clay-curated.base44.app on the free plan."
+}

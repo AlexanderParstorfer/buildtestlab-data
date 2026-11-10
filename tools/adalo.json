@@ -1,0 +1,53 @@
+{
+  "name": "Adalo",
+  "website": "https://www.adalo.com",
+  "category": "No-code app builder with AI",
+  "pricing": {
+    "free_plan": "Free plan to build and test; publishing needs the Builder plan",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "build and test only"
+      },
+      {
+        "name": "Builder",
+        "price": 65,
+        "currency": "USD",
+        "period": "month",
+        "note": "first month 30, app store publishing"
+      },
+      {
+        "name": "Team",
+        "price": 200,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.adalo.com/pricing"
+  },
+  "capabilities": [
+    "True native iOS and Android builds",
+    "Visual canvas plus an AI assistant",
+    "Database-driven apps"
+  ],
+  "limits": [
+    "Publishing to the app stores starts at 65 USD per month",
+    "Our account could not load the app list after email validation (their API returned an error)"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.adalo.com/pricing"
+    }
+  ],
+  "slug": "adalo",
+  "summary": "True native iOS and Android builds; app-store publishing starts at $65 a month.",
+  "logo": "/logos/adalo.png",
+  "run_blocker": "API error on signup"
+}

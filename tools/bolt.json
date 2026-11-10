@@ -1,0 +1,58 @@
+{
+  "name": "Bolt.new",
+  "website": "https://bolt.new",
+  "category": "AI code builder",
+  "pricing": {
+    "free_plan": "Free plan with a daily token allowance; publishes to a bolt.host subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "daily limits, no card"
+      },
+      {
+        "name": "Pro",
+        "price": 25,
+        "currency": "USD",
+        "period": "month",
+        "note": "token based"
+      },
+      {
+        "name": "Pro 50",
+        "price": 30,
+        "currency": "USD",
+        "period": "month",
+        "note": "higher token budget"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://bolt.new/pricing"
+  },
+  "capabilities": [
+    "Writes real code (React, Node) instead of templates",
+    "Database and edge functions",
+    "Publishes to bolt.host",
+    "Code can be downloaded"
+  ],
+  "limits": [
+    "Hash routing: /admin does not resolve, only /#/admin",
+    "Free plan runs on daily tokens — roughly two builds a day, then it stops mid-project",
+    "Secrets like RESEND_API_KEY must be set by hand"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://bolt.new/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/bolt-review"
+    }
+  ],
+  "slug": "bolt",
+  "summary": "Writes real code with a database and is the only tool with a run on all eight briefs; 8 of 8 on the artist, portfolio and landing briefs.",
+  "logo": "/logos/bolt.png"
+}

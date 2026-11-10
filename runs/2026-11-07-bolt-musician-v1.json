@@ -1,0 +1,39 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-07-bolt-musician-v1",
+  "spec": "musician-site-v1",
+  "status": "published",
+  "started_at": "2026-11-07T02:12:00Z",
+  "deployed_at": "2026-11-07T02:26:00Z",
+  "minutes_to_deploy": 14,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan",
+  "public_url": "https://band-website-the-har-o0lr.bolt.host/",
+  "criteria": {
+    "M1": true,
+    "M2": false,
+    "M3": false,
+    "M4": false,
+    "M5": false,
+    "M6": false,
+    "M7": true,
+    "M8": true
+  },
+  "failures": [
+    "M2–M6: The navigation labels (Tour, Music, About, Contact, Mailing list, Admin) are not links and do not open anything. Every hash route (#/tour, #/music, #/about, #/contact, #/mailing-list, #/admin) serves the same home page, and no form exists anywhere on the site.",
+    "M3: No mailing-list form exists at all, so nothing could be stored."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/bolt-musician-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/bolt-musician-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "The home page is genuinely good: band name, sound line, next gig with date, venue and city, a track section and a footer. Only the first page was built — the other six sections exist as labels in the header, and Bolt's hash routing serves the home page for every route. Same pattern as the nonprofit run: the surface looks finished, the structure is missing."
+}

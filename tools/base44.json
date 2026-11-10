@@ -1,0 +1,64 @@
+{
+  "name": "Base44",
+  "website": "https://base44.com",
+  "category": "Full-stack app builder",
+  "pricing": {
+    "free_plan": "Free plan with monthly message credits; publishes to a base44.app subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": 16,
+        "currency": "USD",
+        "period": "month",
+        "note": "monthly billing"
+      },
+      {
+        "name": "Builder",
+        "price": 40,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Pro",
+        "price": 80,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Elite",
+        "price": 160,
+        "currency": "USD",
+        "period": "month",
+        "note": "1,200 message credits"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://base44.com/pricing"
+  },
+  "capabilities": [
+    "Creates backend entities and database itself",
+    "Built-in auth",
+    "Publishes to its own subdomain",
+    "GitHub integration on higher plans"
+  ],
+  "limits": [
+    "Editable fields can look wired without writing to the backend (seen in our run)",
+    "Message credits limit how much you can build per month"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://base44.com/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/base44-review"
+    }
+  ],
+  "slug": "base44",
+  "summary": "Builds backend entities itself, but the edit field in our dashboard run never saved.",
+  "logo": "/logos/base44.png"
+}

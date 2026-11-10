@@ -1,0 +1,52 @@
+{
+  "name": "Anything",
+  "website": "https://www.anything.com",
+  "category": "AI app and site builder",
+  "pricing": {
+    "free_plan": "Free tier with a small monthly credit allowance",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "limited credits"
+      },
+      {
+        "name": "Pro 20k",
+        "price": 19,
+        "currency": "USD",
+        "period": "month",
+        "note": "20K credits"
+      },
+      {
+        "name": "Pro 200k",
+        "price": 199,
+        "currency": "USD",
+        "period": "month",
+        "note": "200K credits"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.anything.com/pricing"
+  },
+  "capabilities": [
+    "Prompt to web or mobile app with code",
+    "40+ integrations",
+    "Adds GPT models to the generated app"
+  ],
+  "limits": [
+    "Signup only via Google or Apple, and the Google popup does not complete in an automated browser",
+    "Could not be tested for that reason"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.anything.com/pricing"
+    }
+  ],
+  "slug": "anything",
+  "summary": "Prompt to web or mobile app with code and 40+ integrations.",
+  "run_blocker": "Google login popup"
+}

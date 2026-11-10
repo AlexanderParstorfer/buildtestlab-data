@@ -1,0 +1,43 @@
+{
+  "tool": "notion-sites",
+  "tool_name": "Notion Sites",
+  "run_id": "2026-11-09-notion-musician-v1",
+  "spec": "musician-site-v1",
+  "status": "published",
+  "started_at": "2026-11-09T12:25:00Z",
+  "deployed_at": "2026-11-09T12:45:00Z",
+  "minutes_to_deploy": 20,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free Notion account, second published page",
+  "public_url": "https://snowy-carbon-6f7.notion.site/The-Lantern-Hours-413a2c34861380079c37ce36329479da",
+  "criteria": {
+    "M1": true,
+    "M2": true,
+    "M3": false,
+    "M4": true,
+    "M5": true,
+    "M6": false,
+    "M7": true,
+    "M8": true
+  },
+  "failures": [
+    "M3: No mailing-list form. The page tells people to write an email and says a proper signup form is not part of the tool.",
+    "M6: Booking address and phone are there, but no contact form — the brief asked for both."
+  ],
+  "artifacts": [
+    {
+      "label": "Page at 1440 px with next gig",
+      "path": "/artifacts/notion-musician-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Six tour dates",
+      "path": "/artifacts/notion-musician-v1/tour.jpg"
+    },
+    {
+      "label": "Page at 390 px",
+      "path": "/artifacts/notion-musician-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Second Notion page, and the fastest run in the set: content pasted as markdown, published in 20 minutes. Six tour dates with venue and city, four releases with listen links, three members with instruments, next gig on top. What it cannot do is collect anything — no mailing list, no contact form. For a band that only needs a readable one-pager this is enough; for anything that stores a name it is the wrong tool."
+}

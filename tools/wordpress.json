@@ -1,0 +1,54 @@
+{
+  "name": "WordPress.com",
+  "website": "https://wordpress.com",
+  "category": "Hosted blogging and site platform",
+  "pricing": {
+    "free_plan": "Free plan publishes to a wordpress.com address with WordPress.com ads",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "ads on every page, wordpress.com subdomain"
+      },
+      {
+        "name": "Personal",
+        "price": 4,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed yearly, removes ads"
+      },
+      {
+        "name": "Premium",
+        "price": 8,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed yearly, payments and plugins"
+      }
+    ],
+    "checked_at": "2026-11-08",
+    "source_url": "https://wordpress.com/pricing/"
+  },
+  "capabilities": [
+    "Twenty years of themes, plugins and documentation",
+    "Free plan publishes without a card",
+    "A real database behind every site"
+  ],
+  "limits": [
+    "The free plan shows WordPress.com ads to visitors",
+    "Plugins and payments start at Premium",
+    "This is the hosted WordPress.com, not the self-hosted WordPress.org software",
+    "Prices were read from the EU version of the pricing page; US figures differ by a dollar or two"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://wordpress.com/pricing/"
+    }
+  ],
+  "slug": "wordpress",
+  "summary": "The hosted version of WordPress: free to publish, ads included, no AI builder in the sense the rest of this site means.",
+  "logo": null
+}

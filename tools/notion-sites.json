@@ -1,0 +1,31 @@
+{
+  "name": "Notion Sites",
+  "website": "https://www.notion.com",
+  "category": "Workspace with a public site publisher",
+  "pricing": {
+    "free_plan": "Free workspace publishes pages to a notion.site address",
+    "publish_requires_paid": false,
+    "tiers": [],
+    "unverified": true,
+    "checked_at": "2026-11-08",
+    "source_url": "https://www.notion.com/pricing"
+  },
+  "capabilities": [
+    "Pages are databases and documents at the same time",
+    "Publishes publicly without a separate website tool",
+    "Notion AI drafts the copy"
+  ],
+  "limits": [
+    "Layout stays close to a document — no real landing page design",
+    "Forms are page-based, not a booking flow"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.notion.com/pricing"
+    }
+  ],
+  "slug": "notion-sites",
+  "summary": "Turns a workspace page into a public site for free — strong for reading, weak for anything that needs a form.",
+  "logo": null
+}

@@ -1,0 +1,39 @@
+{
+  "tool": "framer",
+  "tool_name": "Framer",
+  "run_id": "2026-11-07-framer-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-07T12:35:00Z",
+  "deployed_at": "2026-11-07T13:05:00Z",
+  "minutes_to_deploy": 30,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one AI generation on the free plan",
+  "public_url": "https://cyan-basis-076904.framer.app/",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": false,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": null,
+    "P8": true
+  },
+  "failures": [
+    "P3: Only one series page exists (/series/in-the-stone, three photographs). The second series asked for in the brief was never created — /series itself returns 404 and there is no second series link.",
+    "P7: Not measured. We did not open an image at full resolution or test a download."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/framer-portfolio-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/framer-portfolio-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Framer asked a clarifying question before generating (which direction should lead the portfolio), then built five pages in about thirty minutes: home, portfolio with nine photographs, one series page, about and contact with a working form of thirteen fields. The design is the strongest we have seen for a portfolio. The miss is structural: the brief asked for two series, only one was built."
+}

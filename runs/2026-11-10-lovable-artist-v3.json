@@ -1,0 +1,47 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-10-lovable-artist-v3",
+  "spec": "artist-site-v1",
+  "status": "published",
+  "started_at": "2026-11-10T00:01:00Z",
+  "deployed_at": "2026-11-10T00:22:00Z",
+  "minutes_to_deploy": 21,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free daily credits, one prompt, no fixes needed",
+  "public_url": "https://valletta-clay-gallery-shop.lovable.app/",
+  "criteria": {
+    "T1": true,
+    "T2": false,
+    "T3": true,
+    "T4": true,
+    "T5": true,
+    "T6": null,
+    "T7": true,
+    "T8": true
+  },
+  "failures": [
+    "T2: Nine works are listed and eight carry a price in euro. Celadon Study (2023) shows no price at all, so the gallery does not meet the brief line for line.",
+    "T6: Not verified. The contact form accepts name, email and message and answers with 'Thank you — your message has been sent', but the admin area is behind a studio login, so storage is unproven."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/lovable-artist-v3/home-desktop.jpg"
+    },
+    {
+      "label": "Works page with nine pieces",
+      "path": "/artifacts/lovable-artist-v3/works.jpg"
+    },
+    {
+      "label": "Order received with reference MHS-2026-8LVM3L",
+      "path": "/artifacts/lovable-artist-v3/order-confirmation.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/lovable-artist-v3/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "One prompt, 21 minutes, no corrections. The build is the most complete Lovable run so far: home with statement and four images, nine works with year and medium, detail pages with a longer description and an Inquire button, a cart, a checkout that collects name, email and shipping address and answers with reference MHS-2026-8LVM3L for 680 euro, an about page with a real CV (education and exhibitions), and a contact form that confirms. The cart lives at /cart; /checkout returns 404, which costs nothing because the navigation never points there. axe reports one moderate heading-order problem on the works page. No horizontal scroll at 320, 390 or 430 px."
+}

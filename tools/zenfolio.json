@@ -1,0 +1,31 @@
+{
+  "name": "Zenfolio",
+  "website": "https://www.zenfolio.com",
+  "category": "Photography portfolio and gallery host",
+  "pricing": {
+    "free_plan": "Trial only — there is no lasting free plan, and publishing needs a paid subscription",
+    "publish_requires_paid": true,
+    "tiers": [],
+    "unverified": true,
+    "checked_at": "2026-11-08",
+    "source_url": "https://www.zenfolio.com/pricing"
+  },
+  "capabilities": [
+    "Client galleries with proofing and downloads",
+    "Print sales built in",
+    "Portfolio templates made for photographers"
+  ],
+  "limits": [
+    "No free plan, so no measured run without paying",
+    "Template editing, not an AI builder"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.zenfolio.com/pricing"
+    }
+  ],
+  "slug": "zenfolio",
+  "summary": "Photographer platform with galleries and print sales; like Format, it does not publish on a free plan.",
+  "logo": null
+}

@@ -1,0 +1,39 @@
+{
+  "tool": "pixieset",
+  "tool_name": "Pixieset",
+  "run_id": "2026-11-06-pixieset-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-06T21:55:00Z",
+  "deployed_at": "2026-11-06T22:20:00Z",
+  "minutes_to_deploy": 25,
+  "prompts_used": 0,
+  "cost_usd": 0,
+  "credits_spent": "free plan, no card required",
+  "public_url": "https://stillpointstudio44.mypixieset.com/",
+  "criteria": {
+    "P1": false,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": null,
+    "P8": true
+  },
+  "failures": [
+    "P1: The published site still carries the template's demo persona — 'Ethan Callister. Photography fueled by passion for simplicity.' — on the home and about pages. Nothing warned at publish time that these are placeholder words.",
+    "P7: Not measured. Clicking an image did not open a viewer in our run, and we did not test a download or full-resolution link."
+  ],
+  "artifacts": [
+    {
+      "label": "Live home page at 1440 px",
+      "path": "/artifacts/pixieset-portfolio-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/pixieset-portfolio-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Pixieset is not a prompt-first builder: the site comes from a template picker (we chose the portfolio theme Kyoto), so 'one prompt' does not apply. Account creation, email activation and publishing were automated; the activation link arrived in the same inbox we monitor for the site. Publishing was blocked until the account was activated — a real step a user hits too. The contact page has a working form with five fields; we did not submit it because that would send mail to the studio inbox. Images are the template's demo photos; uploading real photography is the one step we skipped, so P7 stays unmeasured rather than passed."
+}

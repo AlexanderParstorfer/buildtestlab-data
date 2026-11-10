@@ -1,0 +1,72 @@
+{
+  "tool": "base44",
+  "tool_name": "Base44",
+  "run_id": "2026-11-01-base44-dashboard-v1",
+  "spec": "dashboard-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-01T21:36:00Z",
+  "deployed_at": "2026-11-01T21:58:00Z",
+  "minutes_to_deploy": 22,
+  "prompts_used": 2,
+  "cost_usd": 0,
+  "credits_spent": "free plan; not displayed",
+  "criteria": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": false,
+    "D6": true,
+    "D7": true,
+    "D8": true,
+    "D11": true,
+    "D12": false,
+    "D14": true
+  },
+  "criterion_notes": {
+    "D5": "The detail page offers an editable notes field with a Save button. After saving, the value disappears from the page and is gone after a reload. The network log shows no update request at all, only two login calls — the save is not wired to the backend.",
+    "D7": "A wrong password produces a visible error, and an empty search result shows an empty state.",
+    "D12": "axe found two issues: no H1 and two nodes outside landmarks."
+  },
+  "failures": [
+    "D5: editing notes does not persist — the save never reaches the backend.",
+    "D12: no H1, content outside landmarks (axe)."
+  ],
+  "artifacts": [
+    {
+      "label": "Login screen",
+      "path": "/artifacts/base44-dashboard-v1/d7-login-error.jpg"
+    },
+    {
+      "label": "Bookings table with 20 rows",
+      "path": "/artifacts/base44-dashboard-v1/d1-list.jpg"
+    },
+    {
+      "label": "Detail view",
+      "path": "/artifacts/base44-dashboard-v1/d4-detail.jpg"
+    },
+    {
+      "label": "Table at 320 px",
+      "path": "/artifacts/base44-dashboard-v1/page-320.jpg"
+    }
+  ],
+  "notes": "The first prompt stopped after reading two files and building the login shell; a second prompt was needed to get the whole dashboard. Once it ran, the result is the most complete of the three: login with a real error message, 20 seeded bookings, search, working status filter, detail route per booking, CSV export and an empty state. The one broken promise is the editable field: Save notes looks like it works but nothing is written. Publishing is a separate click and free.",
+  "affiliate_url": null,
+  "public_url": "https://stalwart-still-point-flow.base44.app/",
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": 0,
+    "axe_violations": 2
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "Free plan to start (credit based), publishes to a base44.app subdomain; paid tiers are listed on the pricing page",
+    "publish_requires_paid": false,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-01",
+    "source_url": "https://base44.com/pricing"
+  }
+}

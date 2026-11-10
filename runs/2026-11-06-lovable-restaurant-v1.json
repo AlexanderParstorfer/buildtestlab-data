@@ -1,0 +1,46 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-06-lovable-restaurant-v1",
+  "spec": "restaurant-site-v1",
+  "status": "published",
+  "started_at": "2026-11-06T23:45:00Z",
+  "deployed_at": "2026-11-07T00:05:00Z",
+  "minutes_to_deploy": 20,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan",
+  "public_url": "https://still-point-table.lovable.app/",
+  "criteria": {
+    "R1": true,
+    "R2": true,
+    "R3": true,
+    "R4": true,
+    "R5": true,
+    "R6": true,
+    "R7": false,
+    "R8": true
+  },
+  "failures": [
+    "R7: The contact section has the address (14 Triq il-Merkanti, Valletta) but no phone number, although the brief asked for one. A restaurant without a phone number is a restaurant you cannot call about a table."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/lovable-restaurant-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Menu with 12 dishes and allergen lines",
+      "path": "/artifacts/lovable-restaurant-v1/menu-desktop.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/lovable-restaurant-v1/home-mobile-390.jpg"
+    },
+    {
+      "label": "Admin list with the stored reservation",
+      "path": "/artifacts/lovable-restaurant-v1/admin-list.jpg"
+    }
+  ],
+  "notes": "One prompt produced a four-page site: home with opening hours, menu with three sections and 12 dishes, a reservation form and an /admin area. The menu is unusually complete for one prompt: every dish has a price in euro, dietary markers (V/VG/GF) and an allergen line. The reservation stored server-side and returned a reference (SPK-B31239); the admin area required creating an account and confirming an email before it listed the booking — a real step a restaurant owner would hit. The only miss is the missing phone number."
+}

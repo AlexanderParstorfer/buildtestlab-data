@@ -1,0 +1,60 @@
+{
+  "name": "Bubble",
+  "website": "https://bubble.io",
+  "category": "No-code app builder with AI",
+  "pricing": {
+    "free_plan": "Free plan to build and test; app generation does not consume credits",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "build and test"
+      },
+      {
+        "name": "Starter",
+        "price": 32,
+        "currency": "USD",
+        "period": "month",
+        "note": "500 AI credits, 50K workload units"
+      },
+      {
+        "name": "Growth",
+        "price": 119,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Team",
+        "price": 349,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://bubble.io/pricing"
+  },
+  "capabilities": [
+    "Full database, workflows and roles",
+    "Web and native mobile from one project",
+    "AI generates screens from a prompt"
+  ],
+  "limits": [
+    "The sign-up form could not be submitted in an automated browser (button not reachable), so we have no run",
+    "Steeper learning curve than the prompt-only builders"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://bubble.io/pricing"
+    }
+  ],
+  "slug": "bubble",
+  "summary": "Full database, workflows and roles, plus AI screen generation.",
+  "logo": "/logos/bubble.png",
+  "run_blocker": "signup form unreachable"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Framer",
+  "website": "https://www.framer.com",
+  "category": "Design-first site builder",
+  "pricing": {
+    "free_plan": "Free plan with a framer.app subdomain and a Framer badge",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "framer.app domain, 1 GB bandwidth"
+      },
+      {
+        "name": "Mini",
+        "price": 10,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Basic",
+        "price": 30,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.framer.com/pricing/"
+  },
+  "capabilities": [
+    "Visual canvas plus an agent that edits layers",
+    "Asks clarifying questions before building",
+    "Own subdomain on the free plan",
+    "CMS on paid plans"
+  ],
+  "limits": [
+    "No backend, so database-style briefs are out of reach",
+    "Placeholder address and opening hours stay unless you edit them"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.framer.com/pricing/"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/framer-review"
+    }
+  ],
+  "slug": "framer",
+  "summary": "Design-first builder with an AI agent that asks questions before it starts.",
+  "logo": "/logos/framer.jpg"
+}

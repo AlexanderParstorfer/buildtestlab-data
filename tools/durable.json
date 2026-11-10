@@ -1,0 +1,58 @@
+{
+  "name": "Durable",
+  "website": "https://durable.co",
+  "category": "Business site in a minute",
+  "pricing": {
+    "free_plan": "Free plan generates a page but keeps it in preview mode",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "preview only"
+      },
+      {
+        "name": "Starter",
+        "price": 20,
+        "currency": "USD",
+        "period": "month",
+        "note": "yearly billing shown as 22"
+      },
+      {
+        "name": "Business",
+        "price": 40,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://durable.co/pricing"
+  },
+  "capabilities": [
+    "Fastest generation in our set (five minutes)",
+    "Writes complete copy including prices",
+    "AI Partner can edit content afterwards"
+  ],
+  "limits": [
+    "Publishing needs a paid plan, the free page stays in preview",
+    "Invents testimonials with names and job titles",
+    "Placeholder phone number and email by default"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://durable.co/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/durable-review"
+    }
+  ],
+  "slug": "durable",
+  "summary": "Fastest generator we tested, five minutes, but the page stays in preview mode.",
+  "logo": "/logos/durable.png",
+  "run_blocker": "free plan stays in preview"
+}

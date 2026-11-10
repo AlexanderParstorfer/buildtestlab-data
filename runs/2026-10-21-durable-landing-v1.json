@@ -1,0 +1,58 @@
+{
+  "tool": "durable",
+  "tool_name": "Durable",
+  "run_id": "2026-10-21-durable-landing-v1",
+  "spec": "landing-page-v1",
+  "status": "published",
+  "started_at": "2026-10-21T17:58:20Z",
+  "deployed_at": "2026-10-21T18:03:00Z",
+  "minutes_to_deploy": 5,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; publishing requires a paid plan",
+  "criteria": {
+    "L1": true,
+    "L2": true,
+    "L3": false,
+    "L4": true,
+    "L5": false,
+    "L6": true,
+    "L7": true,
+    "L8": false,
+    "L9": true
+  },
+  "failures": [
+    "L5: The site never goes live on the free plan. The public URL shows 'Preview mode — this website isn't live yet', and the dashboard says 'Upgrade now to launch a professional site'.",
+    "L3: The contact form has name, email, treatment and time fields, but submitting produces no confirmation and no error — the visitor cannot tell whether anything was sent.",
+    "L8: The footer shows '+1 234 567 8900' and 'email@mybusiness.com' as contact details."
+  ],
+  "artifacts": [
+    {
+      "label": "Landing page with the preview banner",
+      "path": "/artifacts/durable-landing-v1/landing-preview.png"
+    },
+    {
+      "label": "Contact page with the form",
+      "path": "/artifacts/durable-landing-v1/contact.png"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/durable-landing-v1/mobile-390.png"
+    },
+    {
+      "label": "Editor after the follow-up prompt",
+      "path": "/artifacts/durable-landing-v1/retest-editor.png"
+    }
+  ],
+  "notes": "Fastest run of all: five minutes from signup to a generated page, no company data needed, no credit card. The content is good and includes all three prices. Two serious problems: the page cannot be published without a paid plan, so the URL stays in preview mode; and Durable invented four customer testimonials with names and job titles ('Elena M., Valletta resident', 'James T., Architect, Sliema' and so on) that nobody ever wrote. A new site owner who publishes that would be publishing fabricated reviews. The contact details are also placeholders (+1 234 567 8900, email@mybusiness.com). Scored against all eight landing criteria after the spec was aligned to the same eight-point scale as the booking tests.",
+  "affiliate_url": null,
+  "public_url": null,
+  "criterion_notes": {
+    "L9": "Follow-up prompt changed the 90-minute price from $130 to $120 in the editor; other sections untouched. Publishing is still blocked by the paid plan."
+  },
+  "retest": {
+    "prompt": "Change the price of the 90-minute massage from $130 to $120 on my website. Change nothing else.",
+    "outcome": "pass",
+    "note": "The AI Partner edited the home and services pricing. Verified in the editor only: Durable still refuses to publish on the free plan, so the change cannot be checked on a public URL."
+  }
+}

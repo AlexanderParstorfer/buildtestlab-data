@@ -1,0 +1,63 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-10-bolt-landing-page-v1",
+  "spec": "landing-page-v1",
+  "status": "published",
+  "started_at": "2026-11-10T11:08:00Z",
+  "deployed_at": "2026-11-10T11:38:00Z",
+  "minutes_to_deploy": 30,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "third build of the day; the free daily token allowance ran out while it finished, so no follow-up was possible",
+  "public_url": "https://still-point-massage-1m7c.bolt.host/",
+  "criteria": {
+    "L1": true,
+    "L2": true,
+    "L3": true,
+    "L4": true,
+    "L5": true,
+    "L6": true,
+    "L7": true,
+    "L8": true
+  },
+  "criterion_notes": {
+    "L1": "Still Point Massage with an intro line, then three treatments with prices: deep tissue 60 minutes €90, deep tissue 90 minutes €130, hot stone 75 minutes €150.",
+    "L3": "Sending the form returns 'Thank you — your message has been sent', and the message appears as a row in the project's contact_messages table.",
+    "L6": "The Contact link in the header scrolls to the form — 2737 px down the page, with the form in view.",
+    "L7": "The footer carries 17, Strait Street, Valletta, Monday to Saturday 9:00–19:00, closed Sunday."
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Landing page at 1440 px",
+      "path": "/artifacts/bolt-landing-page-v1/home-1440.jpg"
+    },
+    {
+      "label": "The three services with prices",
+      "path": "/artifacts/bolt-landing-page-v1/services.jpg"
+    },
+    {
+      "label": "About section",
+      "path": "/artifacts/bolt-landing-page-v1/about.jpg"
+    },
+    {
+      "label": "Contact section reached from the navigation",
+      "path": "/artifacts/bolt-landing-page-v1/contact-section.jpg"
+    },
+    {
+      "label": "Form answered after sending",
+      "path": "/artifacts/bolt-landing-page-v1/form-sent.jpg"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/bolt-landing-page-v1/home-390.jpg"
+    },
+    {
+      "label": "Landing page at 320 px",
+      "path": "/artifacts/bolt-landing-page-v1/home-320.jpg"
+    }
+  ],
+  "notes": "The third build of the day and the quietest: one prompt, 30 minutes, nothing to correct. This is the only landing run where the form both confirms and stores — the message showed up as a row in the project database, which none of the page builders managed. The layout is calm and deliberate (deep green, serif headings, an italic service list) and the copy reads like a studio rather than a template. The caveat is the one that applies to every Bolt run: it is a client-side app, so the address bar stays on / and crawlers see one page, which for a landing page matters less than for a shop. The free daily allowance ran out as this build finished, so the page could not be adjusted afterwards; nothing needed adjusting.",
+  "affiliate_url": null
+}

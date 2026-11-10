@@ -1,0 +1,77 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-01-lovable-dashboard-v1",
+  "spec": "dashboard-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-01T09:10:00Z",
+  "deployed_at": "2026-11-01T09:24:00Z",
+  "minutes_to_deploy": 14,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; not displayed",
+  "criteria": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true,
+    "D7": false,
+    "D8": true,
+    "D11": true,
+    "D12": false,
+    "D14": true
+  },
+  "criterion_notes": {
+    "D4": "The detail view exists, but only the customer-name link opens it. Clicking anywhere else in the row does nothing.",
+    "D6": "Export CSV downloaded stillpoint-bookings.csv with 21 lines (header plus 20 rows) and the right columns. Export of a filtered table was not checked separately.",
+    "D7": "The empty state appears when a search matches nothing. A wrong password shows no error at all — the form simply stays on screen.",
+    "D12": "axe found one moderate violation: the page has no H1."
+  },
+  "failures": [
+    "D7: a wrong password produces no visible error message.",
+    "D12: no H1 on the bookings page (axe: page-has-heading-one)."
+  ],
+  "artifacts": [
+    {
+      "label": "Login screen",
+      "path": "/artifacts/lovable-dashboard-v1/d7-login-error.jpg"
+    },
+    {
+      "label": "Booking table with 20 rows",
+      "path": "/artifacts/lovable-dashboard-v1/d1-list.jpg"
+    },
+    {
+      "label": "Search filtering the table",
+      "path": "/artifacts/lovable-dashboard-v1/d3-search.jpg"
+    },
+    {
+      "label": "Detail view",
+      "path": "/artifacts/lovable-dashboard-v1/d4-detail.jpg"
+    },
+    {
+      "label": "Table at 320 px",
+      "path": "/artifacts/lovable-dashboard-v1/page-320.jpg"
+    }
+  ],
+  "notes": "One prompt, one build, 14 minutes. The dashboard is a real app: 20 seeded bookings, working search, status filter, detail view, editable status that survives a reload, and a CSV export. What it does not do: show an error on a wrong password, and the row body is not clickable. Publishing needed an explicit publish click. Lovable also flagged an unresolved security finding in its own scan; not investigated.",
+  "affiliate_url": null,
+  "public_url": "https://stillpoint-booking-desk.lovable.app/",
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": 0,
+    "axe_violations": 1
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "Free plan with daily credits, publishes to a lovable.app subdomain; paid plans from EUR 25/month (Pro), checked on the German pricing page",
+    "publish_requires_paid": false,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-01",
+    "source_url": "https://lovable.dev/pricing"
+  }
+}

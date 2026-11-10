@@ -1,0 +1,71 @@
+{
+  "tool": "bolt",
+  "tool_name": "Bolt.new",
+  "run_id": "2026-11-02-bolt-dashboard-v1",
+  "spec": "dashboard-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-02T08:15:00Z",
+  "deployed_at": "2026-11-02T08:41:00Z",
+  "minutes_to_deploy": 26,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; token usage not shown per build",
+  "criteria": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true,
+    "D7": true,
+    "D8": true,
+    "D11": true,
+    "D12": false,
+    "D14": true
+  },
+  "criterion_notes": {
+    "D4": "The detail view is a client-side route: the URL stays on the dashboard, the Back to list link returns to the table.",
+    "D7": "A wrong password shows \"Those details did not match our records. Check the email and password and try again.\" The empty state appears when a search matches nothing.",
+    "D12": "axe found one moderate issue: one node outside a landmark."
+  },
+  "failures": [
+    "D12: one element outside landmarks (axe, moderate)."
+  ],
+  "artifacts": [
+    {
+      "label": "Login screen",
+      "path": "/artifacts/bolt-dashboard-v1/d7-login-error.jpg"
+    },
+    {
+      "label": "Bookings table with 20 rows",
+      "path": "/artifacts/bolt-dashboard-v1/d1-list.jpg"
+    },
+    {
+      "label": "Detail view",
+      "path": "/artifacts/bolt-dashboard-v1/d4-detail.jpg"
+    },
+    {
+      "label": "Table at 320 px",
+      "path": "/artifacts/bolt-dashboard-v1/page-320.jpg"
+    }
+  ],
+  "notes": "One prompt, one plan of eight steps, 26 minutes, no follow-up needed. Bolt wrote a real database with 20 seeded bookings (11 Confirmed, 5 Pending, 4 Cancelled), a session-based login, search, status filter, detail view with an editable status that survives a reload, and a CSV export. The one weak spot is accessibility: one element sits outside a landmark. Bolt says it could not open the app in a browser, so the phone layout is reasoned from code — we checked the three widths ourselves and found no sideways scrolling.",
+  "affiliate_url": null,
+  "public_url": "https://still-point-internal-vaea.bolt.host/",
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": 0,
+    "axe_violations": 1
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "Free plan with a daily token allowance; publishing to a bolt.host subdomain worked without a paid plan",
+    "publish_requires_paid": false,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-02",
+    "source_url": "https://bolt.new/pricing"
+  }
+}

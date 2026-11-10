@@ -1,0 +1,48 @@
+{
+  "tool": "softr",
+  "tool_name": "Softr",
+  "run_id": "2026-11-08-softr-nonprofit-v1",
+  "spec": "nonprofit-site-v1",
+  "status": "published",
+  "started_at": "2026-11-08T11:55:00Z",
+  "deployed_at": "2026-11-08T12:24:00Z",
+  "minutes_to_deploy": 29,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free trial, last day of the 7-day window",
+  "public_url": "https://novella13453.mysoftr.app/",
+  "criteria": {
+    "N1": true,
+    "N2": true,
+    "N3": true,
+    "N4": true,
+    "N5": true,
+    "N6": true,
+    "N7": true,
+    "N8": true
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Home page with mission and donate button",
+      "path": "/artifacts/softr-nonprofit-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Three programmes",
+      "path": "/artifacts/softr-nonprofit-v1/programmes.jpg"
+    },
+    {
+      "label": "Pledge confirmed with reference D-1",
+      "path": "/artifacts/softr-nonprofit-v1/donate-confirmation.jpg"
+    },
+    {
+      "label": "Volunteer signup stored in the database",
+      "path": "/artifacts/softr-nonprofit-v1/volunteer-signup-stored.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/softr-nonprofit-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "One prompt produced the whole site: home with mission and donate call to action, three programmes (Homework Harbour, Open Waters, Lantern Mentors), a history from 2011, three team members with roles, contact page, privacy and imprint. The pledge was stored as D-1 with the amount and the email, and the volunteer signup as V-1 with the chosen availability slot, both visible in the app's database. No payment is taken and the page says so. Reference numbers start at D-1, not D-1001 as the brief asked. Contact details and the imprint are marked as sample content on the page itself."
+}

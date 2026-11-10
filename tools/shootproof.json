@@ -1,0 +1,47 @@
+{
+  "name": "ShootProof",
+  "website": "https://www.shootproof.com",
+  "category": "Client galleries and studio website for photographers",
+  "pricing": {
+    "free_plan": "Free tier with limited galleries and storage; paid tiers add volume and selling features.",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "limited galleries, ShootProof branding"
+      },
+      {
+        "name": "Paid tiers",
+        "price": 4,
+        "currency": "USD",
+        "period": "month",
+        "note": "entry tier reported; the vendor page maps prices to plans dynamically"
+      }
+    ],
+    "checked_at": "2026-11-07",
+    "source_url": "https://www.shootproof.com/pricing/",
+    "unverified": true
+  },
+  "capabilities": [
+    "Client galleries with proofing, downloads and print sales",
+    "Studio portfolio website included",
+    "Contracts, invoices and booking add-ons"
+  ],
+  "limits": [
+    "The pricing page renders plan prices dynamically, so the entry price is reported, not confirmed",
+    "Free tier limits gallery volume rather than features",
+    "Not an AI prompt builder: template-based portfolio"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.shootproof.com/pricing/"
+    }
+  ],
+  "slug": "shootproof",
+  "summary": "Photography business platform: client galleries, proofing and a portfolio site.",
+  "logo": "/logos/shootproof.png"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "10Web",
+  "website": "https://10web.io",
+  "category": "WordPress site builder",
+  "pricing": {
+    "free_plan": "Trial only; the site lives on a 10web.cloud subdomain until the trial ends",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "AI Starter",
+        "price": 20,
+        "currency": "USD",
+        "period": "month",
+        "note": "monthly billing"
+      },
+      {
+        "name": "Business",
+        "price": 30,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      },
+      {
+        "name": "Agency",
+        "price": 45,
+        "currency": "USD",
+        "period": "month",
+        "note": ""
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://10web.io/pricing/"
+  },
+  "capabilities": [
+    "Generates a WordPress site from a prompt",
+    "Hosting and editor included",
+    "Uses standard WordPress, so plugins work"
+  ],
+  "limits": [
+    "The generated front page is not assigned to the root URL automatically",
+    "Contact form is inert without a form plugin",
+    "Trial converts to a paid plan"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://10web.io/pricing/"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/10web-review"
+    }
+  ],
+  "slug": "10web",
+  "summary": "Generates a WordPress site; the front page was never assigned in our run.",
+  "logo": "/logos/10web.png",
+  "run_blocker": "trial ended, URL no longer reachable"
+}

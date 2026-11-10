@@ -1,0 +1,31 @@
+{
+  "name": "Webstudio",
+  "website": "https://webstudio.is",
+  "category": "Open-source visual site builder",
+  "pricing": {
+    "free_plan": "Free plan publishes to a webstudio.io address",
+    "publish_requires_paid": false,
+    "tiers": [],
+    "unverified": true,
+    "checked_at": "2026-11-08",
+    "source_url": "https://webstudio.is/pricing"
+  },
+  "capabilities": [
+    "Produces real HTML and CSS that can be exported",
+    "Open source, so the build can run anywhere",
+    "Hosting and domains built in"
+  ],
+  "limits": [
+    "No AI that builds a whole site from a prompt",
+    "No database or forms of its own"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://webstudio.is/pricing"
+    }
+  ],
+  "slug": "webstudio",
+  "summary": "The only builder in this list whose output leaves as plain HTML and CSS — useful as the export baseline.",
+  "logo": null
+}

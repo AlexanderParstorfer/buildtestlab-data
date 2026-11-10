@@ -1,0 +1,46 @@
+{
+  "name": "Webflow",
+  "website": "https://webflow.com",
+  "category": "Visual site builder",
+  "pricing": {
+    "free_plan": "Free staging site on a webflow.io address with a Webflow badge",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "webflow.io subdomain"
+      },
+      {
+        "name": "Basic",
+        "price": 15,
+        "currency": "USD",
+        "period": "month",
+        "note": "site plan"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://webflow.com/pricing"
+  },
+  "capabilities": [
+    "Most control over layout and CSS of the tools here",
+    "Hosting, CMS and interactions",
+    "Exports clean HTML/CSS/JS"
+  ],
+  "limits": [
+    "Signup adds a \"press and hold\" bot check that restarts the onboarding wizard in automated browsers",
+    "Not a prompt-only builder: you design the page yourself"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://webflow.com/pricing"
+    }
+  ],
+  "slug": "webflow",
+  "summary": "Most layout control of the tools here, at the steepest learning curve.",
+  "logo": "/logos/webflow.png",
+  "run_blocker": "signup bot check"
+}

@@ -1,0 +1,47 @@
+{
+  "tool": "hostinger",
+  "tool_name": "Hostinger AI",
+  "run_id": "2026-11-03-hostinger-landing-v1",
+  "spec": "landing-page-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-03T00:30:00Z",
+  "deployed_at": "2026-11-03T00:52:00Z",
+  "minutes_to_deploy": 22,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "trial; no credits shown",
+  "criteria": {
+    "L5": false
+  },
+  "criterion_notes": {
+    "L5": "No public URL. Pressing Publish opens \"Get a plan to publish your project\" — publishing needs a paid plan. The trial build expires in six days, so there is no address to test and nothing that stays online."
+  },
+  "failures": [
+    "L5: publishing is behind a paywall; the free trial site expires."
+  ],
+  "artifacts": [
+    {
+      "label": "Builder: site generated, publish blocked by the plan dialog",
+      "path": "/artifacts/hostinger-landing-v1/builder.jpg"
+    }
+  ],
+  "notes": "Hostinger's signup needed no email confirmation and no captcha, which made it the smoothest start of any tool in this batch. The agent then built the page in one prompt: the preview shows the studio name, treatments, a contact section and the Valletta address. Everything stops at publish: the button opens a plan dialog, and the trial site is deleted if it is not paid for. So the page exists but never becomes reachable.",
+  "affiliate_url": null,
+  "public_url": null,
+  "metrics": {
+    "lighthouse": null,
+    "html_kb": null,
+    "requests": null,
+    "console_errors": null,
+    "axe_violations": null
+  },
+  "retest": null,
+  "pricing": {
+    "free_plan": "AI Builder trial only; the site expires after the trial and cannot be published without a plan",
+    "publish_requires_paid": true,
+    "paid_from_usd": null,
+    "checked_at": "2026-11-03",
+    "source_url": "https://www.hostinger.com/website-builder"
+  }
+}

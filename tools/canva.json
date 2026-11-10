@@ -1,0 +1,33 @@
+{
+  "name": "Canva Websites",
+  "website": "https://www.canva.com/websites/",
+  "category": "Design tool with a website builder",
+  "pricing": {
+    "free_plan": "Free account publishes a one-page site to a canva.site address with a Canva badge",
+    "publish_requires_paid": false,
+    "tiers": [],
+    "unverified": true,
+    "checked_at": "2026-11-08",
+    "source_url": "https://www.canva.com/pricing/"
+  },
+  "capabilities": [
+    "Template-first editing, no code",
+    "Magic tools write copy and generate images",
+    "Publishes to a canva.site subdomain"
+  ],
+  "limits": [
+    "Account was created without a phone number, but the website editor is canvas-based: applying a template and editing text could not be driven reliably in an automated run (checked 08.11.2026).",
+    "One page on the free plan",
+    "No database, so no booking or signup storage"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.canva.com/pricing/"
+    }
+  ],
+  "slug": "canva",
+  "summary": "Lowest barrier of any builder here — a free account publishes a page in minutes, but it cannot store anything.",
+  "logo": null,
+  "run_blocker": "canvas editor cannot be driven automatically (checked 08.11.2026)"
+}

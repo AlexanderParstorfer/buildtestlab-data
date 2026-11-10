@@ -1,0 +1,46 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-09-lovable-musician-v2",
+  "spec": "musician-site-v1",
+  "status": "published",
+  "started_at": "2026-11-09T11:28:50Z",
+  "deployed_at": "2026-11-09T11:35:12Z",
+  "minutes_to_deploy": 6,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free daily credits",
+  "public_url": "https://lantern-hours-music-and-gigs.lovable.app/",
+  "criteria": {
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "M4": true,
+    "M5": true,
+    "M6": false,
+    "M7": true,
+    "M8": true
+  },
+  "failures": [
+    "M6: The booking page carries the contact form but no contact details — no email address, no phone number, no mailto link."
+  ],
+  "artifacts": [
+    {
+      "label": "Home page at 1440 px",
+      "path": "/artifacts/lovable-musician-v2/home-desktop.jpg"
+    },
+    {
+      "label": "Tour page with seven dates",
+      "path": "/artifacts/lovable-musician-v2/tour.jpg"
+    },
+    {
+      "label": "Mailing list confirmation",
+      "path": "/artifacts/lovable-musician-v2/mailinglist.jpg"
+    },
+    {
+      "label": "Home page at 390 px",
+      "path": "/artifacts/lovable-musician-v2/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Repeat of the run from 7 November 2026 (8/8): the result did not reproduce, 7 of 8. The difference is the contact page — the first run had a booking address next to the form, this one only the form. Everything else holds: seven tour dates, four releases with listen links, three members with instruments, a mailing list that writes to the database (HTTP 201) and confirms visibly, a booking form that stores its message (HTTP 201), a public URL without login, and no horizontal scroll on six pages at 390 px. The build paused once when the free credits ran out and continued after dismissing the prompt — nothing was paid. The listen links point at the Spotify and Bandcamp home pages rather than artist pages. The admin area exists at /admin but needs a login, so the stored entries were not read back. Cosmetic: the band name wraps to three lines in the 390 px header without overflowing."
+}

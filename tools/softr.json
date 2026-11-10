@@ -1,0 +1,43 @@
+{
+  "name": "Softr",
+  "website": "https://www.softr.io",
+  "category": "Client portals and internal tools",
+  "pricing": {
+    "free_plan": "Trial with a free mysoftr.app domain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free trial",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "seven days at test time"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://www.softr.io/pricing",
+    "unverified": true
+  },
+  "capabilities": [
+    "Builds a working internal tool from one prompt",
+    "Email-code login instead of passwords",
+    "Detail pages, filters, CSV export"
+  ],
+  "limits": [
+    "No password login, so a demo account cannot exist",
+    "Colour contrast fails on status badges (axe)"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.softr.io/pricing"
+    },
+    {
+      "label": "Our run",
+      "url": "https://buildtestlab.com/softr-review"
+    }
+  ],
+  "slug": "softr",
+  "summary": "Client portals and internal tools from one prompt; email codes instead of passwords.",
+  "logo": "/logos/softr.png"
+}

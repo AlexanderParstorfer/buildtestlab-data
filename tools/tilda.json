@@ -1,0 +1,46 @@
+{
+  "name": "Tilda",
+  "website": "https://tilda.cc",
+  "category": "Block-based site builder with AI",
+  "pricing": {
+    "free_plan": "Free plan with a tilda.ws subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "tilda.ws subdomain"
+      },
+      {
+        "name": "Personal",
+        "price": 10,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 20 month to month"
+      }
+    ],
+    "checked_at": "2026-11-05",
+    "source_url": "https://tilda.cc/pricing/"
+  },
+  "capabilities": [
+    "AI generates a page from a short description plus hundreds of blocks",
+    "Strong typography and zero-block layouts",
+    "Custom code injection"
+  ],
+  "limits": [
+    "Signup is gated by an image captcha",
+    "AI is an assistant inside a block editor, not a full app builder"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://tilda.cc/pricing/"
+    }
+  ],
+  "slug": "tilda",
+  "summary": "Block editor with an AI page generator; signup needs an image captcha.",
+  "logo": "/logos/tilda.png",
+  "run_blocker": "signup image captcha"
+}

@@ -1,0 +1,44 @@
+{
+  "tool": "notion-sites",
+  "tool_name": "Notion Sites",
+  "run_id": "2026-11-09-notion-restaurant-v1",
+  "spec": "restaurant-site-v1",
+  "status": "published",
+  "started_at": "2026-11-09T12:40:00Z",
+  "deployed_at": "2026-11-09T13:05:00Z",
+  "minutes_to_deploy": 25,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free Notion account, third published page",
+  "public_url": "https://snowy-carbon-6f7.notion.site/Still-Point-Kitchen-413a2c34861380e7a9f3cc94659dc357",
+  "criteria": {
+    "R1": false,
+    "R2": true,
+    "R3": true,
+    "R4": true,
+    "R5": false,
+    "R6": false,
+    "R7": true,
+    "R8": true
+  },
+  "failures": [
+    "R1: The name and the opening hours are there, but the page opens with text. There is no hero image — a Notion page built from pasted content has no design layer until someone adds a cover.",
+    "R5: No reservation form. The page asks people to send an email and says a booking form is not part of the tool.",
+    "R6: No admin page, because nothing is stored."
+  ],
+  "artifacts": [
+    {
+      "label": "Page at 1440 px",
+      "path": "/artifacts/notion-restaurant-v1/home-desktop.jpg"
+    },
+    {
+      "label": "Menu with three sections, prices, dietary markers and allergens",
+      "path": "/artifacts/notion-restaurant-v1/menu.jpg"
+    },
+    {
+      "label": "Page at 390 px",
+      "path": "/artifacts/notion-restaurant-v1/home-mobile-390.jpg"
+    }
+  ],
+  "notes": "Third Notion page, same pattern as the other two: content pasted as markdown and published in 25 minutes. Fourteen dishes in three sections, every dish with a price, dietary markers and an allergen list, opening hours by weekday, address and phone in the footer. What is missing is everything a restaurant needs beyond reading: a reservation form and a place where bookings land. Notion rate-limited our requests with HTTP 429 twice during the test; the page itself answered 200 once the limit lifted."
+}

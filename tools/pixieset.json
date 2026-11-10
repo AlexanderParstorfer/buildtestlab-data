@@ -1,0 +1,58 @@
+{
+  "name": "Pixieset",
+  "website": "https://www.pixieset.com",
+  "category": "Client galleries plus portfolio website",
+  "pricing": {
+    "free_plan": "Free forever: website with 15 pages and 100 photos, galleries with 3 GB, 15% commission on store sales.",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Website Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "15 pages, 100 photos, 5 blog posts, Pixieset banner"
+      },
+      {
+        "name": "Website Plus",
+        "price": 12,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 15 monthly; custom domain, unlimited photos, no banner"
+      },
+      {
+        "name": "Website Pro",
+        "price": 18,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed annually, 24 monthly; custom code, advanced theming"
+      }
+    ],
+    "checked_at": "2026-11-06",
+    "source_url": "https://pixieset.com/pricing-website/"
+  },
+  "capabilities": [
+    "Free plan publishes a real website, not a preview",
+    "Client galleries with downloads and proofing in the same account",
+    "Store for prints and downloads, commission-free on paid plans",
+    "Mobile gallery apps for clients"
+  ],
+  "limits": [
+    "Free website is capped at 100 photos — quickly reached by a portfolio",
+    "Custom domain needs the 12 USD plan",
+    "The photography workflow is separate from the website plans"
+  ],
+  "sources": [
+    {
+      "label": "Website pricing",
+      "url": "https://pixieset.com/pricing-website/"
+    },
+    {
+      "label": "Client gallery pricing",
+      "url": "https://www.pixieset.com/pricing/"
+    }
+  ],
+  "slug": "pixieset",
+  "summary": "Free portfolio website plus client galleries; the closest thing to a photographer's toolkit.",
+  "logo": "/logos/pixieset.png"
+}

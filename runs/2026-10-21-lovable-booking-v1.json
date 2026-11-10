@@ -1,0 +1,66 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-10-21-lovable-booking-v1",
+  "spec": "booking-app-v1",
+  "status": "published",
+  "started_at": "2026-10-21T14:19:00Z",
+  "deployed_at": "2026-10-21T14:26:00Z",
+  "minutes_to_deploy": 7,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "not displayed on the free plan",
+  "criteria": {
+    "A1": true,
+    "A2": true,
+    "A3": true,
+    "A4": true,
+    "A5": true,
+    "A6": true,
+    "A7": true,
+    "A8": true,
+    "A9": true
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Landing page, 1440 px",
+      "path": "/artifacts/lovable-booking-v1/landing.png"
+    },
+    {
+      "label": "Booking form with the three services",
+      "path": "/artifacts/lovable-booking-v1/booking-form.png"
+    },
+    {
+      "label": "Confirmation with booking reference SP-VYLC9W",
+      "path": "/artifacts/lovable-booking-v1/confirmation.png"
+    },
+    {
+      "label": "Admin list after the booking",
+      "path": "/artifacts/lovable-booking-v1/admin.png"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/lovable-booking-v1/mobile-390.png"
+    },
+    {
+      "label": "Follow-up prompt in the builder",
+      "path": "/artifacts/lovable-booking-v1/retest-prompt.png"
+    },
+    {
+      "label": "Result after the follow-up prompt",
+      "path": "/artifacts/lovable-booking-v1/retest-result.png"
+    }
+  ],
+  "notes": "One prompt, one build. Published at still-point-studio.lovable.app — the plain name 'still-point' was already taken, so Lovable added the suffix on its own. No confirmation email is sent: the app states on the confirmation screen that email sending needs a paid plan and a verified domain, which satisfies A6 as written. The admin page is open to anyone by design, as the brief asked. Lovable also reported its own 390 px check in the chat; we verified it independently and it passed.",
+  "affiliate_url": null,
+  "public_url": "https://still-point-studio.lovable.app",
+  "criterion_notes": {
+    "A9": "Follow-up prompt changed the 90-minute price from $130 to $120; booking form, confirmation reference and admin list still worked afterwards."
+  },
+  "retest": {
+    "prompt": "Change the price of the 90-Minute Massage from $130 to $120. Change nothing else — keep the layout, the booking form and the admin page exactly as they are.",
+    "outcome": "pass",
+    "note": "Applied in one step (2s). Published site shows $90/$120/$150, the service dropdown reads $120, a test booking returned reference SP-KFB6UW and the admin list shows it with the new price."
+  }
+}
