@@ -1,0 +1,49 @@
+{
+  "slug": "nordcraft",
+  "name": "Nordcraft",
+  "website": "https://nordcraft.com",
+  "category": "Visual web builder with AI",
+  "pricing": {
+    "free_plan": "$0 forever: every editor feature, unlimited collaborators, published to a yoursite.nordcraft.site subdomain with Nordcraft branding",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "nordcraft.site subdomain, Nordcraft branding"
+      },
+      {
+        "name": "Pro",
+        "price": 9,
+        "currency": "USD",
+        "period": "month",
+        "note": "per project, custom domain, no branding"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://nordcraft.com/pricing"
+  },
+  "capabilities": [
+    "Visual editor with a DOM-like structure and real CSS",
+    "Built-in AI and connections to Claude Code, Codex, Copilot and Cursor",
+    "Free plan publishes to a nordcraft.site subdomain"
+  ],
+  "limits": [
+    "Own domain and removal of the branding need Pro",
+    "Code-first thinking helps; it is not a one-prompt generator",
+    "Formerly sold as Toddle"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://nordcraft.com/pricing"
+    },
+    {
+      "label": "Home",
+      "url": "https://nordcraft.com/"
+    }
+  ],
+  "logo": "/logos/nordcraft.png"
+}

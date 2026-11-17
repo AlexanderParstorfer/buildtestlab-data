@@ -54,5 +54,25 @@
   ],
   "slug": "pixieset",
   "summary": "Free portfolio website plus client galleries; the closest thing to a photographer's toolkit.",
-  "logo": "/logos/pixieset.png"
+  "logo": "/logos/pixieset.png",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Domain can be connected on a paid plan",
+      "checked_at": "2026-11-13",
+      "source": "https://www.pixieset.com/pricing/"
+    },
+    "client_galleries": {
+      "value": true,
+      "detail": "Client galleries are the product; the free plan caps the website at 100 photos",
+      "checked_at": "2026-11-13",
+      "source": "https://www.pixieset.com/pricing/"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Store with print and download sales; commission applies on the free tier",
+      "checked_at": "2026-11-13",
+      "source": "https://www.pixieset.com/pricing/"
+    }
+  }
 }

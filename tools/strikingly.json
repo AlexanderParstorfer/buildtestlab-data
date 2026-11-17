@@ -1,0 +1,69 @@
+{
+  "name": "Strikingly",
+  "website": "https://www.strikingly.com",
+  "category": "Website builder (template and AI generator)",
+  "pricing": {
+    "free_plan": "Free plan publishes to a strikingly.com subdomain with the vendor badge; paid tiers add a custom domain and a store.",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "subdomain, badge, one page"
+      },
+      {
+        "name": "Pro",
+        "price": 16,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported on the pricing page; not confirmed by purchase"
+      },
+      {
+        "name": "Limited",
+        "price": 8,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported; store and blog features limited"
+      }
+    ],
+    "checked_at": "2026-11-10",
+    "source_url": "https://www.strikingly.com/pricing",
+    "unverified": true
+  },
+  "capabilities": [
+    "Signup with email and password, no phone number",
+    "One-page and multi-page templates",
+    "AI site generation from a name and a description",
+    "Publishes to a subdomain without a card"
+  ],
+  "limits": [
+    "The AI generator rejects every attempt with a reCAPTCHA image puzzle",
+    "Free plan is one page only (the signup flow links to one_page_only=true)",
+    "No Malta in the signup country list"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.strikingly.com/pricing"
+    }
+  ],
+  "slug": "strikingly",
+  "summary": "Template builder with an AI generator; the account is creatable without a phone, but generating a site needs a solved captcha.",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Paid tiers add a custom domain",
+      "checked_at": "2026-11-10",
+      "source": "https://www.strikingly.com/s/pricing"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Paid tiers add a store",
+      "checked_at": "2026-11-10",
+      "source": "https://www.strikingly.com/s/pricing"
+    }
+  },
+  "blocker_type": "automation"
+}

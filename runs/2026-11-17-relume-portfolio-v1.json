@@ -1,0 +1,109 @@
+{
+  "tool": "relume",
+  "tool_name": "Relume",
+  "run_id": "2026-11-17-relume-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T17:10:00+01:00",
+  "deployed_at": "2026-11-17T17:50:00+01:00",
+  "minutes_to_deploy": 40,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan, no card; one brief to the agent",
+  "public_url": "https://4kfnwp7m.relumesite.ai",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": false,
+    "P4": false,
+    "P5": false,
+    "P6": true,
+    "P7": true,
+    "P8": true,
+    "P11": true,
+    "P15": true,
+    "P20": false
+  },
+  "failures": [
+    "P3: The three series links exist (/harbour-light, /interiors, /quiet-portraits), but each published page renders only the navigation and the copyright line. The photographs live on the home page, not on the series pages.",
+    "P4: /about is empty. The agent said so itself: 'The About page and the contact form are still empty on purpose, waiting on the real text.'",
+    "P5: No contact form was built. /contact is as empty as /about; the only way to reach the studio is the mail link the agent did not create.",
+    "P20: The home page has one H1 and 22 of 24 images carry alt text, but the subpages have no H1 at all and their two images have none."
+  ],
+  "notes": "Relume runs a four-step agent: brief → sitemap → wireframes → design. The brief from the homepage box produced a six-page sitemap and a designed home page in about 20 minutes, with the studio name, the tagline 'Harbours, interiors and people, photographed without hurry', nine titled photographs in three groups and the three series sections with links. Then it stopped and asked whether to fill the series pages, write the About page and build the contact form — those three were left as empty pages. Publishing needs a free account (Google sign-in worked); the free tier is 'Enough usage to build a landing page', and the site went live on 4kfnwp7m.relumesite.ai with a 'Built in Relume' badge. The navbar still shows a placeholder 'Logo' instead of the studio mark, because the asset library had no logo. Relume's own review step reported a site health of 90 with 'favicon missing' and 'three unnamed form fields'.",
+  "artifacts": [
+    {
+      "label": "Live home page with nine titled photographs",
+      "path": "/artifacts/relume-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/relume-portfolio-v1/home-mobile-390.webp"
+    },
+    {
+      "label": "Published series page: navigation and copyright, no photographs",
+      "path": "/artifacts/relume-portfolio-v1/series-empty.webp"
+    },
+    {
+      "label": "Image viewer at 1300 px",
+      "path": "/artifacts/relume-portfolio-v1/lightbox.webp"
+    }
+  ],
+  "criteria_source": {
+    "P1": {
+      "check": "text",
+      "measured_at": "2026-11-17T18:05:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P2": {
+      "check": "imageCount",
+      "measured_at": "2026-11-17T18:05:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P3": {
+      "check": "seriesPages",
+      "measured_at": "2026-11-17T18:06:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai/harbour-light"
+    },
+    "P4": {
+      "check": "text",
+      "measured_at": "2026-11-17T18:06:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai/about"
+    },
+    "P5": {
+      "check": "form",
+      "measured_at": "2026-11-17T18:06:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai/contact"
+    },
+    "P6": {
+      "check": "publicUrl+overflow390",
+      "measured_at": "2026-11-17T18:07:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P7": {
+      "check": "lightbox",
+      "measured_at": "2026-11-17T18:08:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P8": {
+      "check": "freePublish",
+      "measured_at": "2026-11-17T17:50:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T18:07:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T18:12:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T18:06:00+01:00",
+      "url": "https://4kfnwp7m.relumesite.ai/about"
+    }
+  }
+}

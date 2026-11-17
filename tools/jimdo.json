@@ -1,0 +1,41 @@
+{
+  "slug": "jimdo",
+  "name": "Jimdo",
+  "website": "https://www.jimdo.com",
+  "category": "Website builder with AI",
+  "pricing": {
+    "free_plan": "Free plan (Start for free) on a jimdosite.com subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "vendor subdomain"
+      },
+      {
+        "name": "Paid",
+        "price": 6,
+        "currency": "USD",
+        "period": "month",
+        "note": "entry tier, yearly billing where stated"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.jimdo.com/pricing/"
+  },
+  "capabilities": [
+    "AI layout assistant",
+    "Free plan publishes on a Jimdo subdomain"
+  ],
+  "limits": [
+    "Own domain needs a paid plan"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.jimdo.com/pricing/"
+    }
+  ]
+}

@@ -54,11 +54,12 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/glide-review"
+      "url": "https://buildtestlab.com/tools/glide"
     }
   ],
   "slug": "glide",
   "summary": "Internal apps that build well, but publishing needs a paid plan.",
   "logo": "/logos/glide.png",
-  "run_blocker": "free plan cannot publish"
+  "run_blocker": "free plan cannot publish",
+  "blocker_type": "paywall"
 }

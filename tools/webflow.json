@@ -31,7 +31,9 @@
   ],
   "limits": [
     "Signup adds a \"press and hold\" bot check that restarts the onboarding wizard in automated browsers",
-    "Not a prompt-only builder: you design the page yourself"
+    "Not a prompt-only builder: you design the page yourself",
+    "Free Starter plan covers two projects; both slots are in use (portfolio run plus a draft), so a third free site is not possible (checked 10.11.2026)",
+    "The Webflow AI assistant could not rebuild a page: repeated \"Failed to read page\" and \"Failed to create reusable section\" steps, the canvas stayed unchanged (checked 10.11.2026)"
   ],
   "sources": [
     {
@@ -42,5 +44,12 @@
   "slug": "webflow",
   "summary": "Most layout control of the tools here, at the steepest learning curve.",
   "logo": "/logos/webflow.png",
-  "run_blocker": "signup bot check"
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain on paid site plans",
+      "checked_at": "2026-11-13",
+      "source": "https://webflow.com/pricing"
+    }
+  }
 }

@@ -22,7 +22,8 @@
     "D8": true,
     "D11": true,
     "D12": false,
-    "D14": true
+    "D14": true,
+    "D15": true
   },
   "criterion_notes": {
     "D4": "The detail view is a client-side route: the URL stays on the dashboard, the Back to list link returns to the table.",
@@ -35,19 +36,19 @@
   "artifacts": [
     {
       "label": "Login screen",
-      "path": "/artifacts/bolt-dashboard-v1/d7-login-error.jpg"
+      "path": "/artifacts/bolt-dashboard-v1/d7-login-error.webp"
     },
     {
       "label": "Bookings table with 20 rows",
-      "path": "/artifacts/bolt-dashboard-v1/d1-list.jpg"
+      "path": "/artifacts/bolt-dashboard-v1/d1-list.webp"
     },
     {
       "label": "Detail view",
-      "path": "/artifacts/bolt-dashboard-v1/d4-detail.jpg"
+      "path": "/artifacts/bolt-dashboard-v1/d4-detail.webp"
     },
     {
       "label": "Table at 320 px",
-      "path": "/artifacts/bolt-dashboard-v1/page-320.jpg"
+      "path": "/artifacts/bolt-dashboard-v1/page-320.webp"
     }
   ],
   "notes": "One prompt, one plan of eight steps, 26 minutes, no follow-up needed. Bolt wrote a real database with 20 seeded bookings (11 Confirmed, 5 Pending, 4 Cancelled), a session-based login, search, status filter, detail view with an editable status that survives a reload, and a CSV export. The one weak spot is accessibility: one element sits outside a landmark. Bolt says it could not open the app in a browser, so the phone layout is reasoned from code — we checked the three widths ourselves and found no sideways scrolling.",
@@ -67,5 +68,12 @@
     "paid_from_usd": null,
     "checked_at": "2026-11-02",
     "source_url": "https://bolt.new/pricing"
+  },
+  "criteria_source": {
+    "D15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:05:23.530Z",
+      "url": "https://still-point-internal-vaea.bolt.host/"
+    }
   }
 }

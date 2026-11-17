@@ -1,0 +1,53 @@
+{
+  "slug": "carrd",
+  "name": "Carrd",
+  "website": "https://carrd.co",
+  "category": "One-page site builder",
+  "pricing": {
+    "free_plan": "Free: up to three sites per account with all core features, published on a carrd.co subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "three sites, carrd.co subdomain"
+      },
+      {
+        "name": "Pro Standard",
+        "price": 19,
+        "currency": "USD",
+        "period": "year",
+        "note": "custom domains, forms, more sites"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://carrd.co/"
+  },
+  "capabilities": [
+    "Single-page sites from templates or a blank page",
+    "Responsive out of the box",
+    "Free plan publishes immediately on a carrd.co subdomain"
+  ],
+  "limits": [
+    "One page per site; no gallery or series pages",
+    "Contact forms and custom domains need Pro",
+    "No AI generation"
+  ],
+  "sources": [
+    {
+      "label": "Home and free plan",
+      "url": "https://carrd.co/"
+    },
+    {
+      "label": "Pro features",
+      "url": "https://carrd.com/pro"
+    }
+  ],
+  "no_ai": {
+    "reason": "Template-and-editor builder for one-page sites without any AI prompt. A same-brief run would measure the operator, not the tool (checked 17.11.2026).",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/carrd.png"
+}

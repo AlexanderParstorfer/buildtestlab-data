@@ -23,7 +23,7 @@
   "artifacts": [
     {
       "label": "Builder: site generated, publish blocked by the plan dialog",
-      "path": "/artifacts/hostinger-landing-v1/builder.jpg"
+      "path": "/artifacts/hostinger-landing-v1/builder.webp"
     }
   ],
   "notes": "Hostinger's signup needed no email confirmation and no captcha, which made it the smoothest start of any tool in this batch. The agent then built the page in one prompt: the preview shows the studio name, treatments, a contact section and the Valletta address. Everything stops at publish: the button opens a plan dialog, and the trial site is deleted if it is not paid for. So the page exists but never becomes reachable.",

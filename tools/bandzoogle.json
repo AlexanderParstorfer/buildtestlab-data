@@ -29,7 +29,9 @@
       }
     ],
     "checked_at": "2026-11-09",
-    "source_url": "https://bandzoogle.com/"
+    "source_url": "https://bandzoogle.com/",
+    "trial_days": 14,
+    "publish": "trial"
   },
   "capabilities": [
     "Built for bands: tour dates, mailing list, music player and merch built in",
@@ -51,5 +53,25 @@
   ],
   "slug": "bandzoogle",
   "summary": "Musician-specific site builder with tour dates, mailing list and music built in.",
-  "logo": "/logos/bandzoogle.png"
+  "logo": "/logos/bandzoogle.png",
+  "features": {
+    "payments": {
+      "value": true,
+      "detail": "Merch payments depend on the tier",
+      "checked_at": "2026-11-09",
+      "source": "https://bandzoogle.com/pricing"
+    },
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain is included in every website plan; there is no free plan, only a 14-day trial",
+      "checked_at": "2026-11-13",
+      "source": "https://www.bandzoogle.com/pricing"
+    }
+  },
+  "blocker_type": "no-prompt",
+  "run_blocker": "No prompt step: Bandzoogle is a template-and-editor builder for musicians. The feature list (checked 13.11.2026) has no AI generation; a same-brief run would measure the operator, not the tool. It stays documented, with price and free-plan limits, and carries no score.",
+  "no_ai": {
+    "reason": "Template-and-editor builder for musicians, no AI generation. A same-brief run would measure the operator.",
+    "checked_at": "2026-11-17"
+  }
 }

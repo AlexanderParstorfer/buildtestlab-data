@@ -19,7 +19,11 @@
     "R5": false,
     "R6": false,
     "R7": true,
-    "R8": true
+    "R8": true,
+    "R11": true,
+    "R20": true,
+    "R15": false,
+    "R16": false
   },
   "failures": [
     "R5: The reservation form at /#/reserve has name, email, date and one time dropdown, but pressing the reserve button leaves the page unchanged — no confirmation, no reference number.",
@@ -29,12 +33,34 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/bolt-restaurant-v1/home-desktop.jpg"
+      "path": "/artifacts/bolt-restaurant-v1/home-desktop.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/bolt-restaurant-v1/home-mobile-390.jpg"
+      "path": "/artifacts/bolt-restaurant-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "The menu is the strongest part: twelve dishes, twelve prices in euro and twenty dietary markers (V/VG/GF) with allergen lines. Same hash-routing pattern as the other Bolt runs: /#/menu and /#/reserve work, plain paths do not. The reservation flow is where it stops — the form renders but does not submit, and the guest-count field is missing."
+  "notes": "The menu is the strongest part: twelve dishes, twelve prices in euro and twenty dietary markers (V/VG/GF) with allergen lines. Same hash-routing pattern as the other Bolt runs: /#/menu and /#/reserve work, plain paths do not. The reservation flow is where it stops — the form renders but does not submit, and the guest-count field is missing.",
+  "criteria_source": {
+    "R11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:28:59.533Z",
+      "url": "https://still-point-kitchen-4343.bolt.host/"
+    },
+    "R20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:28:59.533Z",
+      "url": "https://still-point-kitchen-4343.bolt.host/"
+    },
+    "R15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:07:06.271Z",
+      "url": "https://still-point-kitchen-4343.bolt.host/"
+    },
+    "R16": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:24:02.496Z",
+      "url": "https://still-point-kitchen-4343.bolt.host/"
+    }
+  }
 }

@@ -1,0 +1,42 @@
+{
+  "slug": "ucraft",
+  "name": "Ucraft",
+  "website": "https://www.ucraft.com",
+  "category": "Website builder with AI",
+  "pricing": {
+    "free_plan": "Free plan on a ucraft.site subdomain, multi-page",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "vendor subdomain"
+      },
+      {
+        "name": "Website",
+        "price": 6,
+        "currency": "USD",
+        "period": "month",
+        "note": "entry tier, yearly billing where stated"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.ucraft.com/pricing"
+  },
+  "capabilities": [
+    "AI site generation and a drag-and-drop editor",
+    "Free plan allows multi-page sites"
+  ],
+  "limits": [
+    "Own domain and shop features need a paid plan"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.ucraft.com/pricing"
+    }
+  ],
+  "run_blocker": "The free checkout does not complete: the wizard runs in an iframe on ucraft.com, the login cookie is SameSite=Lax and therefore not sent in that cross-site frame, so the checkout answers 'not authenticated' (17.11.2026). The only other route, My Sites -> Create a new website, leads to a paid Basic Shop checkout (13 $/month, 14-day trial) with no free option."
+}

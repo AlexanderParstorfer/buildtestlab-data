@@ -1,0 +1,49 @@
+{
+  "slug": "readymag",
+  "name": "Readymag",
+  "website": "https://readymag.com",
+  "category": "Design-led website builder",
+  "pricing": {
+    "free_plan": "Free Basic, 0 € forever: one website with up to 10 pages on a Readymag domain, all widgets",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free Basic",
+        "price": 0,
+        "currency": "EUR",
+        "period": "month",
+        "note": "one site, up to 10 pages, Readymag domain"
+      },
+      {
+        "name": "Personal",
+        "price": 13,
+        "currency": "EUR",
+        "period": "month",
+        "note": "billed yearly, 18 € monthly"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://readymag.com/pricing/"
+  },
+  "capabilities": [
+    "Free-form canvas with real typography and animation",
+    "Free plan publishes a site of up to 10 pages",
+    "Built for portfolios, studio sites and presentations"
+  ],
+  "limits": [
+    "No AI prompt anywhere in the product",
+    "Own domain and removal of the Readymag branding need a paid plan",
+    "Pages are laid out by hand, one element at a time"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://readymag.com/pricing/"
+    }
+  ],
+  "no_ai": {
+    "reason": "A design tool without a generator: the site is laid out by hand on a canvas, and the marketing pages mention no AI. A same-brief run would measure the operator, not the tool (checked 17.11.2026).",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/readymag.png"
+}

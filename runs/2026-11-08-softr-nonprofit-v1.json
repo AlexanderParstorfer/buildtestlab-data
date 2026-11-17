@@ -19,30 +19,50 @@
     "N5": true,
     "N6": true,
     "N7": true,
-    "N8": true
+    "N8": true,
+    "N11": true,
+    "N20": true,
+    "N15": false
   },
   "failures": [],
   "artifacts": [
     {
       "label": "Home page with mission and donate button",
-      "path": "/artifacts/softr-nonprofit-v1/home-desktop.jpg"
+      "path": "/artifacts/softr-nonprofit-v1/home-desktop.webp"
     },
     {
       "label": "Three programmes",
-      "path": "/artifacts/softr-nonprofit-v1/programmes.jpg"
+      "path": "/artifacts/softr-nonprofit-v1/programmes.webp"
     },
     {
       "label": "Pledge confirmed with reference D-1",
-      "path": "/artifacts/softr-nonprofit-v1/donate-confirmation.jpg"
+      "path": "/artifacts/softr-nonprofit-v1/donate-confirmation.webp"
     },
     {
       "label": "Volunteer signup stored in the database",
-      "path": "/artifacts/softr-nonprofit-v1/volunteer-signup-stored.jpg"
+      "path": "/artifacts/softr-nonprofit-v1/volunteer-signup-stored.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/softr-nonprofit-v1/home-mobile-390.jpg"
+      "path": "/artifacts/softr-nonprofit-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "One prompt produced the whole site: home with mission and donate call to action, three programmes (Homework Harbour, Open Waters, Lantern Mentors), a history from 2011, three team members with roles, contact page, privacy and imprint. The pledge was stored as D-1 with the amount and the email, and the volunteer signup as V-1 with the chosen availability slot, both visible in the app's database. No payment is taken and the page says so. Reference numbers start at D-1, not D-1001 as the brief asked. Contact details and the imprint are marked as sample content on the page itself."
+  "notes": "One prompt produced the whole site: home with mission and donate call to action, three programmes (Homework Harbour, Open Waters, Lantern Mentors), a history from 2011, three team members with roles, contact page, privacy and imprint. The pledge was stored as D-1 with the amount and the email, and the volunteer signup as V-1 with the chosen availability slot, both visible in the app's database. No payment is taken and the page says so. Reference numbers start at D-1, not D-1001 as the brief asked. Contact details and the imprint are marked as sample content on the page itself.",
+  "criteria_source": {
+    "N11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:31:29.014Z",
+      "url": "https://novella13453.mysoftr.app/"
+    },
+    "N20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:31:29.014Z",
+      "url": "https://novella13453.mysoftr.app/"
+    },
+    "N15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:09:21.227Z",
+      "url": "https://novella13453.mysoftr.app/"
+    }
+  }
 }

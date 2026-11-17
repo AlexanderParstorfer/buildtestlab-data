@@ -1,0 +1,51 @@
+{
+  "slug": "appsmith",
+  "name": "Appsmith",
+  "website": "https://www.appsmith.com",
+  "category": "Internal tool builder with AI",
+  "pricing": {
+    "free_plan": "$0: up to 5 users in the cloud, 5 workspaces, 3 Git repos, public apps",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "up to 5 users, public apps"
+      },
+      {
+        "name": "Business",
+        "price": 15,
+        "currency": "USD",
+        "period": "month",
+        "note": "per user, up to 99 users"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.appsmith.com/pricing"
+  },
+  "capabilities": [
+    "Builds dashboards and internal tools on top of a database",
+    "AI assists with queries and widgets",
+    "Free plan can publish an app that is publicly reachable"
+  ],
+  "limits": [
+    "Free plan stops at five users",
+    "Not a website builder; it produces apps with tables and forms",
+    "Data source has to be connected first",
+    "A fresh workspace opens with 'Your trial will expire in 15 days' above the editor, although the pricing page lists a free tier (seen 17.11.2026)"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://www.appsmith.com/pricing"
+    },
+    {
+      "label": "Home",
+      "url": "https://www.appsmith.com/"
+    }
+  ],
+  "logo": "/logos/appsmith.png",
+  "run_blocker": "Data layer is ready: a small bookings API with twenty rows, server-side search and status filter, an update route and a CSV route, reachable through a tunnel, plus a working REST query in Appsmith (20 records returned, filters bound). The run stops at the editor automation: dragging the table widget is not reliable in a driven browser, a keystroke landed in a column binding and the app now renders blank in the editor. Not a product limit - a manual drag of one table widget is enough to continue (17.11.2026)."
+}

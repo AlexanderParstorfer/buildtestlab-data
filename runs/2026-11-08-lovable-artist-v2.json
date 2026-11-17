@@ -19,7 +19,10 @@
     "T5": true,
     "T6": null,
     "T7": true,
-    "T8": true
+    "T8": true,
+    "T11": true,
+    "T20": true,
+    "T15": true
   },
   "failures": [
     "T2: The gallery holds eight works with a price, not the nine the brief asked for.",
@@ -28,20 +31,37 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/lovable-artist-v2/home-desktop.jpg"
+      "path": "/artifacts/lovable-artist-v2/home-desktop.webp"
     },
     {
       "label": "Works page",
-      "path": "/artifacts/lovable-artist-v2/works.jpg"
+      "path": "/artifacts/lovable-artist-v2/works.webp"
     },
     {
       "label": "Order confirmation with reference",
-      "path": "/artifacts/lovable-artist-v2/order-confirmation.jpg"
+      "path": "/artifacts/lovable-artist-v2/order-confirmation.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/lovable-artist-v2/home-mobile-390.jpg"
+      "path": "/artifacts/lovable-artist-v2/home-mobile-390.webp"
     }
   ],
-  "notes": "Second Lovable attempt at the artist brief after the empty page on 7 Nov. This time the site is complete: home, works with eight priced pieces, three detail pages, cart, checkout with shipping address, order reference MHS-20261108-7J5P, about with a CV, contact form. The free credits ran out during the build ('0 kostenlose Build-Credits'), but the result was published and usable."
+  "notes": "Second Lovable attempt at the artist brief after the empty page on 7 Nov. This time the site is complete: home, works with eight priced pieces, three detail pages, cart, checkout with shipping address, order reference MHS-20261108-7J5P, about with a CV, contact form. The free credits ran out during the build ('0 kostenlose Build-Credits'), but the result was published and usable.",
+  "criteria_source": {
+    "T11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:29:23.273Z",
+      "url": "https://valletta-clay-gallery.lovable.app/"
+    },
+    "T20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:29:23.273Z",
+      "url": "https://valletta-clay-gallery.lovable.app/"
+    },
+    "T15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:08:23.602Z",
+      "url": "https://valletta-clay-gallery.lovable.app/"
+    }
+  }
 }

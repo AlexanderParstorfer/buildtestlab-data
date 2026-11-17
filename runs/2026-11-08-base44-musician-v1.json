@@ -19,7 +19,10 @@
     "M5": true,
     "M6": true,
     "M7": true,
-    "M8": true
+    "M8": true,
+    "M11": true,
+    "M20": true,
+    "M15": false
   },
   "failures": [
     "M3: Not verified. The mailing list on the home page accepts an address and answers 'You're on the list. Thank you', but the admin area is gated behind a role we could not grant, so storage is unproven.",
@@ -28,24 +31,41 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/base44-musician-v1/home-desktop.jpg"
+      "path": "/artifacts/base44-musician-v1/home-desktop.webp"
     },
     {
       "label": "Tour page with six dates",
-      "path": "/artifacts/base44-musician-v1/tour.jpg"
+      "path": "/artifacts/base44-musician-v1/tour.webp"
     },
     {
       "label": "Releases with listen links",
-      "path": "/artifacts/base44-musician-v1/music.jpg"
+      "path": "/artifacts/base44-musician-v1/music.webp"
     },
     {
       "label": "Booking form confirmation",
-      "path": "/artifacts/base44-musician-v1/booking-confirmation.jpg"
+      "path": "/artifacts/base44-musician-v1/booking-confirmation.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/base44-musician-v1/home-mobile-390.jpg"
+      "path": "/artifacts/base44-musician-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Second attempt inside the same app: the first build inherited the chat history of the previous artist app and produced a photography site, so the brief had to be sent again with an explicit instruction to ignore the earlier project. After that the build was complete: home, six tour dates with venue and city, four releases with listen links, three members with instruments, booking form with confirmation, mailing list with confirmation, admin page behind a login. Publishing took about three minutes and stalled at 'Wird veröffentlicht' before the URL answered."
+  "notes": "Second attempt inside the same app: the first build inherited the chat history of the previous artist app and produced a photography site, so the brief had to be sent again with an explicit instruction to ignore the earlier project. After that the build was complete: home, six tour dates with venue and city, four releases with listen links, three members with instruments, booking form with confirmation, mailing list with confirmation, admin page behind a login. Publishing took about three minutes and stalled at 'Wird veröffentlicht' before the URL answered.",
+  "criteria_source": {
+    "M11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:27:27.851Z",
+      "url": "https://lantern-hours-music.base44.app/"
+    },
+    "M20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:27:27.851Z",
+      "url": "https://lantern-hours-music.base44.app/"
+    },
+    "M15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:07:59.258Z",
+      "url": "https://lantern-hours-music.base44.app/"
+    }
+  }
 }

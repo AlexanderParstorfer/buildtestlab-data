@@ -19,7 +19,11 @@
     "L5": true,
     "L6": true,
     "L7": true,
-    "L8": true
+    "L8": true,
+    "L11": true,
+    "L20": true,
+    "L15": false,
+    "L17": false
   },
   "criterion_notes": {
     "L1": "Still Point Massage with an intro line, then three treatments with prices: deep tissue 60 minutes €90, deep tissue 90 minutes €130, hot stone 75 minutes €150.",
@@ -31,33 +35,55 @@
   "artifacts": [
     {
       "label": "Landing page at 1440 px",
-      "path": "/artifacts/bolt-landing-page-v1/home-1440.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/home-1440.webp"
     },
     {
       "label": "The three services with prices",
-      "path": "/artifacts/bolt-landing-page-v1/services.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/services.webp"
     },
     {
       "label": "About section",
-      "path": "/artifacts/bolt-landing-page-v1/about.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/about.webp"
     },
     {
       "label": "Contact section reached from the navigation",
-      "path": "/artifacts/bolt-landing-page-v1/contact-section.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/contact-section.webp"
     },
     {
       "label": "Form answered after sending",
-      "path": "/artifacts/bolt-landing-page-v1/form-sent.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/form-sent.webp"
     },
     {
       "label": "Landing page at 390 px",
-      "path": "/artifacts/bolt-landing-page-v1/home-390.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/home-390.webp"
     },
     {
       "label": "Landing page at 320 px",
-      "path": "/artifacts/bolt-landing-page-v1/home-320.jpg"
+      "path": "/artifacts/bolt-landing-page-v1/home-320.webp"
     }
   ],
   "notes": "The third build of the day and the quietest: one prompt, 30 minutes, nothing to correct. This is the only landing run where the form both confirms and stores — the message showed up as a row in the project database, which none of the page builders managed. The layout is calm and deliberate (deep green, serif headings, an italic service list) and the copy reads like a studio rather than a template. The caveat is the one that applies to every Bolt run: it is a client-side app, so the address bar stays on / and crawlers see one page, which for a landing page matters less than for a shop. The free daily allowance ran out as this build finished, so the page could not be adjusted afterwards; nothing needed adjusting.",
-  "affiliate_url": null
+  "affiliate_url": null,
+  "criteria_source": {
+    "L11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:28:20.512Z",
+      "url": "https://still-point-massage-1m7c.bolt.host/"
+    },
+    "L20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:28:20.512Z",
+      "url": "https://still-point-massage-1m7c.bolt.host/"
+    },
+    "L15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:14:05.550Z",
+      "url": "https://still-point-massage-1m7c.bolt.host/"
+    },
+    "L17": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:23:07.777Z",
+      "url": "https://still-point-massage-1m7c.bolt.host/"
+    }
+  }
 }

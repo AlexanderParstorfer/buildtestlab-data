@@ -48,5 +48,18 @@
   ],
   "slug": "anything",
   "summary": "Prompt to web or mobile app with code and 40+ integrations.",
-  "run_blocker": "Google login popup"
+  "run_blocker": "The account page shows a Free plan with 3,000 credits, but every project — new or existing — opens with \"Choose a plan to get started\" and only offers Pro (19–24 $/mo) and Max (199–239 $/mo). No build is possible on the free plan (checked 17.11.2026).",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domains on paid plans",
+      "checked_at": "2026-11-13",
+      "source": "https://www.anything.com/pricing"
+    }
+  },
+  "blocker_type": "account",
+  "not_testable": {
+    "reason": "The account page shows a Free plan with 3,000 credits, but every project opens \"Choose a plan to get started\" with Pro (19–24 $/mo) and Max (199–239 $/mo). No build without paying.",
+    "checked_at": "2026-11-17"
+  }
 }

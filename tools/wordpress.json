@@ -50,5 +50,24 @@
   ],
   "slug": "wordpress",
   "summary": "The hosted version of WordPress: free to publish, ads included, no AI builder in the sense the rest of this site means.",
-  "logo": null
+  "logo": null,
+  "features": {
+    "payments": {
+      "value": true,
+      "detail": "Payments need WooCommerce on a paid plan (checked on the pricing page)",
+      "checked_at": "2026-11-08",
+      "source": "https://wordpress.com/pricing/"
+    },
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain requires a paid plan; free sites keep a wordpress.com address and show WordPress.com ads",
+      "checked_at": "2026-11-13",
+      "source": "https://wordpress.com/pricing/"
+    }
+  },
+  "run_blocker": "No AI prompt on the free plan: the setup flow ends in a theme picker (/setup/site-setup/design-setup), there is no site generator. A same-brief run would measure the operator (checked 15.11.2026).",
+  "no_ai": {
+    "reason": "No site generator on the free plan: the setup ends in a theme picker, content is written and placed by hand.",
+    "checked_at": "2026-11-17"
+  }
 }

@@ -1,0 +1,58 @@
+{
+  "tool": "v0",
+  "tool_name": "v0",
+  "run_id": "2026-11-17-v0-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T00:20:00+01:00",
+  "deployed_at": "2026-11-17T00:55:00+01:00",
+  "minutes_to_deploy": 35,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free credit on the Hobby account (2 $ of the 5 $ starting credit used by one generation)",
+  "public_url": "https://ss-ivory-beta.vercel.app",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": true,
+    "P8": true,
+    "P11": true,
+    "P15": false,
+    "P20": true
+  },
+  "failures": [
+    "P15: Lighthouse mobile performance 81, LCP 5.1 s. The threshold is 90."
+  ],
+  "artifacts": [
+    {
+      "label": "Live home page at 1440 px",
+      "path": "/artifacts/v0-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/v0-portfolio-v1/home-mobile-390.webp"
+    }
+  ],
+  "notes": "v0 built a real site, not a single page: home, /gallery (twelve photographs), /about, /contact with a working form, and three series pages under /series/ — all reachable from the gallery, which is the one thing most tools miss. Every image carries alt text and a full-resolution viewer opens on click. The page language is en-GB without being asked. The deployment lives on *.vercel.app; the v0.build preview URL is session-bound (HTTP 401 without the logged-in session) and only the production deployment is public.",
+  "criteria_source": {
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T01:10:00+01:00",
+      "url": "https://ss-ivory-beta.vercel.app"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T01:10:00+01:00",
+      "url": "https://ss-ivory-beta.vercel.app"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T01:12:00+01:00",
+      "url": "https://ss-ivory-beta.vercel.app"
+    }
+  }
+}

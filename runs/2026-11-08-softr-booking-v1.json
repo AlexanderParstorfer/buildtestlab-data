@@ -23,7 +23,10 @@
     "A9": false,
     "A10": false,
     "A11": true,
-    "A12": false
+    "A12": false,
+    "A20": true,
+    "A15": true,
+    "A16": false
   },
   "failures": [
     "A9: The follow-up prompt never reached the builder. Both attempts ('make the button dark green', 'change the headline') came back with 'Something went wrong' and the message stayed in the input box.",
@@ -34,24 +37,41 @@
   "artifacts": [
     {
       "label": "Landing page at 1440 px",
-      "path": "/artifacts/softr-booking-v1/home-desktop.jpg"
+      "path": "/artifacts/softr-booking-v1/home-desktop.webp"
     },
     {
       "label": "Booking form",
-      "path": "/artifacts/softr-booking-v1/booking-form.jpg"
+      "path": "/artifacts/softr-booking-v1/booking-form.webp"
     },
     {
       "label": "Booking confirmed with reference BK-11",
-      "path": "/artifacts/softr-booking-v1/booking-confirmation.jpg"
+      "path": "/artifacts/softr-booking-v1/booking-confirmation.webp"
     },
     {
       "label": "Admin list of all bookings",
-      "path": "/artifacts/softr-booking-v1/admin-bookings.jpg"
+      "path": "/artifacts/softr-booking-v1/admin-bookings.webp"
     },
     {
       "label": "Landing page at 390 px",
-      "path": "/artifacts/softr-booking-v1/home-mobile-390.jpg"
+      "path": "/artifacts/softr-booking-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Softr AI built the whole app from one prompt: landing page with three services and prices, booking form, admin area with search and filters, seeded with ten sample bookings. The form stores the booking under reference BK-11 and the admin list shows it in a fresh session, so the data is real and persistent. Sign-in is by emailed code; our own address was already the admin. Weak points: the follow-up chat is broken, there is no export, and the navigation link to /services is dead. Prices are radio buttons rather than a dropdown, which the brief asked for — same information, different control."
+  "notes": "Softr AI built the whole app from one prompt: landing page with three services and prices, booking form, admin area with search and filters, seeded with ten sample bookings. The form stores the booking under reference BK-11 and the admin list shows it in a fresh session, so the data is real and persistent. Sign-in is by emailed code; our own address was already the admin. Weak points: the follow-up chat is broken, there is no export, and the navigation link to /services is dead. Prices are radio buttons rather than a dropdown, which the brief asked for — same information, different control.",
+  "criteria_source": {
+    "A20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:31:09.704Z",
+      "url": "https://lorraine40518.mysoftr.app/"
+    },
+    "A15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:09:10.165Z",
+      "url": "https://lorraine40518.mysoftr.app/"
+    },
+    "A16": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:27:41.694Z",
+      "url": "https://lorraine40518.mysoftr.app/"
+    }
+  }
 }

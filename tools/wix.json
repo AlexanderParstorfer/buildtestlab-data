@@ -61,10 +61,24 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/wix-review"
+      "url": "https://buildtestlab.com/tools/wix"
     }
   ],
   "slug": "wix",
   "summary": "The longest AI interview in the set; our published page came out empty.",
-  "logo": "/logos/wix.png"
+  "logo": "/logos/wix.png",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain on paid plans; first year of a domain included on annual plans",
+      "checked_at": "2026-11-13",
+      "source": "https://www.wix.com/plans"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Wix Payments available on paid plans",
+      "checked_at": "2026-11-13",
+      "source": "https://www.wix.com/plans"
+    }
+  }
 }

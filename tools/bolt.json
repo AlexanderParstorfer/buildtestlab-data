@@ -49,10 +49,18 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/bolt-review"
+      "url": "https://buildtestlab.com/tools/bolt"
     }
   ],
   "slug": "bolt",
   "summary": "Writes real code with a database and is the only tool with a run on all eight briefs; 8 of 8 on the artist, portfolio and landing briefs.",
-  "logo": "/logos/bolt.png"
+  "logo": "/logos/bolt.png",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain support on paid tiers",
+      "checked_at": "2026-11-13",
+      "source": "https://bolt.new/pricing"
+    }
+  }
 }

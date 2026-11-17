@@ -19,7 +19,10 @@
     "P5": true,
     "P6": true,
     "P7": false,
-    "P8": true
+    "P8": true,
+    "P11": true,
+    "P20": true,
+    "P15": false
   },
   "failures": [
     "P2: The gallery holds eight cards with titles, not nine. Duplicating a card did not work, and the cards show round portrait crops instead of large photographs.",
@@ -31,16 +34,33 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/webflow-portfolio-v1/home-desktop.jpg"
+      "path": "/artifacts/webflow-portfolio-v1/home-desktop.webp"
     },
     {
       "label": "Gallery section at 1440 px",
-      "path": "/artifacts/webflow-portfolio-v1/gallery.jpg"
+      "path": "/artifacts/webflow-portfolio-v1/gallery.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/webflow-portfolio-v1/home-mobile-390.jpg"
+      "path": "/artifacts/webflow-portfolio-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "No gallery template was used: the Webflow designer is not realistically automatable from scratch, so the AI site builder served as the template. Prompt one asked for a seven-page portfolio, prompt two deliberately for a single page after the page limit blocked publishing. Sections for pricing, testimonials, events and team were removed, a contact form with name and email survived. Images come from the Webflow asset set rather than picsum, because the designer only offers upload or asset picker on image replace. Published to the staging domain on the free plan with the Made in Webflow badge. No horizontal scroll at 320, 390 or 430 px. Runtime blew past the 50 minute budget: 184 minutes in total, first successful publish after 112."
+  "notes": "No gallery template was used: the Webflow designer is not realistically automatable from scratch, so the AI site builder served as the template. Prompt one asked for a seven-page portfolio, prompt two deliberately for a single page after the page limit blocked publishing. Sections for pricing, testimonials, events and team were removed, a contact form with name and email survived. Images come from the Webflow asset set rather than picsum, because the designer only offers upload or asset picker on image replace. Published to the staging domain on the free plan with the Made in Webflow badge. No horizontal scroll at 320, 390 or 430 px. Runtime blew past the 50 minute budget: 184 minutes in total, first successful publish after 112.",
+  "criteria_source": {
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:31:36.514Z",
+      "url": "https://still-point-studio-7fc2c9.webflow.io/"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:31:36.514Z",
+      "url": "https://still-point-studio-7fc2c9.webflow.io/"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:12:19.245Z",
+      "url": "https://still-point-studio-7fc2c9.webflow.io/"
+    }
+  }
 }

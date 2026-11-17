@@ -48,10 +48,18 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/framer-review"
+      "url": "https://buildtestlab.com/tools/framer"
     }
   ],
   "slug": "framer",
   "summary": "Design-first builder with an AI agent that asks questions before it starts.",
-  "logo": "/logos/framer.jpg"
+  "logo": "/logos/framer.jpg",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain on paid plans; a complimentary domain is included with yearly billing",
+      "checked_at": "2026-11-13",
+      "source": "https://www.framer.com/pricing/"
+    }
+  }
 }

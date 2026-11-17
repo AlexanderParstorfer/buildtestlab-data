@@ -42,5 +42,13 @@
   "slug": "tilda",
   "summary": "Block editor with an AI page generator; signup needs an image captcha.",
   "logo": "/logos/tilda.png",
-  "run_blocker": "signup image captcha"
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "A domain you bought elsewhere can be connected, on monthly plans as well; the domain itself is not included",
+      "checked_at": "2026-11-13",
+      "source": "https://tilda.cc/pricing/"
+    }
+  },
+  "blocker_type": "account"
 }

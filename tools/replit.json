@@ -29,5 +29,10 @@
   "slug": "replit",
   "summary": "Builds and hosts a whole app in one cloud workspace — documented from its pricing page, not yet measured on a brief.",
   "logo": null,
-  "run_blocker": "WhatsApp code required before the first build (checked 08.11.2026)"
+  "run_blocker": "WhatsApp code required before the first build (checked 08.11.2026)",
+  "blocker_type": "account",
+  "not_testable": {
+    "reason": "The Agent builds an app, but publishing needs a paid plan: the Publish action answers with \"Upgrade your plan\", not a phone step.",
+    "checked_at": "2026-11-17"
+  }
 }

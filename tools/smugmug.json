@@ -29,7 +29,9 @@
       }
     ],
     "checked_at": "2026-11-06",
-    "source_url": "https://www.smugmug.com/plans/"
+    "source_url": "https://www.smugmug.com/plans/",
+    "trial_days": 14,
+    "publish": "trial"
   },
   "capabilities": [
     "Unlimited photo storage on every tier",
@@ -52,5 +54,24 @@
   "slug": "smugmug",
   "summary": "Hosting-first platform: unlimited storage and print sales, website as a side product.",
   "logo": "/logos/smugmug.png",
-  "run_blocker": "onboarding survey blocks automation"
+  "run_blocker": "onboarding survey blocks automation",
+  "features": {
+    "client_galleries": {
+      "value": true,
+      "detail": "Client galleries for review and download, private galleries",
+      "checked_at": "2026-11-13",
+      "source": "https://www.smugmug.com/plans"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Integrated cart and checkout with credit card and PayPal",
+      "checked_at": "2026-11-13",
+      "source": "https://www.smugmug.com/plans"
+    }
+  },
+  "blocker_type": "automation",
+  "not_testable": {
+    "reason": "The 4-day trial keeps the site private: \"Subscribe to a plan to make your site visible to visitors.\" Publishing needs a subscription, and the builder has no AI step (checked 17.11.2026).",
+    "checked_at": "2026-11-17"
+  }
 }

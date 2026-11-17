@@ -19,7 +19,9 @@
     "N5": true,
     "N6": false,
     "N7": true,
-    "N8": true
+    "N8": true,
+    "N11": true,
+    "N15": false
   },
   "failures": [
     "N1: The mission is there, but the donate section is a paragraph asking people to write an email. There is no button or link to press.",
@@ -30,16 +32,28 @@
   "artifacts": [
     {
       "label": "Published page at 1440 px",
-      "path": "/artifacts/notion-nonprofit-v1/home-desktop.jpg"
+      "path": "/artifacts/notion-nonprofit-v1/home-desktop.webp"
     },
     {
       "label": "Three programmes",
-      "path": "/artifacts/notion-nonprofit-v1/programmes.jpg"
+      "path": "/artifacts/notion-nonprofit-v1/programmes.webp"
     },
     {
       "label": "Page at 390 px",
-      "path": "/artifacts/notion-nonprofit-v1/home-mobile-390.jpg"
+      "path": "/artifacts/notion-nonprofit-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Notion builds a document, not a website. The reading part is the best of any tool here: clean typography, proper headings, and publishing is one switch that produces a public notion.site address in seconds. The interactive part does not exist — no forms, no stored data, no reference numbers. Content was pasted as markdown and Notion turned it into headings, paragraphs and bullet lists without a single fix. The page carries a Notion 'Get started' button in the header and a cookie banner, both injected by the platform."
+  "notes": "Notion builds a document, not a website. The reading part is the best of any tool here: clean typography, proper headings, and publishing is one switch that produces a public notion.site address in seconds. The interactive part does not exist — no forms, no stored data, no reference numbers. Content was pasted as markdown and Notion turned it into headings, paragraphs and bullet lists without a single fix. The page carries a Notion 'Get started' button in the header and a cookie banner, both injected by the platform.",
+  "criteria_source": {
+    "N11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:30:44.844Z",
+      "url": "https://snowy-carbon-6f7.notion.site/Harbour-Lights-Youth-Circle-412a2c3486138092be64e3797768257f"
+    },
+    "N15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:08:58.517Z",
+      "url": "https://snowy-carbon-6f7.notion.site/Harbour-Lights-Youth-Circle-412a2c3486138092be64e3797768257f"
+    }
+  }
 }

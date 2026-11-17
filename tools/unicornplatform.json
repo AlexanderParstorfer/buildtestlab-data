@@ -1,0 +1,44 @@
+{
+  "slug": "unicornplatform",
+  "name": "Unicorn Platform",
+  "website": "https://unicornplatform.com",
+  "category": "Template website builder with AI help",
+  "pricing": {
+    "free_plan": "Free plan with an app.unicornplatform.com subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "vendor subdomain"
+      },
+      {
+        "name": "Paid",
+        "price": 25,
+        "currency": "USD",
+        "period": "month",
+        "note": "entry tier"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://unicornplatform.com/pricing"
+  },
+  "capabilities": [
+    "Fast template editing, hosting and blog built in"
+  ],
+  "limits": [
+    "No site-level generation from a prompt"
+  ],
+  "sources": [
+    {
+      "label": "Vendor page",
+      "url": "https://unicornplatform.com/pricing"
+    }
+  ],
+  "no_ai": {
+    "reason": "Pages come from templates; the AI (\"Ask AI\") rewrites text, changes tone and fixes grammar inside an existing page. No prompt builds a site (checked 17.11.2026).",
+    "checked_at": "2026-11-17"
+  }
+}

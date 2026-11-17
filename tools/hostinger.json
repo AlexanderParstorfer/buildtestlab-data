@@ -29,7 +29,9 @@
       }
     ],
     "checked_at": "2026-11-05",
-    "source_url": "https://www.hostinger.com/pricing"
+    "source_url": "https://www.hostinger.com/pricing",
+    "publish": "paid",
+    "publish_note": "The trial page cannot be published and expires."
   },
   "capabilities": [
     "Signup without captcha or email confirmation",
@@ -47,11 +49,20 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/hostinger-review"
+      "url": "https://buildtestlab.com/tools/hostinger"
     }
   ],
   "slug": "hostinger",
   "summary": "Agent builds a page in one prompt; publishing opens a plan dialog.",
   "logo": "/logos/hostinger.png",
-  "run_blocker": "free plan cannot publish"
+  "run_blocker": "free plan cannot publish",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain free for the first year on paid plans",
+      "checked_at": "2026-11-13",
+      "source": "https://www.hostinger.com/website-builder"
+    }
+  },
+  "blocker_type": "paywall"
 }

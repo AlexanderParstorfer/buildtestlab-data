@@ -55,10 +55,18 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/base44-review"
+      "url": "https://buildtestlab.com/tools/base44"
     }
   ],
   "slug": "base44",
   "summary": "Builds backend entities itself, but the edit field in our dashboard run never saved.",
-  "logo": "/logos/base44.png"
+  "logo": "/logos/base44.png",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Connect a domain; the annual paid tiers list a free domain for the first year",
+      "checked_at": "2026-11-13",
+      "source": "https://base44.com/pricing"
+    }
+  }
 }

@@ -1,0 +1,41 @@
+{
+  "slug": "pixpa",
+  "name": "Pixpa",
+  "website": "https://www.pixpa.com",
+  "category": "Portfolio website builder",
+  "pricing": {
+    "free_plan": "No free plan: a 15-day trial without a card, then a subscription",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": 9,
+        "currency": "USD",
+        "period": "month",
+        "note": "list price, discounted to 4.05 with the two-year plan"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.pixpa.com/pricing"
+  },
+  "capabilities": [
+    "Portfolio sites with client galleries and a shop",
+    "Templates aimed at photographers",
+    "15-day trial without payment details"
+  ],
+  "limits": [
+    "No free plan; the trial ends after 15 days",
+    "Publishing needs a subscription"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://www.pixpa.com/pricing"
+    }
+  ],
+  "not_testable": {
+    "reason": "Only a 15-day trial and no free plan: the pricing page opens with 'Start 15-day free trial, no credit card'. A published page would disappear when the trial ends.",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/pixpa.png"
+}

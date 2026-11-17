@@ -19,29 +19,33 @@
     "A6": true,
     "A7": true,
     "A8": true,
-    "A9": true
+    "A9": true,
+    "A11": true,
+    "A20": true,
+    "A15": false,
+    "A16": false
   },
   "failures": [],
   "artifacts": [
     {
       "label": "Landing page, 1440 px",
-      "path": "/artifacts/base44-booking-v1/landing.png"
+      "path": "/artifacts/base44-booking-v1/landing.webp"
     },
     {
       "label": "Booking form with the three sessions",
-      "path": "/artifacts/base44-booking-v1/booking-form.png"
+      "path": "/artifacts/base44-booking-v1/booking-form.webp"
     },
     {
       "label": "Confirmation with booking reference SP-6XHJZK",
-      "path": "/artifacts/base44-booking-v1/confirmation.png"
+      "path": "/artifacts/base44-booking-v1/confirmation.webp"
     },
     {
       "label": "Admin list after the booking",
-      "path": "/artifacts/base44-booking-v1/admin.png"
+      "path": "/artifacts/base44-booking-v1/admin.webp"
     },
     {
       "label": "Landing page at 390 px",
-      "path": "/artifacts/base44-booking-v1/mobile-390.png"
+      "path": "/artifacts/base44-booking-v1/mobile-390.webp"
     }
   ],
   "notes": "One prompt, one build, 8 of 8. Base44 created the backend entities itself (Booking with create/list) and ran its own end-to-end check in the editor. The app was only reachable after clicking Publish — before that the public URL answered 'This app is not available yet'. The subdomain is auto-generated (inescapable-still-point-flow.base44.app); Base44 suggests buying stillpointbooking.com. Email delivery requires a paid plan and a verified domain and the confirmation screen says so explicitly. Same limitation as Lovable, same pass under A6.",
@@ -54,5 +58,27 @@
     "prompt": "Change the price of the 90-minute massage from $130 to $120. Change nothing else: keep the layout, the booking form and the /admin table exactly as they are.",
     "outcome": "pass",
     "note": "Applied in one build. Public app shows $90/$120/$150, the session dropdown reads $120, a test booking returned reference SP-98VPKW and the admin list shows it with the new price. Publishing required an explicit Publish click."
+  },
+  "criteria_source": {
+    "A11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:27:11.246Z",
+      "url": "https://inescapable-still-point-flow.base44.app"
+    },
+    "A20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:27:11.246Z",
+      "url": "https://inescapable-still-point-flow.base44.app"
+    },
+    "A15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:03:56.663Z",
+      "url": "https://inescapable-still-point-flow.base44.app"
+    },
+    "A16": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:21:29.832Z",
+      "url": "https://inescapable-still-point-flow.base44.app"
+    }
   }
 }

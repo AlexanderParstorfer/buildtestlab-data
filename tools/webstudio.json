@@ -3,12 +3,28 @@
   "website": "https://webstudio.is",
   "category": "Open-source visual site builder",
   "pricing": {
-    "free_plan": "Free plan publishes to a webstudio.io address",
+    "free_plan": "Free Cloud plan: unlimited projects and pages, publishes to a wstd.io subdomain, project export included; custom domains and 100k page views need Pro ($15/month billed yearly)",
     "publish_requires_paid": false,
-    "tiers": [],
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "wstd.io subdomain, unlimited projects/pages, export included"
+      },
+      {
+        "name": "Pro",
+        "price": 15,
+        "currency": "USD",
+        "period": "month",
+        "note": "custom domains, 100k page views/month, billed yearly"
+      }
+    ],
     "unverified": true,
-    "checked_at": "2026-11-08",
-    "source_url": "https://webstudio.is/pricing"
+    "checked_at": "2026-11-13",
+    "source_url": "https://webstudio.is/pricing",
+    "publish": "free"
   },
   "capabilities": [
     "Produces real HTML and CSS that can be exported",
@@ -17,7 +33,9 @@
   ],
   "limits": [
     "No AI that builds a whole site from a prompt",
-    "No database or forms of its own"
+    "No database or forms of its own",
+    "Free plan publishes to a wstd.io subdomain and includes project export (pricing page, checked 13.11.2026)",
+    "No prompt-based builder: Inception generates design variants and HTML/CSS for import, the site itself is built in the visual editor"
   ],
   "sources": [
     {
@@ -27,5 +45,19 @@
   ],
   "slug": "webstudio",
   "summary": "The only builder in this list whose output leaves as plain HTML and CSS — useful as the export baseline.",
-  "logo": null
+  "logo": null,
+  "run_blocker": "No AI prompt step: Inception generates design variants and HTML/CSS for import, the site is assembled in the visual editor — a same-brief run would measure the operator, not the tool. Practical check 13.11.2026: account via Google works, project created and published to btl-webstudio-check-qotb3.wstd.io, but that domain answers HTTP 403 with cf-mitigated: challenge to curl and to our headless Chrome, so the published page could not be verified; project export not tested.",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domains need Pro ($15/month billed yearly); the free plan publishes to a wstd.io subdomain",
+      "checked_at": "2026-11-13",
+      "source": "https://webstudio.is/pricing"
+    }
+  },
+  "blocker_type": "no-prompt",
+  "no_ai": {
+    "reason": "Visual site builder without an AI prompt; designs are assembled by hand in the editor.",
+    "checked_at": "2026-11-17"
+  }
 }

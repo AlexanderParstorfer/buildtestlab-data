@@ -1,0 +1,41 @@
+{
+  "slug": "site123",
+  "name": "SITE123",
+  "website": "https://www.site123.com",
+  "category": "Website builder with AI",
+  "pricing": {
+    "free_plan": "Free plan with 250 MB storage and a subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "vendor subdomain"
+      },
+      {
+        "name": "Paid",
+        "price": 6,
+        "currency": "USD",
+        "period": "month",
+        "note": "entry tier, yearly billing where stated"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.site123.com/pricing"
+  },
+  "capabilities": [
+    "AI-assisted setup and ready-made sections",
+    "Free plan publishes on a subdomain"
+  ],
+  "limits": [
+    "250 MB storage and bandwidth on the free plan"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.site123.com/pricing"
+    }
+  ]
+}

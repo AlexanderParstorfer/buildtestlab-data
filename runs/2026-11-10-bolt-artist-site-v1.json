@@ -19,7 +19,10 @@
     "T5": true,
     "T6": true,
     "T7": true,
-    "T8": true
+    "T8": true,
+    "T11": true,
+    "T20": true,
+    "T15": false
   },
   "criterion_notes": {
     "T2": "Ten works, each with title, year, medium, dimensions and a price in euro, from €1,800 to €5,200.",
@@ -31,45 +34,62 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/bolt-artist-site-v1/home-1440.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/home-1440.webp"
     },
     {
       "label": "The catalogue: ten works with year, medium and price",
-      "path": "/artifacts/bolt-artist-site-v1/works.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/works.webp"
     },
     {
       "label": "One work detail page",
-      "path": "/artifacts/bolt-artist-site-v1/work-detail.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/work-detail.webp"
     },
     {
       "label": "Cart with one work",
-      "path": "/artifacts/bolt-artist-site-v1/cart.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/cart.webp"
     },
     {
       "label": "Checkout form",
-      "path": "/artifacts/bolt-artist-site-v1/checkout.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/checkout.webp"
     },
     {
       "label": "Order confirmation with reference MH-VKJU-5OZ0",
-      "path": "/artifacts/bolt-artist-site-v1/order-confirmation.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/order-confirmation.webp"
     },
     {
       "label": "About / CV with the exhibition list",
-      "path": "/artifacts/bolt-artist-site-v1/about.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/about.webp"
     },
     {
       "label": "Contact form answered",
-      "path": "/artifacts/bolt-artist-site-v1/contact-sent.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/contact-sent.webp"
     },
     {
       "label": "The same message as a row in the project database",
-      "path": "/artifacts/bolt-artist-site-v1/database-contact-message.png"
+      "path": "/artifacts/bolt-artist-site-v1/database-contact-message.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/bolt-artist-site-v1/home-390.jpg"
+      "path": "/artifacts/bolt-artist-site-v1/home-390.webp"
     }
   ],
   "notes": "One prompt, one run of the plan, 32 minutes, 8 of 8 — and the first run in this set where the storefront half and the admin half both work in the same build. Bolt wrote a real database table and wired the contact form to it: the message shows up as a row in contact_messages, which is the check that most builders fail. The catalogue is the strongest content in any Bolt run (ten works, dimensions, a paragraph per painting, curated-looking picsum images), and the cart, checkout and reference number all hold. Two honest limits: the order is not stored anywhere server-side, so the confirmation disappears on reload although the brief asked for it to survive; and the site is a client-side app, so all ten works live behind /#/ and only the home page is visible to a crawler. No horizontal scroll at 320, 390 or 430 px, no console errors; axe finds contrast on the small caps labels.",
-  "affiliate_url": null
+  "affiliate_url": null,
+  "criteria_source": {
+    "T11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:27:52.165Z",
+      "url": "https://mira-halden-artist-p-8mte.bolt.host/"
+    },
+    "T20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:27:52.165Z",
+      "url": "https://mira-halden-artist-p-8mte.bolt.host/"
+    },
+    "T15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:13:12.150Z",
+      "url": "https://mira-halden-artist-p-8mte.bolt.host/"
+    }
+  }
 }

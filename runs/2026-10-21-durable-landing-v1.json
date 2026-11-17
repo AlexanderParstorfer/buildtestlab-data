@@ -29,19 +29,19 @@
   "artifacts": [
     {
       "label": "Landing page with the preview banner",
-      "path": "/artifacts/durable-landing-v1/landing-preview.png"
+      "path": "/artifacts/durable-landing-v1/landing-preview.webp"
     },
     {
       "label": "Contact page with the form",
-      "path": "/artifacts/durable-landing-v1/contact.png"
+      "path": "/artifacts/durable-landing-v1/contact.webp"
     },
     {
       "label": "Landing page at 390 px",
-      "path": "/artifacts/durable-landing-v1/mobile-390.png"
+      "path": "/artifacts/durable-landing-v1/mobile-390.webp"
     },
     {
       "label": "Editor after the follow-up prompt",
-      "path": "/artifacts/durable-landing-v1/retest-editor.png"
+      "path": "/artifacts/durable-landing-v1/retest-editor.webp"
     }
   ],
   "notes": "Fastest run of all: five minutes from signup to a generated page, no company data needed, no credit card. The content is good and includes all three prices. Two serious problems: the page cannot be published without a paid plan, so the URL stays in preview mode; and Durable invented four customer testimonials with names and job titles ('Elena M., Valletta resident', 'James T., Architect, Sliema' and so on) that nobody ever wrote. A new site owner who publishes that would be publishing fabricated reviews. The contact details are also placeholders (+1 234 567 8900, email@mybusiness.com). Scored against all eight landing criteria after the spec was aligned to the same eight-point scale as the booking tests.",

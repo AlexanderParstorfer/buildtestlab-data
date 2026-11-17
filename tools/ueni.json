@@ -1,0 +1,42 @@
+{
+  "slug": "ueni",
+  "name": "UENI",
+  "website": "https://ueni.com",
+  "category": "Done-for-you website service",
+  "pricing": {
+    "free_plan": "No free plan: 24.99 $ per month plus a 79 $ setup fee during the current offer",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Website Launch",
+        "price": 24.99,
+        "currency": "USD",
+        "period": "month",
+        "note": "plus 79 $ setup (offer, regular setup 599 $)"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://ueni.com/en-us/pricing"
+  },
+  "capabilities": [
+    "UENI builds and edits the site for the customer",
+    "Custom domain, SSL, email and hosting included",
+    "Thirty days of done-for-you edits"
+  ],
+  "limits": [
+    "No free plan and no self-service builder",
+    "Setup fee on top of the monthly price",
+    "Content changes go through the service, not an editor"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://ueni.com/en-us/pricing"
+    }
+  ],
+  "not_testable": {
+    "reason": "No free plan: 24.99 $ per month plus a setup fee, and the site is built by the service rather than by a prompt we can send. Nothing to run on our side.",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/ueni.png"
+}

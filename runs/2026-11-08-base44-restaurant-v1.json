@@ -19,7 +19,11 @@
     "R5": true,
     "R6": null,
     "R7": true,
-    "R8": true
+    "R8": true,
+    "R11": true,
+    "R20": true,
+    "R15": true,
+    "R16": true
   },
   "failures": [
     "R6: Not verified. The staff page exists at /admin and is linked in the footer, but it sits behind a login, and registering our address there was not accepted, so we could not see the reservation list itself.",
@@ -29,20 +33,42 @@
   "artifacts": [
     {
       "label": "Home page with hero and opening hours",
-      "path": "/artifacts/base44-restaurant-v1/home-desktop.jpg"
+      "path": "/artifacts/base44-restaurant-v1/home-desktop.webp"
     },
     {
       "label": "Menu with twelve dishes, markers and allergens",
-      "path": "/artifacts/base44-restaurant-v1/menu.jpg"
+      "path": "/artifacts/base44-restaurant-v1/menu.webp"
     },
     {
       "label": "Reservation confirmed with reference SPK-4CD2E8",
-      "path": "/artifacts/base44-restaurant-v1/reservation-confirmation.jpg"
+      "path": "/artifacts/base44-restaurant-v1/reservation-confirmation.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/base44-restaurant-v1/home-mobile-390.jpg"
+      "path": "/artifacts/base44-restaurant-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Second attempt at the restaurant brief after the first one never published. This time the build was clean: home with name, hero and opening hours by weekday, a twelve-dish menu in three sections with prices, dietary markers and allergens on every dish, and a reservation form with date, time and party size. The reservation was accepted and answered with the reference SPK-4CD2E8. Address and phone are in the footer; the phone number is also a tap-to-call link in the reservation column."
+  "notes": "Second attempt at the restaurant brief after the first one never published. This time the build was clean: home with name, hero and opening hours by weekday, a twelve-dish menu in three sections with prices, dietary markers and allergens on every dish, and a reservation form with date, time and party size. The reservation was accepted and answered with the reference SPK-4CD2E8. Address and phone are in the footer; the phone number is also a tap-to-call link in the reservation column.",
+  "criteria_source": {
+    "R11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:27:40.438Z",
+      "url": "https://still-point-dine.base44.app/"
+    },
+    "R20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:27:40.438Z",
+      "url": "https://still-point-dine.base44.app/"
+    },
+    "R15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:08:12.535Z",
+      "url": "https://still-point-dine.base44.app/"
+    },
+    "R16": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:22:10.074Z",
+      "url": "https://still-point-dine.base44.app/"
+    }
+  }
 }

@@ -1,0 +1,113 @@
+{
+  "tool": "nordcraft",
+  "tool_name": "Nordcraft",
+  "run_id": "2026-11-17-nordcraft-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T18:50:00+01:00",
+  "deployed_at": "2026-11-17T19:35:00+01:00",
+  "minutes_to_deploy": 45,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; the AI build ran 6 min 15 s and left 3.62 free credits",
+  "public_url": "https://stillpointstudioietr.nordcraft.site",
+  "criteria": {
+    "P1": true,
+    "P2": false,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": false,
+    "P20": false
+  },
+  "failures": [
+    "P2: The home page has a section headed 'Nine photographs' and three series blocks, and renders no image and no title at all in either. The only picture on the home page is the hero. Nine photographs exist, but they are spread over the three series pages, three each.",
+    "P7: No viewer and no full-size view. The series pages serve 1200 px files and display them at 334 px; clicking a photograph does nothing.",
+    "P15: Lighthouse mobile performance 79, LCP 5.4 s. The threshold is 90.",
+    "P20: The hero image on the home page has no alt attribute; only the photographs on the series pages carry one."
+  ],
+  "notes": "Nordcraft is a visual editor with a real code layer (branches, commits, a Ship mode), and its AI panel took the brief in one message. It worked through a six-step task list for 6 min 15 s: it built PhotoCard, PhotoGrid, SeriesCard, SeriesIndex, a contact form and new navbar, hero and footer sections, rewrote the home page, created the three series pages plus about and contact, and deleted the demo components. The result reads well — 'Nine photographs', 'Three bodies of work', a two-paragraph biography, a contact form with name, email and message — but the home gallery renders empty, because the grid component has no data behind it. Publishing is not a button in the top bar: you change into Ship mode (Cmd+Shift+S), write a commit message and publish; that merges the working branch into main and puts it live on the nordcraft.site subdomain. The branch preview (start-<project>.nordcraft.site) is public too and shows the same state.",
+  "artifacts": [
+    {
+      "label": "Live home page at 1300 px",
+      "path": "/artifacts/nordcraft-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/nordcraft-portfolio-v1/home-mobile-390.webp"
+    },
+    {
+      "label": "Section 'Nine photographs' with no photographs",
+      "path": "/artifacts/nordcraft-portfolio-v1/gallery-empty.webp"
+    },
+    {
+      "label": "Series page Harbour Light with three photographs",
+      "path": "/artifacts/nordcraft-portfolio-v1/series-harbour-light.webp"
+    },
+    {
+      "label": "Contact page with name, email and message",
+      "path": "/artifacts/nordcraft-portfolio-v1/contact.webp"
+    }
+  ],
+  "criteria_source": {
+    "P1": {
+      "check": "text",
+      "measured_at": "2026-11-17T19:40:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    },
+    "P2": {
+      "check": "imageCount",
+      "measured_at": "2026-11-17T19:41:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    },
+    "P3": {
+      "check": "seriesPages",
+      "measured_at": "2026-11-17T19:41:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site/series/harbour-light"
+    },
+    "P4": {
+      "check": "text",
+      "measured_at": "2026-11-17T19:42:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site/about"
+    },
+    "P5": {
+      "check": "form",
+      "measured_at": "2026-11-17T19:42:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site/contact"
+    },
+    "P6": {
+      "check": "publicUrl+overflow390",
+      "measured_at": "2026-11-17T19:43:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    },
+    "P7": {
+      "check": "lightbox",
+      "measured_at": "2026-11-17T19:43:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site/series/harbour-light"
+    },
+    "P8": {
+      "check": "freePublish",
+      "measured_at": "2026-11-17T19:35:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    },
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T19:43:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T19:48:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T19:42:00+01:00",
+      "url": "https://stillpointstudioietr.nordcraft.site"
+    }
+  }
+}

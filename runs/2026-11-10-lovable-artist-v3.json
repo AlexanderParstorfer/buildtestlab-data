@@ -19,7 +19,10 @@
     "T5": true,
     "T6": null,
     "T7": true,
-    "T8": true
+    "T8": true,
+    "T11": true,
+    "T20": true,
+    "T15": true
   },
   "failures": [
     "T2: Nine works are listed and eight carry a price in euro. Celadon Study (2023) shows no price at all, so the gallery does not meet the brief line for line.",
@@ -28,20 +31,37 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/lovable-artist-v3/home-desktop.jpg"
+      "path": "/artifacts/lovable-artist-v3/home-desktop.webp"
     },
     {
       "label": "Works page with nine pieces",
-      "path": "/artifacts/lovable-artist-v3/works.jpg"
+      "path": "/artifacts/lovable-artist-v3/works.webp"
     },
     {
       "label": "Order received with reference MHS-2026-8LVM3L",
-      "path": "/artifacts/lovable-artist-v3/order-confirmation.jpg"
+      "path": "/artifacts/lovable-artist-v3/order-confirmation.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/lovable-artist-v3/home-mobile-390.jpg"
+      "path": "/artifacts/lovable-artist-v3/home-mobile-390.webp"
     }
   ],
-  "notes": "One prompt, 21 minutes, no corrections. The build is the most complete Lovable run so far: home with statement and four images, nine works with year and medium, detail pages with a longer description and an Inquire button, a cart, a checkout that collects name, email and shipping address and answers with reference MHS-2026-8LVM3L for 680 euro, an about page with a real CV (education and exhibitions), and a contact form that confirms. The cart lives at /cart; /checkout returns 404, which costs nothing because the navigation never points there. axe reports one moderate heading-order problem on the works page. No horizontal scroll at 320, 390 or 430 px."
+  "notes": "One prompt, 21 minutes, no corrections. The build is the most complete Lovable run so far: home with statement and four images, nine works with year and medium, detail pages with a longer description and an Inquire button, a cart, a checkout that collects name, email and shipping address and answers with reference MHS-2026-8LVM3L for 680 euro, an about page with a real CV (education and exhibitions), and a contact form that confirms. The cart lives at /cart; /checkout returns 404, which costs nothing because the navigation never points there. axe reports one moderate heading-order problem on the works page. No horizontal scroll at 320, 390 or 430 px.",
+  "criteria_source": {
+    "T11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:29:31.762Z",
+      "url": "https://valletta-clay-gallery-shop.lovable.app/"
+    },
+    "T20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:29:31.762Z",
+      "url": "https://valletta-clay-gallery-shop.lovable.app/"
+    },
+    "T15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:15:08.425Z",
+      "url": "https://valletta-clay-gallery-shop.lovable.app/"
+    }
+  }
 }

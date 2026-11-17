@@ -29,7 +29,10 @@
       }
     ],
     "checked_at": "2026-11-07",
-    "source_url": "https://jane.app/pricing"
+    "source_url": "https://jane.app/pricing",
+    "trial_days": 14,
+    "publish": "paid",
+    "publish_note": "No free plan; the trial is available on request."
   },
   "capabilities": [
     "Online booking with intake forms and reminders",
@@ -50,5 +53,18 @@
   "slug": "jane",
   "summary": "Clinic software with online booking; the therapist equivalent of a booking site.",
   "logo": "/logos/jane.png",
-  "run_blocker": "no free plan, trial by request"
+  "run_blocker": "no free plan, trial by request",
+  "features": {
+    "payments": {
+      "value": true,
+      "detail": "Invoicing and integrated payments, payment tracking",
+      "checked_at": "2026-11-13",
+      "source": "https://jane.app/pricing"
+    }
+  },
+  "blocker_type": "account",
+  "not_testable": {
+    "reason": "No free plan and no self-serve trial; the demo clinic is a shared practice environment, not an own site.",
+    "checked_at": "2026-11-17"
+  }
 }

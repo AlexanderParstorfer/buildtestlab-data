@@ -8,7 +8,11 @@
     "tiers": [],
     "unverified": true,
     "checked_at": "2026-11-08",
-    "source_url": "https://www.zenfolio.com/pricing"
+    "source_url": "https://www.zenfolio.com/",
+    "trial_days": 14,
+    "publish": "paid",
+    "publish_note": "Publishing requires a paid plan.",
+    "source_note": "The pricing page returned 404 on 2026-11-08; the prices come from third-party reports."
   },
   "capabilities": [
     "Client galleries with proofing and downloads",
@@ -27,5 +31,17 @@
   ],
   "slug": "zenfolio",
   "summary": "Photographer platform with galleries and print sales; like Format, it does not publish on a free plan.",
-  "logo": null
+  "logo": null,
+  "features": {
+    "client_galleries": {
+      "value": true,
+      "detail": "Client galleries with proofing and downloads",
+      "checked_at": "2026-11-08",
+      "source": "https://www.zenfolio.com/pricing"
+    }
+  },
+  "not_testable": {
+    "reason": "Only a 14-day trial, publishing needs a paid subscription after it ends.",
+    "checked_at": "2026-11-17"
+  }
 }

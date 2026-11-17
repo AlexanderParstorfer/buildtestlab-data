@@ -1,0 +1,76 @@
+{
+  "tool": "lovable",
+  "tool_name": "Lovable",
+  "run_id": "2026-11-11-lovable-landing-v1",
+  "spec": "landing-page-v1",
+  "status": "published",
+  "schema_version": 2,
+  "started_at": "2026-11-11T19:05:00Z",
+  "deployed_at": "2026-11-11T19:24:00Z",
+  "minutes_to_deploy": 19,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "one build on the free plan (daily credits)",
+  "public_url": "https://still-point-valletta-wellness.lovable.app/",
+  "prompt": "Build the website for \"Still Point Massage\" ... exactly three treatments with prices in euro (€90 / €130 / €150), about with photo, contact form with name, email, message, footer with address and opening hours, responsive at 320 px.",
+  "criteria": {
+    "L1": true,
+    "L2": true,
+    "L3": true,
+    "L4": true,
+    "L5": true,
+    "L6": true,
+    "L7": true,
+    "L8": true,
+    "L11": true,
+    "L20": true,
+    "L15": true,
+    "L17": true
+  },
+  "criterion_notes": {
+    "L1": "Hero with the studio name and a one-sentence intro; three treatments with euro prices €90, €130 and €150, each with two sentences.",
+    "L2": "Form with name, email and message.",
+    "L3": "The form confirms submission on the page; no email was configured, so nothing is delivered — the run records the confirmation, not a delivery.",
+    "L6": "The Contact link in the header jumps to the form (scroll position 2427 px).",
+    "L7": "Footer carries 17, Strait Street, Valletta and the opening hours."
+  },
+  "failures": [],
+  "artifacts": [
+    {
+      "label": "Landing page at 1440 px",
+      "path": "/artifacts/lovable-landing-page-v1/home-1440.webp"
+    },
+    {
+      "label": "Contact section reached from the navigation",
+      "path": "/artifacts/lovable-landing-page-v1/contact.webp"
+    },
+    {
+      "label": "Landing page at 390 px",
+      "path": "/artifacts/lovable-landing-page-v1/home-390.webp"
+    }
+  ],
+  "notes": "One prompt, 19 minutes, first clean landing run for Lovable. Three treatments with euro prices, a real contact form, an about section and a footer with the address. Content quality is the weak point: the photographs come from picsum, so the hero shows a forest and the About portrait is not a therapist. No horizontal scroll at 320, 390 or 430 px, no console errors.",
+  "affiliate_url": null,
+  "criteria_source": {
+    "L11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:29:54.264Z",
+      "url": "https://still-point-valletta-wellness.lovable.app/"
+    },
+    "L20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:29:54.264Z",
+      "url": "https://still-point-valletta-wellness.lovable.app/"
+    },
+    "L15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:15:59.491Z",
+      "url": "https://still-point-valletta-wellness.lovable.app/"
+    },
+    "L17": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:25:32.761Z",
+      "url": "https://still-point-valletta-wellness.lovable.app/"
+    }
+  }
+}

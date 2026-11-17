@@ -1,0 +1,49 @@
+{
+  "slug": "bravostudio",
+  "name": "Bravo Studio",
+  "website": "https://www.bravostudio.app",
+  "category": "Design-to-app builder",
+  "pricing": {
+    "free_plan": "Starter, free forever: preview the app on your phone and basic API connections, no store builds",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "preview on the phone, no builds"
+      },
+      {
+        "name": "Solo",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "build and ship apps, price on the pricing page"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.bravostudio.app/pricing"
+  },
+  "capabilities": [
+    "Turns a Figma design into a native app",
+    "AI support through Bravo MCP",
+    "Starter plan tests the design in a real Bravo app"
+  ],
+  "limits": [
+    "The free plan has no builds and no public URL",
+    "Shipping to the stores needs Solo",
+    "A Figma file is the starting point"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://www.bravostudio.app/pricing"
+    }
+  ],
+  "not_testable": {
+    "reason": "The free plan is a preview only: 'Preview on your phone, basic API connections, no App Store builds'. Without a published build there is no public URL to measure.",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/bravostudio.png"
+}

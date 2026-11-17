@@ -1,0 +1,45 @@
+{
+  "slug": "b12",
+  "name": "B12",
+  "website": "https://www.b12.io",
+  "category": "AI website builder",
+  "pricing": {
+    "free_plan": "No free plan: 7 days for 1 $, then a subscription",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Trial",
+        "price": 1,
+        "currency": "USD",
+        "period": "once",
+        "note": "7 days"
+      },
+      {
+        "name": "Subscription",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "price at checkout"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.b12.io/pricing"
+  },
+  "capabilities": [
+    "AI builds a site from a short questionnaire",
+    "Design and content done by the service"
+  ],
+  "limits": [
+    "No free plan; 1 $ for seven days, then a paid subscription"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://www.b12.io/pricing"
+    }
+  ],
+  "not_testable": {
+    "reason": "No free plan: 1 $ for seven days, then a paid subscription. A published page would expire with the trial.",
+    "checked_at": "2026-11-17"
+  }
+}

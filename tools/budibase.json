@@ -1,0 +1,49 @@
+{
+  "slug": "budibase",
+  "name": "Budibase",
+  "website": "https://budibase.com",
+  "category": "Internal tool builder",
+  "pricing": {
+    "free_plan": "Community edition, $0: unlimited users, apps, automations and requests, self-hosted on your own infrastructure",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Community (self-managed)",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "you run it yourself"
+      },
+      {
+        "name": "Enterprise",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "custom package, price on request"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://budibase.com/pricing/"
+  },
+  "capabilities": [
+    "Builds CRUD apps and admin panels from a data source",
+    "Automations and user roles included in the community edition",
+    "Open source, deployable with Docker"
+  ],
+  "limits": [
+    "The free edition is self-managed: hosting, backups and updates are yours",
+    "No free hosted plan for a public URL",
+    "Publishing means deploying to your own server"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://budibase.com/pricing/"
+    }
+  ],
+  "logo": "/logos/budibase.png",
+  "not_testable": {
+    "reason": "Free only as a self-managed community edition; the hosted cloud starts at 299 $ per month. Publishing would mean deploying on our own server, which is a different measurement than every other run on this site.",
+    "checked_at": "2026-11-17"
+  }
+}

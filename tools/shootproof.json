@@ -3,26 +3,21 @@
   "website": "https://www.shootproof.com",
   "category": "Client galleries and studio website for photographers",
   "pricing": {
-    "free_plan": "Free tier with limited galleries and storage; paid tiers add volume and selling features.",
+    "free_plan": "A 14-day trial; the signup has no Malta in its country list. Some comparison sites list a permanent free tier — the vendor's pricing page loads prices dynamically, so we could not confirm one.",
     "publish_requires_paid": false,
     "tiers": [
-      {
-        "name": "Free",
-        "price": 0,
-        "currency": "USD",
-        "period": "month",
-        "note": "limited galleries, ShootProof branding"
-      },
       {
         "name": "Paid tiers",
         "price": 4,
         "currency": "USD",
         "period": "month",
-        "note": "entry tier reported; the vendor page maps prices to plans dynamically"
+        "note": "entry tier reported; the vendor page maps prices to plans dynamically, so the amount is not confirmed"
       }
     ],
     "checked_at": "2026-11-07",
     "source_url": "https://www.shootproof.com/pricing/",
+    "publish": "trial",
+    "trial_days": 14,
     "unverified": true
   },
   "capabilities": [
@@ -43,5 +38,25 @@
   ],
   "slug": "shootproof",
   "summary": "Photography business platform: client galleries, proofing and a portfolio site.",
-  "logo": "/logos/shootproof.png"
+  "logo": "/logos/shootproof.png",
+  "run_blocker": "no free plan (14-day trial only) and no Malta in the 39-country signup list; the form drops typed values, so no run was possible (checked 10.11.2026)",
+  "features": {
+    "client_galleries": {
+      "value": true,
+      "detail": "Unlimited client galleries on paid tiers",
+      "checked_at": "2026-11-13",
+      "source": "https://www.shootproof.com/pricing/"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Online store for prints, products and downloads; zero commission on paid tiers",
+      "checked_at": "2026-11-13",
+      "source": "https://www.shootproof.com/pricing/"
+    }
+  },
+  "blocker_type": "account",
+  "not_testable": {
+    "reason": "No free plan: a 14-day trial only, and Malta is not in the 39-country signup list. Publishing needs a subscription.",
+    "checked_at": "2026-11-17"
+  }
 }

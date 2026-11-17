@@ -1,0 +1,62 @@
+{
+  "tool": "tilda",
+  "tool_name": "Tilda",
+  "run_id": "2026-11-17-tilda-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-16T23:05:00+01:00",
+  "deployed_at": "2026-11-17T00:35:00+01:00",
+  "minutes_to_deploy": 90,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; one AI generation (the editor showed 19 credits left afterwards)",
+  "public_url": "https://boldly-private-bat.tilda.ws",
+  "criteria": {
+    "P1": true,
+    "P2": false,
+    "P3": false,
+    "P4": false,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": true,
+    "P20": false
+  },
+  "failures": [
+    "P2: The page holds eight images in total, six of them rendered 100 px or wider, with three series labels but no title per photograph. The brief asked for at least nine photographs, each with a title.",
+    "P3: No series pages. 'Harbour Light', 'Interiors' and 'Quiet Portraits' are plain text on the one page; every navigation link is an in-page anchor (#home, #gallery, #about, #contact).",
+    "P4: No biography. The about part is one sentence ('a small working studio on the west basin') plus a street address.",
+    "P7: Images are 800x600 originals rendered at 296 px and are not linked, so there is no full-resolution view.",
+    "P20: No image carries alt text (0 of 8). The page does have one H1, so only the first half of the criterion fails."
+  ],
+  "artifacts": [
+    {
+      "label": "Live page at 1440 px",
+      "path": "/artifacts/tilda-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live page at 390 px",
+      "path": "/artifacts/tilda-portfolio-v1/home-mobile-390.webp"
+    }
+  ],
+  "notes": "Tilda's AI built one page from the prompt, not a site: navigation exists as anchors on the same page. Publishing needs two gates that no other tool in our set has — a confirmed email address and a verified phone number. After both, 'Publish' works on the free plan and the page carries a Tilda footer badge. The generated page keeps the default title 'Blank page' and has no lang attribute on <html>.",
+  "criteria_source": {
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T00:38:00+01:00",
+      "url": "https://boldly-private-bat.tilda.ws"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T00:38:00+01:00",
+      "url": "https://boldly-private-bat.tilda.ws"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T00:41:00+01:00",
+      "url": "https://boldly-private-bat.tilda.ws"
+    }
+  }
+}

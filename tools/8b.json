@@ -1,0 +1,48 @@
+{
+  "slug": "8b",
+  "name": "8b",
+  "website": "https://8b.com",
+  "category": "AI website builder",
+  "pricing": {
+    "free_plan": "Free forever: the full design engine, no paywall in front of the result — publishing costs 9 $ per month, billed yearly",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "design only, no publishing"
+      },
+      {
+        "name": "Pro",
+        "price": 9,
+        "currency": "USD",
+        "period": "month",
+        "note": "billed yearly, publishing included"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://8b.com/pricing/"
+  },
+  "capabilities": [
+    "Designs a page from a text description",
+    "Outputs real HTML and CSS, not a screenshot",
+    "Free plan shows the whole design before any payment"
+  ],
+  "limits": [
+    "Publishing is explicitly paid: 'Publishing is 9 $ a month, billed yearly'",
+    "Free plan has no public URL"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://8b.com/pricing/"
+    }
+  ],
+  "not_testable": {
+    "reason": "The design is free, publishing is not: 'Publishing is 9 $ a month, billed yearly'. Without a public URL there is nothing to measure. The free design is a preview, not a result.",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/8b.png"
+}

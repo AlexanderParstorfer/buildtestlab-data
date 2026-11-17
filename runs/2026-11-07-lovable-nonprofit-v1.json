@@ -19,7 +19,10 @@
     "N5": true,
     "N6": true,
     "N7": true,
-    "N8": true
+    "N8": true,
+    "N11": true,
+    "N20": true,
+    "N15": false
   },
   "failures": [
     "N3: The volunteer form accepts name, email, phone and availability and shows no error, but the admin page reports 0 volunteer sign-ups. The donation pledge right next to it was stored correctly, so the failure is specific to this form."
@@ -27,20 +30,37 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/lovable-nonprofit-v1/home-desktop.jpg"
+      "path": "/artifacts/lovable-nonprofit-v1/home-desktop.webp"
     },
     {
       "label": "Donation confirmed with reference",
-      "path": "/artifacts/lovable-nonprofit-v1/donate.jpg"
+      "path": "/artifacts/lovable-nonprofit-v1/donate.webp"
     },
     {
       "label": "Admin: one pledge, zero volunteers",
-      "path": "/artifacts/lovable-nonprofit-v1/admin-list.jpg"
+      "path": "/artifacts/lovable-nonprofit-v1/admin-list.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/lovable-nonprofit-v1/home-mobile-390.jpg"
+      "path": "/artifacts/lovable-nonprofit-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Nine pages in one prompt: home, programmes, volunteer, about, contact, donate, privacy, imprint and admin. The donation flow worked end to end: 25 euro pledge stored, reference HLF-D30B56E6, listed with timestamp in the admin area after email confirmation. The volunteer form did not store anything. This is the mirror image of the Bolt run on the same brief, where both forms failed — here one of two works."
+  "notes": "Nine pages in one prompt: home, programmes, volunteer, about, contact, donate, privacy, imprint and admin. The donation flow worked end to end: 25 euro pledge stored, reference HLF-D30B56E6, listed with timestamp in the admin area after email confirmation. The volunteer form did not store anything. This is the mirror image of the Bolt run on the same brief, where both forms failed — here one of two works.",
+  "criteria_source": {
+    "N11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:30:16.121Z",
+      "url": "https://harbour-lights-youth-circle.lovable.app/"
+    },
+    "N20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:30:16.121Z",
+      "url": "https://harbour-lights-youth-circle.lovable.app/"
+    },
+    "N15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:07:46.325Z",
+      "url": "https://harbour-lights-youth-circle.lovable.app/"
+    }
+  }
 }

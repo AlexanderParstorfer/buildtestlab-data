@@ -1,0 +1,42 @@
+{
+  "slug": "relume",
+  "name": "Relume",
+  "website": "https://www.relume.ai",
+  "category": "AI website builder",
+  "pricing": {
+    "free_plan": "$0 forever: enough AI usage to build a landing page, published on a relumesite.ai subdomain with the Relume badge, 1,500 page views",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "relumesite.ai subdomain, Relume badge, 1,500 page views"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.relume.ai/pricing"
+  },
+  "capabilities": [
+    "Turns a document, notes or an old site into a marketing page",
+    "Assembles sections from a component library instead of writing raw code",
+    "Publishes on a relumesite.ai subdomain on the free plan"
+  ],
+  "limits": [
+    "Free plan carries the Relume badge and a page-view limit",
+    "Own domain comes with the paid plans",
+    "Built for marketing pages, not multi-page portfolios or shops"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://www.relume.ai/pricing"
+    },
+    {
+      "label": "Home",
+      "url": "https://www.relume.ai/"
+    }
+  ],
+  "logo": "/logos/relume.png"
+}

@@ -39,7 +39,10 @@
     ],
     "checked_at": "2026-11-05",
     "source_url": "https://www.shopify.com/pricing",
-    "unverified": true
+    "unverified": true,
+    "trial_days": 14,
+    "publish": "paid",
+    "publish_note": "A shop only runs on a paid plan."
   },
   "capabilities": [
     "Complete shop system: payments, shipping, inventory, tax",
@@ -61,5 +64,24 @@
       "url": "https://www.20northmarketing.com/"
     }
   ],
-  "run_blocker": "no free plan"
+  "run_blocker": "no free plan",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain on every plan",
+      "checked_at": "2026-11-13",
+      "source": "https://www.shopify.com/pricing"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Shopify Payments and a hosted checkout",
+      "checked_at": "2026-11-13",
+      "source": "https://www.shopify.com/pricing"
+    }
+  },
+  "blocker_type": "paywall",
+  "not_testable": {
+    "reason": "No free plan. A development store exists but stays behind a password page, so it is not a public result.",
+    "checked_at": "2026-11-17"
+  }
 }

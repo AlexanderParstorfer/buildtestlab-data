@@ -1,0 +1,116 @@
+{
+  "tool": "jimdo",
+  "tool_name": "Jimdo",
+  "run_id": "2026-11-17-jimdo-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T15:05:00+01:00",
+  "deployed_at": "2026-11-17T15:45:00+01:00",
+  "minutes_to_deploy": 40,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan, no card; the starter flow ran once",
+  "public_url": "https://still-point-studio-3.jimdosite.com",
+  "criteria": {
+    "P1": false,
+    "P2": false,
+    "P3": false,
+    "P4": false,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": false,
+    "P20": false
+  },
+  "failures": [
+    "P1: The studio name is right, but the tagline is Jimdo's instruction text: 'A short line about your business.' The page was never filled with the brief's copy.",
+    "P2: The gallery page holds four photographs, not nine. No captions or titles were generated either.",
+    "P3: There are no series pages. The navigation offers Home, About Me, Contact and Gallery, nothing else.",
+    "P4: The about page is an empty template. Its whole text is 'About you — Say why you started, what you care about, and what customers can expect from you.'",
+    "P7: Clicking a photograph opens a viewer, but it loads a 1440 px wide copy from Jimdo's image CDN, not the original file, and there is no download.",
+    "P15: Lighthouse mobile performance 55, LCP 8.2 s. The threshold is 90.",
+    "P20: The home page has one H1 ('Still Point Studio'), but none of the seven images carries alt text."
+  ],
+  "artifacts": [
+    {
+      "label": "Live home page at 1300 px — the tagline is still the placeholder",
+      "path": "/artifacts/jimdo-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/jimdo-portfolio-v1/home-mobile-390.webp"
+    },
+    {
+      "label": "Gallery page with four photographs",
+      "path": "/artifacts/jimdo-portfolio-v1/gallery.webp"
+    },
+    {
+      "label": "Contact page with name, email, phone and message",
+      "path": "/artifacts/jimdo-portfolio-v1/contact.webp"
+    },
+    {
+      "label": "Image viewer at 1440 px",
+      "path": "/artifacts/jimdo-portfolio-v1/lightbox.webp"
+    }
+  ],
+  "notes": "Jimdo's starter asked four things — project name, category, a free-text description and three focus areas — and then generated a complete site structure in about 20 seconds: home, About Me, Contact, Gallery, a cookie banner, an imprint and a privacy page. What it did not do is write the content. Every text block on every page is the template's instruction ('Say what you do in 2 or 3 sentences', 'Service or product one', 'Add your real proof here when you have it'), and the four gallery photographs come from Jimdo's stock, not from the brief. The brief's three series names never appear. The category 'Photographer' sets the layout and the stock imagery; the free-text description only influenced the name. Publishing was free and immediate on a jimdosite.com subdomain, and the site answered with HTTP 200 in the browser while curl got a Cloudflare challenge — the page itself is fine. A follow-up check: the free plan caps at one site, so the placeholder copy has to be rewritten by hand in the editor.",
+  "criteria_source": {
+    "P1": {
+      "check": "text",
+      "measured_at": "2026-11-17T16:40:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com"
+    },
+    "P2": {
+      "check": "imageCount",
+      "measured_at": "2026-11-17T16:42:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com/gallery/"
+    },
+    "P3": {
+      "check": "navigation",
+      "measured_at": "2026-11-17T16:42:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com/gallery/"
+    },
+    "P4": {
+      "check": "text",
+      "measured_at": "2026-11-17T16:43:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com/about-me/"
+    },
+    "P5": {
+      "check": "form",
+      "measured_at": "2026-11-17T16:43:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com/contact/"
+    },
+    "P6": {
+      "check": "publicUrl+overflow390",
+      "measured_at": "2026-11-17T16:44:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com"
+    },
+    "P7": {
+      "check": "lightbox",
+      "measured_at": "2026-11-17T16:46:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com/gallery/"
+    },
+    "P8": {
+      "check": "freePublish",
+      "measured_at": "2026-11-17T15:45:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com"
+    },
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T16:45:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T16:52:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T16:44:00+01:00",
+      "url": "https://still-point-studio-3.jimdosite.com"
+    }
+  }
+}

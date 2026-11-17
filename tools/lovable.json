@@ -48,10 +48,18 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/lovable-review"
+      "url": "https://buildtestlab.com/tools/lovable"
     }
   ],
   "slug": "lovable",
   "summary": "Prompt to a full-stack app with database and login; the fastest of the app builders in our booking run.",
-  "logo": "/logos/lovable.png"
+  "logo": "/logos/lovable.png",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain requires a paid plan; the free plan publishes to a lovable.app subdomain",
+      "checked_at": "2026-11-13",
+      "source": "https://lovable.dev/pricing"
+    }
+  }
 }

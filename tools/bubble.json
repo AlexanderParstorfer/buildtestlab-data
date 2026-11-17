@@ -56,5 +56,14 @@
   "slug": "bubble",
   "summary": "Full database, workflows and roles, plus AI screen generation.",
   "logo": "/logos/bubble.png",
-  "run_blocker": "signup form unreachable"
+  "run_blocker": "Account works (Google), but the AI generator never finishes: it shows a plan, then spins over 35 minutes without creating a project (checked 15.11.2026).",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain on paid plans",
+      "checked_at": "2026-11-13",
+      "source": "https://bubble.io/pricing"
+    }
+  },
+  "blocker_type": "account"
 }

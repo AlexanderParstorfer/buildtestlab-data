@@ -1,0 +1,62 @@
+{
+  "tool": "strikingly",
+  "tool_name": "Strikingly",
+  "run_id": "2026-11-15-strikingly-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-15T22:44:00+01:00",
+  "deployed_at": "2026-11-15T23:15:00+01:00",
+  "minutes_to_deploy": 31,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan, no card; the AI generator ran once",
+  "public_url": "https://lime-penguin-13d7rh6.mystrikingly.com",
+  "criteria": {
+    "P1": true,
+    "P2": false,
+    "P3": false,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": false,
+    "P20": false
+  },
+  "failures": [
+    "P2: The gallery page shows 12 <img> elements, but only three are rendered 100 px or wider with a title next to them. The brief asked for at least nine photographs.",
+    "P3: The gallery links to one page called 'Serienseiten' that holds two series as sections. The brief asked for three series pages of their own, reachable from the gallery.",
+    "P7: Images come from the Strikingly CDN as 960x640 and 960x540 crops. No image is linked and no viewer opens on click, so there is no full-resolution view.",
+    "P15: Lighthouse mobile performance 73, LCP 4.5 s. The threshold is 90.",
+    "P20: The home page has no H1 at all and 1 of 28 images carries alt text. On the gallery page 4 of 12 do."
+  ],
+  "artifacts": [
+    {
+      "label": "Live home page at 1440 px",
+      "path": "/artifacts/strikingly-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/strikingly-portfolio-v1/home-mobile-390.webp"
+    }
+  ],
+  "notes": "Strikingly generated the site from a title plus a free-text description field, not from a paste of the full brief: the 1,100-character prompt from data/app-runs/portfolio.txt does not fit the field, so a five-line version went in. Before the generator runs, the account has to confirm its email address with a code; that is a step no other tool in our set asks for. The result is in German although the brief described English content — the generator ignored the language line. Pages are numbered (/1 to /4), so the navigation carries no readable slugs.",
+  "criteria_source": {
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-16T00:05:00+01:00",
+      "url": "https://lime-penguin-13d7rh6.mystrikingly.com"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-16T00:05:00+01:00",
+      "url": "https://lime-penguin-13d7rh6.mystrikingly.com"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-16T00:12:00+01:00",
+      "url": "https://lime-penguin-13d7rh6.mystrikingly.com"
+    }
+  }
+}

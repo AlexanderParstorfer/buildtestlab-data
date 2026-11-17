@@ -19,7 +19,11 @@
     "R5": true,
     "R6": true,
     "R7": false,
-    "R8": true
+    "R8": true,
+    "R11": false,
+    "R20": true,
+    "R15": true,
+    "R16": false
   },
   "failures": [
     "R7: The contact section has the address (14 Triq il-Merkanti, Valletta) but no phone number, although the brief asked for one. A restaurant without a phone number is a restaurant you cannot call about a table."
@@ -27,20 +31,42 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/lovable-restaurant-v1/home-desktop.jpg"
+      "path": "/artifacts/lovable-restaurant-v1/home-desktop.webp"
     },
     {
       "label": "Menu with 12 dishes and allergen lines",
-      "path": "/artifacts/lovable-restaurant-v1/menu-desktop.jpg"
+      "path": "/artifacts/lovable-restaurant-v1/menu-desktop.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/lovable-restaurant-v1/home-mobile-390.jpg"
+      "path": "/artifacts/lovable-restaurant-v1/home-mobile-390.webp"
     },
     {
       "label": "Admin list with the stored reservation",
-      "path": "/artifacts/lovable-restaurant-v1/admin-list.jpg"
+      "path": "/artifacts/lovable-restaurant-v1/admin-list.webp"
     }
   ],
-  "notes": "One prompt produced a four-page site: home with opening hours, menu with three sections and 12 dishes, a reservation form and an /admin area. The menu is unusually complete for one prompt: every dish has a price in euro, dietary markers (V/VG/GF) and an allergen line. The reservation stored server-side and returned a reference (SPK-B31239); the admin area required creating an account and confirming an email before it listed the booking — a real step a restaurant owner would hit. The only miss is the missing phone number."
+  "notes": "One prompt produced a four-page site: home with opening hours, menu with three sections and 12 dishes, a reservation form and an /admin area. The menu is unusually complete for one prompt: every dish has a price in euro, dietary markers (V/VG/GF) and an allergen line. The reservation stored server-side and returned a reference (SPK-B31239); the admin area required creating an account and confirming an email before it listed the booking — a real step a restaurant owner would hit. The only miss is the missing phone number.",
+  "criteria_source": {
+    "R11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:30:32.882Z",
+      "url": "https://still-point-table.lovable.app/"
+    },
+    "R20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:30:32.882Z",
+      "url": "https://still-point-table.lovable.app/"
+    },
+    "R15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:06:01.082Z",
+      "url": "https://still-point-table.lovable.app/"
+    },
+    "R16": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:26:35.880Z",
+      "url": "https://still-point-table.lovable.app/"
+    }
+  }
 }

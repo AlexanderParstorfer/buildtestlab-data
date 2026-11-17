@@ -1,0 +1,52 @@
+{
+  "slug": "flutterflow",
+  "name": "FlutterFlow",
+  "website": "https://www.flutterflow.io",
+  "category": "App builder (Flutter) with an AI agent",
+  "pricing": {
+    "free_plan": "Free: 0 $, a free AI allowance and 2 projects in Studio; a public web build is not part of the free plan",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "free AI allowance, 2 projects, no published web app"
+      },
+      {
+        "name": "Basic",
+        "price": 39,
+        "currency": "USD",
+        "period": "month",
+        "note": "yearly 351 USD"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.flutterflow.io/pricing"
+  },
+  "capabilities": [
+    "AI agent builds a multi-screen app from one prompt",
+    "Free plan can deploy to the web on up to two subdomains",
+    "Generated app included a booking form, a confirmation screen and an admin page"
+  ],
+  "limits": [
+    "App stores and a public web build need a paid plan",
+    "The free plan stops at 2 projects and a fixed AI allowance",
+    "The app runs in FlutterFlow's sandbox until it is published"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://www.flutterflow.io/pricing"
+    },
+    {
+      "label": "Run: booking brief (sandbox)",
+      "url": "https://app.flutterflow.io/debug/still-point-booking-6s77i0/26cf3296-a4c9-4c84-a78c-f2fc3ebca64f?sandbox=1"
+    }
+  ],
+  "not_testable": {
+    "reason": "Launching the app on the web is not part of the free plan (confirmed in the account on 17.11.2026), and the app stores are paid as well. The sandbox run proves the booking app works — 2 of 12 criteria — but without a public URL there is nothing to measure.",
+    "checked_at": "2026-11-17"
+  }
+}

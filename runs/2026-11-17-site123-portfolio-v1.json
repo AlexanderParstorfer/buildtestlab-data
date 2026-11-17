@@ -1,0 +1,106 @@
+{
+  "tool": "site123",
+  "tool_name": "SITE123",
+  "run_id": "2026-11-17-site123-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T16:00:00+01:00",
+  "deployed_at": "2026-11-17T16:40:00+01:00",
+  "minutes_to_deploy": 40,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan, no card; the AI builder ran once",
+  "public_url": "https://6afc634f9aedb.site123.me",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": false,
+    "P20": true
+  },
+  "failures": [
+    "P7: No full-resolution view. The gallery photographs are served as 394x587 stock files and the largest image anywhere on the site is 632 px wide; clicking a photograph opens the series page, not a viewer or the original file."
+  ],
+  "notes": "SITE123 now runs a prompt-based AI builder behind its three-step signup: pick the website type, enter category, name and a description, sign up with Google, then the builder writes the site. It used the whole brief — the tagline 'Harbours, interiors, and quiet portraits — light held still', nine titled photographs, the three series pages (Harbour Light, Interiors, Quiet Portraits with six photographs each and print labels), an about page with a two-paragraph biography and a contact form with name, email and message. The build took about two minutes and was published free on a site123.me subdomain, with a SITE123 badge bar fixed at the bottom of every page. The photographs are stock; the AI wrote the copy, not the images. A description field is optional: there is a 'Let us generate it for you' button that writes one from category and name.",
+  "artifacts": [
+    {
+      "label": "Live home page at 1300 px",
+      "path": "/artifacts/site123-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/site123-portfolio-v1/home-mobile-390.webp"
+    },
+    {
+      "label": "Series page Harbour Light with six photographs and print labels",
+      "path": "/artifacts/site123-portfolio-v1/series-harbour-light.webp"
+    },
+    {
+      "label": "About page with biography and the contact form",
+      "path": "/artifacts/site123-portfolio-v1/about-and-contact.webp"
+    }
+  ],
+  "criteria_source": {
+    "P1": {
+      "check": "text",
+      "measured_at": "2026-11-17T17:05:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    },
+    "P2": {
+      "check": "imageCount",
+      "measured_at": "2026-11-17T17:05:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    },
+    "P3": {
+      "check": "seriesPages",
+      "measured_at": "2026-11-17T17:06:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me/harbour-light.html"
+    },
+    "P4": {
+      "check": "text",
+      "measured_at": "2026-11-17T17:06:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me/about.html"
+    },
+    "P5": {
+      "check": "form",
+      "measured_at": "2026-11-17T17:06:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me/about.html#contact"
+    },
+    "P6": {
+      "check": "publicUrl+overflow390",
+      "measured_at": "2026-11-17T17:07:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    },
+    "P7": {
+      "check": "lightbox",
+      "measured_at": "2026-11-17T17:08:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me/harbour-light.html"
+    },
+    "P8": {
+      "check": "freePublish",
+      "measured_at": "2026-11-17T16:40:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    },
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T17:07:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T17:12:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T17:06:00+01:00",
+      "url": "https://6afc634f9aedb.site123.me"
+    }
+  }
+}

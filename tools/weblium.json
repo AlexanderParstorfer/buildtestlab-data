@@ -1,0 +1,44 @@
+{
+  "slug": "weblium",
+  "name": "Weblium",
+  "website": "https://weblium.com",
+  "category": "Template website builder with AI help",
+  "pricing": {
+    "free_plan": "Free plan with a weblium.site subdomain",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "vendor subdomain"
+      },
+      {
+        "name": "Paid",
+        "price": 10,
+        "currency": "USD",
+        "period": "month",
+        "note": "entry tier"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://weblium.com"
+  },
+  "capabilities": [
+    "AI helps with text and images inside the editor"
+  ],
+  "limits": [
+    "No site-level generation from a prompt"
+  ],
+  "sources": [
+    {
+      "label": "Vendor page",
+      "url": "https://weblium.com"
+    }
+  ],
+  "no_ai": {
+    "reason": "Templates and a drag-and-drop editor with an AI copy assistant; there is no prompt that builds a page. \"Create a site\" opens a template picker (checked 17.11.2026).",
+    "checked_at": "2026-11-17"
+  }
+}

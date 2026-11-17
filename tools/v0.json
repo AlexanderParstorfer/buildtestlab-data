@@ -29,5 +29,13 @@
   "slug": "v0",
   "summary": "Generates real React code that deploys to Vercel — documented from its pricing page, not yet measured on a brief.",
   "logo": null,
-  "run_blocker": "phone number required at signup (checked 08.11.2026)"
+  "blocker_type": "account",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Free v0 deploys go to a Vercel project, and Vercel's Hobby plan allows up to 50 custom domains per project; no v0 line gates the domain itself",
+      "checked_at": "2026-11-13",
+      "source": "https://vercel.com/docs/domains/working-with-domains/add-a-domain"
+    }
+  }
 }

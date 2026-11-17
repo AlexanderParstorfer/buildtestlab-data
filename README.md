@@ -1,7 +1,7 @@
 # Build Test Lab — raw run data
 
-Every published run of [buildtestlab.com](https://buildtestlab.com): 37 runs,
-13 tools, 8 briefs, 241 criteria passed. Updated 2026-11-10.
+Every published run of [buildtestlab.com](https://buildtestlab.com): 47 runs,
+22 tools, 8 briefs, 381 criteria passed. Updated 2026-11-17.
 
 These are not opinions about builders. Each run is one prompt, one brief, one published page, scored
 against a fixed list of binary criteria on a free plan. When a criterion could not be checked, it is
@@ -43,7 +43,7 @@ Use it, chart it, quote it, teach with it. Name the source and the date.
 ## Citation
 
 > Build Test Lab (2026). *AI website builders tested on free plans.*
-> https://buildtestlab.com/data — retrieved 2026-11-10.
+> https://buildtestlab.com/data — retrieved 2026-11-17.
 
 ## What this data does not show
 

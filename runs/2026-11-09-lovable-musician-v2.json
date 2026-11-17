@@ -19,7 +19,10 @@
     "M5": true,
     "M6": false,
     "M7": true,
-    "M8": true
+    "M8": true,
+    "M11": false,
+    "M20": true,
+    "M15": true
   },
   "failures": [
     "M6: The booking page carries the contact form but no contact details — no email address, no phone number, no mailto link."
@@ -27,20 +30,37 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/lovable-musician-v2/home-desktop.jpg"
+      "path": "/artifacts/lovable-musician-v2/home-desktop.webp"
     },
     {
       "label": "Tour page with seven dates",
-      "path": "/artifacts/lovable-musician-v2/tour.jpg"
+      "path": "/artifacts/lovable-musician-v2/tour.webp"
     },
     {
       "label": "Mailing list confirmation",
-      "path": "/artifacts/lovable-musician-v2/mailinglist.jpg"
+      "path": "/artifacts/lovable-musician-v2/mailinglist.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/lovable-musician-v2/home-mobile-390.jpg"
+      "path": "/artifacts/lovable-musician-v2/home-mobile-390.webp"
     }
   ],
-  "notes": "Repeat of the run from 7 November 2026 (8/8): the result did not reproduce, 7 of 8. The difference is the contact page — the first run had a booking address next to the form, this one only the form. Everything else holds: seven tour dates, four releases with listen links, three members with instruments, a mailing list that writes to the database (HTTP 201) and confirms visibly, a booking form that stores its message (HTTP 201), a public URL without login, and no horizontal scroll on six pages at 390 px. The build paused once when the free credits ran out and continued after dismissing the prompt — nothing was paid. The listen links point at the Spotify and Bandcamp home pages rather than artist pages. The admin area exists at /admin but needs a login, so the stored entries were not read back. Cosmetic: the band name wraps to three lines in the 390 px header without overflowing."
+  "notes": "Repeat of the run from 7 November 2026 (8/8): the result did not reproduce, 7 of 8. The difference is the contact page — the first run had a booking address next to the form, this one only the form. Everything else holds: seven tour dates, four releases with listen links, three members with instruments, a mailing list that writes to the database (HTTP 201) and confirms visibly, a booking form that stores its message (HTTP 201), a public URL without login, and no horizontal scroll on six pages at 390 px. The build paused once when the free credits ran out and continued after dismissing the prompt — nothing was paid. The listen links point at the Spotify and Bandcamp home pages rather than artist pages. The admin area exists at /admin but needs a login, so the stored entries were not read back. Cosmetic: the band name wraps to three lines in the 390 px header without overflowing.",
+  "criteria_source": {
+    "M11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:30:10.035Z",
+      "url": "https://lantern-hours-music-and-gigs.lovable.app/"
+    },
+    "M20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:30:10.035Z",
+      "url": "https://lantern-hours-music-and-gigs.lovable.app/"
+    },
+    "M15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:09:33.226Z",
+      "url": "https://lantern-hours-music-and-gigs.lovable.app/"
+    }
+  }
 }

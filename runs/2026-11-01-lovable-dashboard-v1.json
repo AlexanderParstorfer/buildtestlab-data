@@ -22,7 +22,8 @@
     "D8": true,
     "D11": true,
     "D12": false,
-    "D14": true
+    "D14": true,
+    "D15": true
   },
   "criterion_notes": {
     "D4": "The detail view exists, but only the customer-name link opens it. Clicking anywhere else in the row does nothing.",
@@ -37,23 +38,23 @@
   "artifacts": [
     {
       "label": "Login screen",
-      "path": "/artifacts/lovable-dashboard-v1/d7-login-error.jpg"
+      "path": "/artifacts/lovable-dashboard-v1/d7-login-error.webp"
     },
     {
       "label": "Booking table with 20 rows",
-      "path": "/artifacts/lovable-dashboard-v1/d1-list.jpg"
+      "path": "/artifacts/lovable-dashboard-v1/d1-list.webp"
     },
     {
       "label": "Search filtering the table",
-      "path": "/artifacts/lovable-dashboard-v1/d3-search.jpg"
+      "path": "/artifacts/lovable-dashboard-v1/d3-search.webp"
     },
     {
       "label": "Detail view",
-      "path": "/artifacts/lovable-dashboard-v1/d4-detail.jpg"
+      "path": "/artifacts/lovable-dashboard-v1/d4-detail.webp"
     },
     {
       "label": "Table at 320 px",
-      "path": "/artifacts/lovable-dashboard-v1/page-320.jpg"
+      "path": "/artifacts/lovable-dashboard-v1/page-320.webp"
     }
   ],
   "notes": "One prompt, one build, 14 minutes. The dashboard is a real app: 20 seeded bookings, working search, status filter, detail view, editable status that survives a reload, and a CSV export. What it does not do: show an error on a wrong password, and the row body is not clickable. Publishing needed an explicit publish click. Lovable also flagged an unresolved security finding in its own scan; not investigated.",
@@ -73,5 +74,12 @@
     "paid_from_usd": null,
     "checked_at": "2026-11-01",
     "source_url": "https://lovable.dev/pricing"
+  },
+  "criteria_source": {
+    "D15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:05:10.575Z",
+      "url": "https://stillpoint-booking-desk.lovable.app/"
+    }
   }
 }

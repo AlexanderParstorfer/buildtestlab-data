@@ -28,19 +28,19 @@
   "artifacts": [
     {
       "label": "The public root URL: \"No posts found\"",
-      "path": "/artifacts/10web-landing-v1/root-empty.png"
+      "path": "/artifacts/10web-landing-v1/root-empty.webp"
     },
     {
       "label": "The generated page at /home",
-      "path": "/artifacts/10web-landing-v1/home-page.png"
+      "path": "/artifacts/10web-landing-v1/home-page.webp"
     },
     {
       "label": "After submitting the contact form: nothing changes",
-      "path": "/artifacts/10web-landing-v1/form-submitted.png"
+      "path": "/artifacts/10web-landing-v1/form-submitted.webp"
     },
     {
       "label": "Generated page at 390 px",
-      "path": "/artifacts/10web-landing-v1/mobile-390.png"
+      "path": "/artifacts/10web-landing-v1/mobile-390.webp"
     }
   ],
   "notes": "10Web needs no company data — email, first name, last name, password were enough. The AI first presents a plan that has to be approved before generation starts; that approval step blocked the build until it was clicked. The result is a WordPress site on a 10web.cloud subdomain, and the generated content itself is solid: all three services with prices, a contact section, studio text. But the front page was never assigned, so the shared URL is empty, and the contact form is inert. Both are setup failures a normal user would hit too. Scored against all eight landing criteria after the spec was aligned to the same eight-point scale as the booking tests. Added 2026-11-05: the free trial has since ended. my.10web.io logs in but every website route redirects to /upgrade-plan, and app.10web.io no longer resolves, so the 10web.cloud URL from the run cannot be retrieved. The screenshots in /artifacts remain the only evidence of the published page.",

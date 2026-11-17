@@ -1,0 +1,49 @@
+{
+  "slug": "thunkable",
+  "name": "Thunkable",
+  "website": "https://thunkable.com",
+  "category": "App builder with AI",
+  "pricing": {
+    "free_plan": "Free: 2,000 AI tokens, three public projects, five screens per project",
+    "publish_requires_paid": true,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "3 public projects, 5 screens, no published app"
+      },
+      {
+        "name": "Builder",
+        "price": 59,
+        "currency": "USD",
+        "period": "month",
+        "note": "first tier with '1 Live Published App'"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://thunkable.com/pricing"
+  },
+  "capabilities": [
+    "Drag-and-drop app builder for iOS and Android",
+    "AI tokens for generating screens and logic",
+    "Projects can be tested in a preview before publishing"
+  ],
+  "limits": [
+    "A live published app starts at Builder, 59 $ per month",
+    "Free projects are public and capped at five screens",
+    "App-store publishing is a paid feature"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://thunkable.com/pricing"
+    }
+  ],
+  "not_testable": {
+    "reason": "The free plan builds and previews but has no live published app: '1 Live Published App' appears first on Builder at 59 $ per month, and app-store builds are paid too. Without a public URL there is nothing to measure.",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/thunkable.png"
+}

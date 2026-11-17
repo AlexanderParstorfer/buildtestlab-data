@@ -22,7 +22,8 @@
     "D8": true,
     "D11": true,
     "D12": false,
-    "D14": true
+    "D14": true,
+    "D15": true
   },
   "criterion_notes": {
     "D1": "There is no password login. Softr sends a one-time code to the email address instead, so the demo account from the brief cannot be used with a password.",
@@ -36,15 +37,15 @@
   "artifacts": [
     {
       "label": "Bookings table with 20 rows",
-      "path": "/artifacts/softr-dashboard-v1/page-1440.jpg"
+      "path": "/artifacts/softr-dashboard-v1/page-1440.webp"
     },
     {
       "label": "Table at 390 px",
-      "path": "/artifacts/softr-dashboard-v1/d11-390.jpg"
+      "path": "/artifacts/softr-dashboard-v1/d11-390.webp"
     },
     {
       "label": "Table at 320 px",
-      "path": "/artifacts/softr-dashboard-v1/page-320.jpg"
+      "path": "/artifacts/softr-dashboard-v1/page-320.webp"
     }
   ],
   "notes": "Softr built a working internal tool from one prompt: 20 seeded bookings, search that drives a URL parameter, a working status filter (10 of 20 Confirmed), a detail page per booking with a Back to list link, an editable notes field that really saves, and a CSV export with 21 lines. It added a service filter nobody asked for. The gap against the brief is the login: Softr only does email codes, so a demo password cannot exist. The design is the calmest of the four, but accessibility suffers — nine colour-contrast failures on the table badges.",
@@ -64,5 +65,12 @@
     "paid_from_usd": null,
     "checked_at": "2026-11-02",
     "source_url": "https://www.softr.io/pricing"
+  },
+  "criteria_source": {
+    "D15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:05:35.532Z",
+      "url": "https://don17549.mysoftr.app/"
+    }
   }
 }

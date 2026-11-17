@@ -22,7 +22,9 @@
     "D8": true,
     "D11": true,
     "D12": false,
-    "D14": true
+    "D14": true,
+    "D20": false,
+    "D15": true
   },
   "criterion_notes": {
     "D5": "The detail page offers an editable notes field with a Save button. After saving, the value disappears from the page and is gone after a reload. The network log shows no update request at all, only two login calls — the save is not wired to the backend.",
@@ -36,19 +38,19 @@
   "artifacts": [
     {
       "label": "Login screen",
-      "path": "/artifacts/base44-dashboard-v1/d7-login-error.jpg"
+      "path": "/artifacts/base44-dashboard-v1/d7-login-error.webp"
     },
     {
       "label": "Bookings table with 20 rows",
-      "path": "/artifacts/base44-dashboard-v1/d1-list.jpg"
+      "path": "/artifacts/base44-dashboard-v1/d1-list.webp"
     },
     {
       "label": "Detail view",
-      "path": "/artifacts/base44-dashboard-v1/d4-detail.jpg"
+      "path": "/artifacts/base44-dashboard-v1/d4-detail.webp"
     },
     {
       "label": "Table at 320 px",
-      "path": "/artifacts/base44-dashboard-v1/page-320.jpg"
+      "path": "/artifacts/base44-dashboard-v1/page-320.webp"
     }
   ],
   "notes": "The first prompt stopped after reading two files and building the login shell; a second prompt was needed to get the whole dashboard. Once it ran, the result is the most complete of the three: login with a real error message, 20 seeded bookings, search, working status filter, detail route per booking, CSV export and an empty state. The one broken promise is the editable field: Save notes looks like it works but nothing is written. Publishing is a separate click and free.",
@@ -68,5 +70,17 @@
     "paid_from_usd": null,
     "checked_at": "2026-11-01",
     "source_url": "https://base44.com/pricing"
+  },
+  "criteria_source": {
+    "D20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:27:18.421Z",
+      "url": "https://stalwart-still-point-flow.base44.app/"
+    },
+    "D15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:04:59.357Z",
+      "url": "https://stalwart-still-point-flow.base44.app/"
+    }
   }
 }

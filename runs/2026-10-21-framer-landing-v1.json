@@ -19,7 +19,10 @@
     "L6": true,
     "L7": true,
     "L8": false,
-    "L9": true
+    "L9": true,
+    "L11": true,
+    "L15": true,
+    "L17": false
   },
   "failures": [
     "L8: The footer leaves '[Street address, City — placeholder]' and '[Days and hours — placeholder]' visible."
@@ -27,23 +30,23 @@
   "artifacts": [
     {
       "label": "Landing page, 1440 px",
-      "path": "/artifacts/framer-landing-v1/landing.png"
+      "path": "/artifacts/framer-landing-v1/landing.webp"
     },
     {
       "label": "Contact form filled in",
-      "path": "/artifacts/framer-landing-v1/form-filled.png"
+      "path": "/artifacts/framer-landing-v1/form-filled.webp"
     },
     {
       "label": "State after submitting the form",
-      "path": "/artifacts/framer-landing-v1/after-submit.png"
+      "path": "/artifacts/framer-landing-v1/after-submit.webp"
     },
     {
       "label": "Landing page at 390 px",
-      "path": "/artifacts/framer-landing-v1/mobile-390.png"
+      "path": "/artifacts/framer-landing-v1/mobile-390.webp"
     },
     {
       "label": "Published page after the follow-up prompt",
-      "path": "/artifacts/framer-landing-v1/retest-live.png"
+      "path": "/artifacts/framer-landing-v1/retest-live.webp"
     }
   ],
   "notes": "Framer is the only tool that stopped and asked before building: two questions about visual direction and about how to handle missing details, then it built. It published by itself to a random subdomain (salmon-porcupine-216074.framer.app) and offered a free custom domain. The page holds all five sections, the three prices are visible without clicking, and 390 px has no horizontal overflow — the agent claimed the same and it held up. Two honest caveats: the address and opening hours are left as visible placeholders, and the form shows 'Message sent' although no recipient has been configured, so the success message is unverified. Different spec than the app builders (the landing page test), because Framer has no backend. Scored against all eight landing criteria after the spec was aligned to the same eight-point scale as the booking tests.",
@@ -56,5 +59,22 @@
     "prompt": "Change the price of the 90-minute massage from $130 to $120 on the Home page. Change nothing else.",
     "outcome": "pass",
     "note": "Framer's agent edited one layer, then Publish > Update pushed it live. Published page shows $90/$120/$150 and the contact form still renders."
+  },
+  "criteria_source": {
+    "L11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:29:05.649Z",
+      "url": "https://salmon-porcupine-216074.framer.app"
+    },
+    "L15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:04:34.501Z",
+      "url": "https://salmon-porcupine-216074.framer.app"
+    },
+    "L17": {
+      "check": "formErrors",
+      "measured_at": "2026-11-14T10:24:14.087Z",
+      "url": "https://salmon-porcupine-216074.framer.app"
+    }
   }
 }

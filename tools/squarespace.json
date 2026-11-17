@@ -39,7 +39,10 @@
     ],
     "checked_at": "2026-11-05",
     "source_url": "https://www.squarespace.com/pricing",
-    "unverified": true
+    "unverified": true,
+    "trial_days": 14,
+    "publish": "paid",
+    "publish_note": "The trial cannot publish (HTTP 401 \"Private Website\")."
   },
   "capabilities": [
     "Template-driven design with a built-in AI site generator",
@@ -58,5 +61,25 @@
       "url": "https://www.squarespace.com/pricing"
     }
   ],
-  "run_blocker": "trial site stays private (HTTP 401) — publishing needs a paid plan (verified 09.11.2026)"
+  "run_blocker": "trial site stays private (HTTP 401) — publishing needs a paid plan (verified 09.11.2026)",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "A free custom domain for the first year is part of the annual plans",
+      "checked_at": "2026-11-13",
+      "source": "https://www.squarespace.com/pricing"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Squarespace Payments, commerce features on the business tiers",
+      "checked_at": "2026-11-13",
+      "source": "https://www.squarespace.com/pricing"
+    }
+  },
+  "blocker_type": "trial-private",
+  "not_testable": {
+    "reason": "A trial site stays private; publishing needs a paid website plan.",
+    "checked_at": "2026-11-17"
+  },
+  "logo": "/logos/squarespace.png"
 }

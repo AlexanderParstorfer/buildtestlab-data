@@ -48,11 +48,20 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/durable-review"
+      "url": "https://buildtestlab.com/tools/durable"
     }
   ],
   "slug": "durable",
   "summary": "Fastest generator we tested, five minutes, but the page stays in preview mode.",
   "logo": "/logos/durable.png",
-  "run_blocker": "free plan stays in preview"
+  "run_blocker": "free plan stays in preview",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Own domain or a free one on paid plans, including a domain credit",
+      "checked_at": "2026-11-13",
+      "source": "https://durable.co/pricing"
+    }
+  },
+  "blocker_type": "paywall"
 }

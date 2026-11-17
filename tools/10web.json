@@ -29,7 +29,8 @@
       }
     ],
     "checked_at": "2026-11-05",
-    "source_url": "https://10web.io/pricing/"
+    "source_url": "https://10web.io/pricing/",
+    "publish": "trial"
   },
   "capabilities": [
     "Generates a WordPress site from a prompt",
@@ -48,11 +49,20 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/10web-review"
+      "url": "https://buildtestlab.com/tools/10web"
     }
   ],
   "slug": "10web",
   "summary": "Generates a WordPress site; the front page was never assigned in our run.",
   "logo": "/logos/10web.png",
-  "run_blocker": "trial ended, URL no longer reachable"
+  "run_blocker": "free plan covers one website only; the trial site from our run has expired (checked 09.11.2026)",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain on paid plans; the first domain is free up to $30 for one year, more expensive domains cost the difference",
+      "checked_at": "2026-11-13",
+      "source": "https://10web.io/pricing/"
+    }
+  },
+  "blocker_type": "quota"
 }

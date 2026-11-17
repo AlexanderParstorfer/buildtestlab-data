@@ -1,6 +1,6 @@
 {
   "name": "Canva Websites",
-  "website": "https://www.canva.com/websites/",
+  "website": "https://www.canva.com/website-builder/",
   "category": "Design tool with a website builder",
   "pricing": {
     "free_plan": "Free account publishes a one-page site to a canva.site address with a Canva badge",
@@ -29,5 +29,10 @@
   "slug": "canva",
   "summary": "Lowest barrier of any builder here — a free account publishes a page in minutes, but it cannot store anything.",
   "logo": null,
-  "run_blocker": "canvas editor cannot be driven automatically (checked 08.11.2026)"
+  "run_blocker": "No website-from-prompt step: Magic Design generates social posts, the website builder starts from templates and the canvas editor cannot be driven automatically (checked 15.11.2026).",
+  "blocker_type": "automation",
+  "not_testable": {
+    "reason": "No AI prompt step for websites: Magic Design produces social posts, the website builder starts from templates and is edited by drag and drop. A run would measure the operator, not the tool.",
+    "checked_at": "2026-11-17"
+  }
 }

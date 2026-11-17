@@ -1,0 +1,114 @@
+{
+  "tool": "webnode",
+  "tool_name": "Webnode",
+  "run_id": "2026-11-17-webnode-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T18:10:00+01:00",
+  "deployed_at": "2026-11-17T18:45:00+01:00",
+  "minutes_to_deploy": 35,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan, Google sign-in; one prompt, three designs offered",
+  "public_url": "https://still-point-studio-ajlzib.webnode.page",
+  "criteria": {
+    "P1": false,
+    "P2": false,
+    "P3": true,
+    "P4": true,
+    "P5": false,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": true,
+    "P20": false
+  },
+  "failures": [
+    "P1: The name is right and the logo is the studio's, but there is no tagline. The hero holds the name, the navigation and one photograph; the brief's one-line tagline never appears.",
+    "P2: The photo gallery holds six images, not nine. Home adds five more, so the site has eleven photographs in total, but the gallery page itself stops at six.",
+    "P5: /contact exists with copy that says 'Send us a message using the form', and there is no form. The generator had built a SimplyBook.me booking block; publishing warned that it is a premium plugin and dropped it.",
+    "P7: The gallery images are served at 390x390 and there is no viewer: clicking a photograph does nothing, nothing is linked. Only the two large home photographs come at 975 to 1300 px.",
+    "P20: No image on any page carries alt text (18 of 18 without), so alt text is missing throughout."
+  ],
+  "notes": "Webnode's AI takes the brief on a single page, offers three generated designs, and after selecting one it goes straight into the editor with seven pages: Home, Photo gallery, Harbour Light, Interiors, Quiet Portraits, About and Contact. The copy is written well — the series pages explain each body of work, the about page has three paragraphs, all in English. Sign-in runs through Google and the free site publishes on a webnode.page subdomain with a fixed blue banner ('This website was made with Webnode'). The generator had inserted a SimplyBook.me booking block; at publish time Webnode warned that booking needs the paid plugin, so we published without it — which is why the contact page ended up as text without a form. Photographs come from Pexels, credited in the footer. Lighthouse mobile performance 91, but SEO 61.",
+  "artifacts": [
+    {
+      "label": "Live home page at 1300 px",
+      "path": "/artifacts/webnode-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/webnode-portfolio-v1/home-mobile-390.webp"
+    },
+    {
+      "label": "Photo gallery with six images",
+      "path": "/artifacts/webnode-portfolio-v1/gallery.webp"
+    },
+    {
+      "label": "Series page Harbour Light",
+      "path": "/artifacts/webnode-portfolio-v1/series-harbour-light.webp"
+    },
+    {
+      "label": "Contact page: copy promises a form, no form there",
+      "path": "/artifacts/webnode-portfolio-v1/contact.webp"
+    }
+  ],
+  "criteria_source": {
+    "P1": {
+      "check": "text",
+      "measured_at": "2026-11-17T18:50:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page"
+    },
+    "P2": {
+      "check": "imageCount",
+      "measured_at": "2026-11-17T18:51:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page/photo-gallery/"
+    },
+    "P3": {
+      "check": "seriesPages",
+      "measured_at": "2026-11-17T18:51:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page/harbour-light/"
+    },
+    "P4": {
+      "check": "text",
+      "measured_at": "2026-11-17T18:52:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page/about/"
+    },
+    "P5": {
+      "check": "form",
+      "measured_at": "2026-11-17T18:52:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page/contact/"
+    },
+    "P6": {
+      "check": "publicUrl+overflow390",
+      "measured_at": "2026-11-17T18:53:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page"
+    },
+    "P7": {
+      "check": "lightbox",
+      "measured_at": "2026-11-17T18:53:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page/photo-gallery/"
+    },
+    "P8": {
+      "check": "freePublish",
+      "measured_at": "2026-11-17T18:45:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page"
+    },
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T18:53:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T18:58:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T18:51:00+01:00",
+      "url": "https://still-point-studio-ajlzib.webnode.page/photo-gallery/"
+    }
+  }
+}

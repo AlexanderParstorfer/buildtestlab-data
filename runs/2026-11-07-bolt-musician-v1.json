@@ -19,7 +19,10 @@
     "M5": false,
     "M6": false,
     "M7": true,
-    "M8": true
+    "M8": true,
+    "M11": true,
+    "M20": true,
+    "M15": false
   },
   "failures": [
     "M2–M6: The navigation labels (Tour, Music, About, Contact, Mailing list, Admin) are not links and do not open anything. Every hash route (#/tour, #/music, #/about, #/contact, #/mailing-list, #/admin) serves the same home page, and no form exists anywhere on the site.",
@@ -28,12 +31,29 @@
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/bolt-musician-v1/home-desktop.jpg"
+      "path": "/artifacts/bolt-musician-v1/home-desktop.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/bolt-musician-v1/home-mobile-390.jpg"
+      "path": "/artifacts/bolt-musician-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "The home page is genuinely good: band name, sound line, next gig with date, venue and city, a track section and a footer. Only the first page was built — the other six sections exist as labels in the header, and Bolt's hash routing serves the home page for every route. Same pattern as the nonprofit run: the surface looks finished, the structure is missing."
+  "notes": "The home page is genuinely good: band name, sound line, next gig with date, venue and city, a track section and a footer. Only the first page was built — the other six sections exist as labels in the header, and Bolt's hash routing serves the home page for every route. Same pattern as the nonprofit run: the surface looks finished, the structure is missing.",
+  "criteria_source": {
+    "M11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:28:31.117Z",
+      "url": "https://band-website-the-har-o0lr.bolt.host/"
+    },
+    "M20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:28:31.117Z",
+      "url": "https://band-website-the-har-o0lr.bolt.host/"
+    },
+    "M15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:06:41.257Z",
+      "url": "https://band-website-the-har-o0lr.bolt.host/"
+    }
+  }
 }

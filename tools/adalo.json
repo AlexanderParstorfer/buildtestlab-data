@@ -49,5 +49,14 @@
   "slug": "adalo",
   "summary": "True native iOS and Android builds; app-store publishing starts at $65 a month.",
   "logo": "/logos/adalo.png",
-  "run_blocker": "API error on signup"
+  "run_blocker": "Signup and login currently fail on their side: the app shows \"We're having difficulties connecting to our servers\", the signup says the email is already in use, and the password-reset mail never arrives (checked 16.11.2026).",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domains on paid plans; app-store publishing starts at $65/month",
+      "checked_at": "2026-11-13",
+      "source": "https://www.adalo.com/pricing"
+    }
+  },
+  "blocker_type": "account"
 }

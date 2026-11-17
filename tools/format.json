@@ -29,7 +29,10 @@
       }
     ],
     "checked_at": "2026-11-06",
-    "source_url": "https://format.com/pricing"
+    "source_url": "https://format.com/pricing",
+    "trial_days": 14,
+    "publish": "paid",
+    "publish_note": "The 14-day trial cannot publish (\"Website Launching Soon\")."
   },
   "capabilities": [
     "Portfolio themes built for photography, not adapted from a generic builder",
@@ -56,5 +59,30 @@
   "slug": "format",
   "summary": "Portfolio platform built for photographers, with client galleries and a store.",
   "logo": "/logos/format.png",
-  "run_blocker": "trial cannot publish (verified 06.11.)"
+  "run_blocker": "trial cannot publish (verified 06.11.)",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Free custom domain in the first year on paid plans",
+      "checked_at": "2026-11-13",
+      "source": "https://www.format.com/pricing"
+    },
+    "client_galleries": {
+      "value": true,
+      "detail": "Client galleries per tier: 3 on the entry plan, up to 250",
+      "checked_at": "2026-11-13",
+      "source": "https://www.format.com/pricing"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Online store, commission-free on paid tiers",
+      "checked_at": "2026-11-13",
+      "source": "https://www.format.com/pricing"
+    }
+  },
+  "blocker_type": "trial-private",
+  "not_testable": {
+    "reason": "The trial cannot publish and there is no lasting free plan; publishing needs a subscription.",
+    "checked_at": "2026-11-17"
+  }
 }

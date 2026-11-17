@@ -19,7 +19,10 @@
     "P5": true,
     "P6": true,
     "P7": null,
-    "P8": true
+    "P8": true,
+    "P11": true,
+    "P20": false,
+    "P15": false
   },
   "failures": [
     "P1: The published site still carries the template's demo persona — 'Ethan Callister. Photography fueled by passion for simplicity.' — on the home and about pages. Nothing warned at publish time that these are placeholder words.",
@@ -28,12 +31,29 @@
   "artifacts": [
     {
       "label": "Live home page at 1440 px",
-      "path": "/artifacts/pixieset-portfolio-v1/home-desktop.jpg"
+      "path": "/artifacts/pixieset-portfolio-v1/home-desktop.webp"
     },
     {
       "label": "Live home page at 390 px",
-      "path": "/artifacts/pixieset-portfolio-v1/home-mobile-390.jpg"
+      "path": "/artifacts/pixieset-portfolio-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Pixieset is not a prompt-first builder: the site comes from a template picker (we chose the portfolio theme Kyoto), so 'one prompt' does not apply. Account creation, email activation and publishing were automated; the activation link arrived in the same inbox we monitor for the site. Publishing was blocked until the account was activated — a real step a user hits too. The contact page has a working form with five fields; we did not submit it because that would send mail to the studio inbox. Images are the template's demo photos; uploading real photography is the one step we skipped, so P7 stays unmeasured rather than passed."
+  "notes": "Pixieset is not a prompt-first builder: the site comes from a template picker (we chose the portfolio theme Kyoto), so 'one prompt' does not apply. Account creation, email activation and publishing were automated; the activation link arrived in the same inbox we monitor for the site. Publishing was blocked until the account was activated — a real step a user hits too. The contact page has a working form with five fields; we did not submit it because that would send mail to the studio inbox. Images are the template's demo photos; uploading real photography is the one step we skipped, so P7 stays unmeasured rather than passed.",
+  "criteria_source": {
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:31:00.598Z",
+      "url": "https://stillpointstudio44.mypixieset.com/"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:31:00.598Z",
+      "url": "https://stillpointstudio44.mypixieset.com/"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:06:13.982Z",
+      "url": "https://stillpointstudio44.mypixieset.com/"
+    }
+  }
 }

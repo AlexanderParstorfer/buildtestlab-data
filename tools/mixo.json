@@ -1,0 +1,55 @@
+{
+  "name": "Mixo",
+  "website": "https://www.mixo.io",
+  "category": "AI website generator",
+  "pricing": {
+    "free_plan": "Free forever with a Mixo-branded URL and the Mixo badge; one page, contact form included",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Free",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "Mixo-branded URL, Mixo badge"
+      },
+      {
+        "name": "Business",
+        "price": 20,
+        "currency": "USD",
+        "period": "month",
+        "note": "custom domain, no badge, multi-page, 20% off annual"
+      },
+      {
+        "name": "Premium",
+        "price": 40,
+        "currency": "USD",
+        "period": "month",
+        "note": "more customisation"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.mixo.io/pricing"
+  },
+  "capabilities": [
+    "Writes a whole site from one free-text description in about two minutes",
+    "Chooses images and copy itself, then offers style variants",
+    "Contact form and gallery are included on the free plan"
+  ],
+  "limits": [
+    "Free plan is one page plus a gallery; multi-page sites need the Business tier",
+    "Custom domain costs 30 $/year or a paid plan",
+    "No series pages and no about section unless they are asked for page by page"
+  ],
+  "sources": [
+    {
+      "label": "Pricing",
+      "url": "https://www.mixo.io/pricing"
+    },
+    {
+      "label": "Run: portfolio brief",
+      "url": "https://stillp-q28cf4.mixo.io"
+    }
+  ],
+  "slug": "mixo"
+}

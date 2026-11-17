@@ -1,0 +1,61 @@
+{
+  "tool": "mixo",
+  "tool_name": "Mixo",
+  "run_id": "2026-11-17-mixo-portfolio-v1",
+  "spec": "portfolio-v1",
+  "status": "published",
+  "started_at": "2026-11-17T14:40:00+01:00",
+  "deployed_at": "2026-11-17T14:55:00+01:00",
+  "minutes_to_deploy": 15,
+  "prompts_used": 1,
+  "cost_usd": 0,
+  "credits_spent": "free plan; one generation, published on the Mixo subdomain",
+  "public_url": "https://stillp-q28cf4.mixo.io",
+  "criteria": {
+    "P1": true,
+    "P2": true,
+    "P3": false,
+    "P4": false,
+    "P5": true,
+    "P6": true,
+    "P7": false,
+    "P8": true,
+    "P11": true,
+    "P15": false,
+    "P20": true
+  },
+  "failures": [
+    "P3: No series pages. The gallery page holds 23 photographs and a navigation with only 'Homepage' and 'Gallery'; there is no link to Harbour Light, Interiors or Quiet Portraits.",
+    "P4: No biography. The home page offers one sentence of positioning ('Explore thoughtful photography ... from luminous harbour scenes to quiet, intimate portraits') and the contact form, but no about text.",
+    "P7: Images are 800x650 CDN crops, none is wrapped in a link and no viewer opens on click.",
+    "P15: Lighthouse mobile performance 88 (LCP 3.6 s), below the threshold of 90."
+  ],
+  "artifacts": [
+    {
+      "label": "Live home page at 1440 px",
+      "path": "/artifacts/mixo-portfolio-v1/home-desktop.webp"
+    },
+    {
+      "label": "Live home page at 390 px",
+      "path": "/artifacts/mixo-portfolio-v1/home-mobile-390.webp"
+    }
+  ],
+  "notes": "Mixo built the site from one description in about two minutes, then asked for an account and a domain. The free path is 'Continue with Mixo subdomain'; the offered custom domain costs 30 $/year. The result is a two-page site (home and /gallery) with 23 photographs and a working contact form, all images with alt text, but no series pages and no about section. The stored page title on the live home reads 'Contact Still Point Studio | Photography Enquiries' although the page shows the portfolio.",
+  "criteria_source": {
+    "P11": {
+      "check": "overflow",
+      "measured_at": "2026-11-17T15:00:00+01:00",
+      "url": "https://stillp-q28cf4.mixo.io"
+    },
+    "P20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-17T15:00:00+01:00",
+      "url": "https://stillp-q28cf4.mixo.io"
+    },
+    "P15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-17T15:02:00+01:00",
+      "url": "https://stillp-q28cf4.mixo.io"
+    }
+  }
+}

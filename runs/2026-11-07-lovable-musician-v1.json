@@ -19,26 +19,46 @@
     "M5": true,
     "M6": true,
     "M7": true,
-    "M8": true
+    "M8": true,
+    "M11": true,
+    "M20": true,
+    "M15": true
   },
   "failures": [],
   "artifacts": [
     {
       "label": "Home page at 1440 px",
-      "path": "/artifacts/lovable-musician-v1/home-desktop.jpg"
+      "path": "/artifacts/lovable-musician-v1/home-desktop.webp"
     },
     {
       "label": "Mailing list confirmation",
-      "path": "/artifacts/lovable-musician-v1/mailing-confirmation.jpg"
+      "path": "/artifacts/lovable-musician-v1/mailing-confirmation.webp"
     },
     {
       "label": "Admin: one signup, one message",
-      "path": "/artifacts/lovable-musician-v1/admin-list.jpg"
+      "path": "/artifacts/lovable-musician-v1/admin-list.webp"
     },
     {
       "label": "Home page at 390 px",
-      "path": "/artifacts/lovable-musician-v1/home-mobile-390.jpg"
+      "path": "/artifacts/lovable-musician-v1/home-mobile-390.webp"
     }
   ],
-  "notes": "Every criterion passed, which is a first in the set. Six tour dates, six releases with listen links, three band members, a mailing list that stores the address and confirms it, a contact form that stores the message, and an admin page that shows both after email confirmation. Fastest build so far at six minutes, free plan, no fixes needed."
+  "notes": "Every criterion passed, which is a first in the set. Six tour dates, six releases with listen links, three band members, a mailing list that stores the address and confirms it, a contact form that stores the message, and an admin page that shows both after email confirmation. Fastest build so far at six minutes, free plan, no fixes needed.",
+  "criteria_source": {
+    "M11": {
+      "check": "overflow",
+      "measured_at": "2026-11-13T14:30:02.559Z",
+      "url": "https://harbour-lights-after-dark.lovable.app/"
+    },
+    "M20": {
+      "check": "altText+h1",
+      "measured_at": "2026-11-13T14:30:02.559Z",
+      "url": "https://harbour-lights-after-dark.lovable.app/"
+    },
+    "M15": {
+      "check": "lighthouse",
+      "measured_at": "2026-11-13T19:07:33.927Z",
+      "url": "https://harbour-lights-after-dark.lovable.app/"
+    }
+  }
 }

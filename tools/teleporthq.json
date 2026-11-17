@@ -1,0 +1,70 @@
+{
+  "name": "TeleportHQ",
+  "website": "https://teleporthq.io",
+  "category": "Low-code website builder with code export",
+  "pricing": {
+    "free_plan": "No permanent free plan in the app: the account opens on a 7-day trial with 30,000 AI tokens, then a paid tier is required.",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Trial",
+        "price": 0,
+        "currency": "USD",
+        "period": "month",
+        "note": "7 days, 30k AI tokens, full access"
+      },
+      {
+        "name": "Premium",
+        "price": 25,
+        "currency": "USD",
+        "period": "month",
+        "note": "reported after the Black Friday banner, not confirmed by purchase"
+      }
+    ],
+    "checked_at": "2026-11-10",
+    "source_url": "https://teleporthq.io/pricing",
+    "unverified": true,
+    "trial_days": 7,
+    "publish": "trial"
+  },
+  "capabilities": [
+    "Sign in with Google, GitHub or Microsoft (no email-only signup)",
+    "Visual low-code editor with React/Vue/Next export",
+    "AI builder fuelled by tokens",
+    "Publishes to a vercel-hosted subdomain"
+  ],
+  "limits": [
+    "7-day trial instead of a free plan",
+    "30,000 AI tokens on the trial — enough for roughly one generation",
+    "Project creation dialog did not respond to automation across four approaches (mouse, JS click, Playwright locator, direct URLs)"
+  ],
+  "sources": [
+    {
+      "label": "Pricing page",
+      "url": "https://teleporthq.io/pricing"
+    }
+  ],
+  "slug": "teleporthq",
+  "summary": "Low-code builder with real code export; the app is a 7-day trial, not a free plan, and its project dialog blocked automation.",
+  "run_blocker": "7-day trial only (30k AI tokens) and the project-creation dialog could not be operated by automation (checked 10.11.2026)",
+  "checked_note": "Account created with the site's Google login; no project was created, tokens untouched.",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain, SSL and CDN hosting",
+      "checked_at": "2026-11-13",
+      "source": "https://teleporthq.io/pricing"
+    },
+    "payments": {
+      "value": true,
+      "detail": "Stripe payment integration and checkout processing",
+      "checked_at": "2026-11-13",
+      "source": "https://teleporthq.io/pricing"
+    }
+  },
+  "blocker_type": "automation",
+  "not_testable": {
+    "reason": "The free tier is a 7-day trial with 30k tokens; a published page expires with it and publishing then needs a paid plan. The project dialog also would not respond to automation, but the trial is the wall that decides it.",
+    "checked_at": "2026-11-17"
+  }
+}

@@ -34,10 +34,18 @@
     },
     {
       "label": "Our run",
-      "url": "https://buildtestlab.com/softr-review"
+      "url": "https://buildtestlab.com/tools/softr"
     }
   ],
   "slug": "softr",
   "summary": "Client portals and internal tools from one prompt; email codes instead of passwords.",
-  "logo": "/logos/softr.png"
+  "logo": "/logos/softr.png",
+  "features": {
+    "custom_domain": {
+      "value": true,
+      "detail": "Custom domain starts with Basic ($19/month); the free plan publishes to a mysoftr.app address",
+      "checked_at": "2026-11-13",
+      "source": "https://www.softr.io/pricing"
+    }
+  }
 }

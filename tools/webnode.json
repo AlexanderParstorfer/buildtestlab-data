@@ -1,0 +1,56 @@
+{
+  "slug": "webnode",
+  "name": "Webnode",
+  "website": "https://www.webnode.com",
+  "category": "Website builder with AI",
+  "pricing": {
+    "free_plan": "Free website builder: the home page invites visitors to 'create your own website for free' and the AI builder writes the first version; the pricing page lists only paid tiers",
+    "publish_requires_paid": false,
+    "tiers": [
+      {
+        "name": "Mini",
+        "price": 6.9,
+        "currency": "EUR",
+        "period": "month",
+        "note": "billed yearly, 3 GB storage, own domain"
+      },
+      {
+        "name": "Standard",
+        "price": 9.9,
+        "currency": "EUR",
+        "period": "month",
+        "note": "billed yearly, 10 GB storage"
+      },
+      {
+        "name": "Profi",
+        "price": 17.9,
+        "currency": "EUR",
+        "period": "month",
+        "note": "billed yearly, online store, no Webnode branding"
+      }
+    ],
+    "checked_at": "2026-11-17",
+    "source_url": "https://www.webnode.com/pricing/"
+  },
+  "capabilities": [
+    "AI website builder: 'tell us about your project' and it drafts the site",
+    "Templates and an editor on top of the draft",
+    "Own domain on the paid tiers"
+  ],
+  "limits": [
+    "The free plan is advertised, but its limits are not on the pricing page — only paid tiers are listed",
+    "Removing the Webnode branding needs Profi",
+    "Free sites sit on a Webnode subdomain"
+  ],
+  "sources": [
+    {
+      "label": "Home",
+      "url": "https://www.webnode.com/"
+    },
+    {
+      "label": "Pricing",
+      "url": "https://www.webnode.com/pricing/"
+    }
+  ],
+  "logo": "/logos/webnode.png"
+}
