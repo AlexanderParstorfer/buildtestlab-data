@@ -121,8 +121,8 @@
       },
       "retest": {
         "asked_at": "2026-11-17",
-        "asked": "The studio admin page renders blank right after signing in, so the artist cannot see the orders or the contact messages. Fix that and publish the app again. Change nothing else.",
-        "result": "partially-fixed",
+        "prompt": "The studio admin page renders blank right after signing in, so the artist cannot see the orders or the contact messages. Fix that and publish the app again. Change nothing else.",
+        "outcome": "partial",
         "note": "Base44 found the cause itself: the admin route relied on inheriting ssr:false and looped through the server-side login gate on a full page load. The app was rebuilt and published the same evening. /admin now renders a 'studio access' screen instead of a blank page. Whether the studio owner sees orders and messages could not be proven: the test account has no admin role, and the app offers no way to grant it without the owner."
       },
       "pricing": null,
@@ -262,8 +262,8 @@
       },
       "retest": {
         "asked_at": "2026-11-17",
-        "asked": "In the dashboard, editing a record and saving it does not persist: after a reload the old text is back. The save never reaches the backend. Fix that and publish the app again. Change nothing else.",
-        "result": "fixed",
+        "prompt": "In the dashboard, editing a record and saving it does not persist: after a reload the old text is back. The save never reaches the backend. Fix that and publish the app again. Change nothing else.",
+        "outcome": "pass",
         "note": "Base44 traced it itself: the write was fine, but the read (getBooking) was a GET server function whose response got edge/browser-cached on a stable /_serverFn/...?payload= URL — so a reload re-read the pre-save value. The read is now a POST. Verified on the live app: a note saved in the booking detail is still there after a full reload."
       },
       "pricing": {

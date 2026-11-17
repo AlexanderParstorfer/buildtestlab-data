@@ -74,8 +74,8 @@
   },
   "retest": {
     "asked_at": "2026-11-17",
-    "asked": "The studio admin page renders blank right after signing in, so the artist cannot see the orders or the contact messages. Fix that and publish the app again. Change nothing else.",
-    "result": "partially-fixed",
+    "prompt": "The studio admin page renders blank right after signing in, so the artist cannot see the orders or the contact messages. Fix that and publish the app again. Change nothing else.",
+    "outcome": "partial",
     "note": "Base44 found the cause itself: the admin route relied on inheriting ssr:false and looped through the server-side login gate on a full page load. The app was rebuilt and published the same evening. /admin now renders a 'studio access' screen instead of a blank page. Whether the studio owner sees orders and messages could not be proven: the test account has no admin role, and the app offers no way to grant it without the owner."
   }
 }

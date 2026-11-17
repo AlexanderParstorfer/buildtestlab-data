@@ -69,8 +69,8 @@
   },
   "retest": {
     "asked_at": "2026-11-17",
-    "asked": "In the dashboard, editing a record and saving it does not persist: after a reload the old text is back. The save never reaches the backend. Fix that and publish the app again. Change nothing else.",
-    "result": "fixed",
+    "prompt": "In the dashboard, editing a record and saving it does not persist: after a reload the old text is back. The save never reaches the backend. Fix that and publish the app again. Change nothing else.",
+    "outcome": "pass",
     "note": "Base44 traced it itself: the write was fine, but the read (getBooking) was a GET server function whose response got edge/browser-cached on a stable /_serverFn/...?payload= URL — so a reload re-read the pre-save value. The read is now a POST. Verified on the live app: a note saved in the booking detail is still there after a full reload."
   },
   "pricing": {
