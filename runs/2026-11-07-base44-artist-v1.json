@@ -48,6 +48,10 @@
     {
       "label": "Admin area after login: blank",
       "path": "/artifacts/base44-artist-v1/admin-blank.webp"
+    },
+    {
+      "label": "After the fix: /admin renders a studio-access screen instead of a blank page",
+      "path": "/artifacts/base44-artist-v1/retest-admin.webp"
     }
   ],
   "notes": "One prompt produced nine pages: home, gallery with 10 works, shop, cart, checkout, work detail, about, contact and an admin area. Every work carries title, year, medium and price in euro (e.g. 'Vessel, Ash Ridge, 2023, stoneware, ash glaze, 420 euro'). The shop flow is real: add to cart, checkout with name, email and shipping address, order stored, reference MH-2026-JWM27FE returned, cart emptied. The weakness is the admin side: after creating an account and confirming a six-digit code, /admin renders blank, so the studio owner sees neither orders nor messages. Publishing needed the hidden Publish action in the editor menu; the app went live at mira-clay-curated.base44.app on the free plan.",
@@ -67,5 +71,11 @@
       "measured_at": "2026-11-13T19:06:28.198Z",
       "url": "https://mira-clay-curated.base44.app/"
     }
+  },
+  "retest": {
+    "asked_at": "2026-11-17",
+    "asked": "The studio admin page renders blank right after signing in, so the artist cannot see the orders or the contact messages. Fix that and publish the app again. Change nothing else.",
+    "result": "partially-fixed",
+    "note": "Base44 found the cause itself: the admin route relied on inheriting ssr:false and looped through the server-side login gate on a full page load. The app was rebuilt and published the same evening. /admin now renders a 'studio access' screen instead of a blank page. Whether the studio owner sees orders and messages could not be proven: the test account has no admin role, and the app offers no way to grant it without the owner."
   }
 }

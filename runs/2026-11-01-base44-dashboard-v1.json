@@ -51,6 +51,10 @@
     {
       "label": "Table at 320 px",
       "path": "/artifacts/base44-dashboard-v1/page-320.webp"
+    },
+    {
+      "label": "After the fix: the saved note survives a full reload",
+      "path": "/artifacts/base44-dashboard-v1/retest-notes.webp"
     }
   ],
   "notes": "The first prompt stopped after reading two files and building the login shell; a second prompt was needed to get the whole dashboard. Once it ran, the result is the most complete of the three: login with a real error message, 20 seeded bookings, search, working status filter, detail route per booking, CSV export and an empty state. The one broken promise is the editable field: Save notes looks like it works but nothing is written. Publishing is a separate click and free.",
@@ -63,7 +67,12 @@
     "console_errors": 0,
     "axe_violations": 2
   },
-  "retest": null,
+  "retest": {
+    "asked_at": "2026-11-17",
+    "asked": "In the dashboard, editing a record and saving it does not persist: after a reload the old text is back. The save never reaches the backend. Fix that and publish the app again. Change nothing else.",
+    "result": "fixed",
+    "note": "Base44 traced it itself: the write was fine, but the read (getBooking) was a GET server function whose response got edge/browser-cached on a stable /_serverFn/...?payload= URL — so a reload re-read the pre-save value. The read is now a POST. Verified on the live app: a note saved in the booking detail is still there after a full reload."
+  },
   "pricing": {
     "free_plan": "Free plan to start (credit based), publishes to a base44.app subdomain; paid tiers are listed on the pricing page",
     "publish_requires_paid": false,

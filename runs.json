@@ -119,7 +119,12 @@
       "reasons": {
         "T6": "The contact form accepts name, email and message but shows no confirmation after sending, and the admin area renders as a blank page after login — so neither the sender nor the studio can tell whether the message arrived."
       },
-      "retest": null,
+      "retest": {
+        "asked_at": "2026-11-17",
+        "asked": "The studio admin page renders blank right after signing in, so the artist cannot see the orders or the contact messages. Fix that and publish the app again. Change nothing else.",
+        "result": "partially-fixed",
+        "note": "Base44 found the cause itself: the admin route relied on inheriting ssr:false and looped through the server-side login gate on a full page load. The app was rebuilt and published the same evening. /admin now renders a 'studio access' screen instead of a blank page. Whether the studio owner sees orders and messages could not be proven: the test account has no admin role, and the app offers no way to grant it without the owner."
+      },
       "pricing": null,
       "metrics": null,
       "failures": [
@@ -255,7 +260,12 @@
         "D5": "The detail page offers an editable notes field with a Save button. After saving, the value disappears from the page and is gone after a reload. The network log shows no update request at all, only two login calls — the save is not wired to the backend.",
         "D12": "axe found two issues: no H1 and two nodes outside landmarks."
       },
-      "retest": null,
+      "retest": {
+        "asked_at": "2026-11-17",
+        "asked": "In the dashboard, editing a record and saving it does not persist: after a reload the old text is back. The save never reaches the backend. Fix that and publish the app again. Change nothing else.",
+        "result": "fixed",
+        "note": "Base44 traced it itself: the write was fine, but the read (getBooking) was a GET server function whose response got edge/browser-cached on a stable /_serverFn/...?payload= URL — so a reload re-read the pre-save value. The read is now a POST. Verified on the live app: a note saved in the booking detail is still there after a full reload."
+      },
       "pricing": {
         "free_plan": "Free plan to start (credit based), publishes to a base44.app subdomain; paid tiers are listed on the pricing page",
         "publish_requires_paid": false,
