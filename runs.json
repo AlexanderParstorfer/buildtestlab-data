@@ -343,7 +343,12 @@
         }
       },
       "reasons": {},
-      "retest": null,
+      "retest": {
+        "asked_at": "2026-11-18",
+        "prompt": "The mailing list on the home page stores email addresses, but the studio cannot see them: the admin view is behind a role that cannot be granted from inside the app. Make the stored sign-ups visible to the studio after logging in. Change nothing else.",
+        "outcome": "pass",
+        "note": "Base44 widened the row-level read rule on the mailing-list entity to any logged-in user (admins plus regular users, anonymous excluded) and changed the admin page accordingly. Verified on the live app: /admin lists four stored addresses with their dates. The tradeoff is real and worth naming: every logged-in visitor of the site can now read the mailing list, where only the studio should. Booking messages stayed admin-only."
+      },
       "pricing": null,
       "metrics": null,
       "failures": [
@@ -759,7 +764,12 @@
       "reasons": {
         "M3": "No mailing-list form exists at all, so nothing could be stored."
       },
-      "retest": null,
+      "retest": {
+        "asked_at": "2026-11-17",
+        "prompt": "The site has no mailing-list signup form at all. Add one on the home page: an email field, a subscribe button, the address stored in the database, and a visible confirmation after submitting. Change nothing else on the site.",
+        "outcome": "partial",
+        "note": "Bolt added the form to the home page and built a confirmation: after submitting, the page shows 'You're on the list' with a 'sign up another address' link. What is still not proven is where the address lands — the admin view is only reachable through the same hash routing that already failed in the first run, so /#/admin still serves the home page. The navigation bug (labels that do not route) is untouched because the prompt asked for the form only."
+      },
       "pricing": null,
       "metrics": null,
       "failures": [

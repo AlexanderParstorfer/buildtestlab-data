@@ -48,6 +48,10 @@
     {
       "label": "Home page at 390 px",
       "path": "/artifacts/base44-musician-v1/home-mobile-390.webp"
+    },
+    {
+      "label": "After the fix: /admin lists the stored sign-ups",
+      "path": "/artifacts/base44-musician-v1/retest-admin.webp"
     }
   ],
   "notes": "Second attempt inside the same app: the first build inherited the chat history of the previous artist app and produced a photography site, so the brief had to be sent again with an explicit instruction to ignore the earlier project. After that the build was complete: home, six tour dates with venue and city, four releases with listen links, three members with instruments, booking form with confirmation, mailing list with confirmation, admin page behind a login. Publishing took about three minutes and stalled at 'Wird veröffentlicht' before the URL answered.",
@@ -67,5 +71,11 @@
       "measured_at": "2026-11-13T19:07:59.258Z",
       "url": "https://lantern-hours-music.base44.app/"
     }
+  },
+  "retest": {
+    "asked_at": "2026-11-18",
+    "prompt": "The mailing list on the home page stores email addresses, but the studio cannot see them: the admin view is behind a role that cannot be granted from inside the app. Make the stored sign-ups visible to the studio after logging in. Change nothing else.",
+    "outcome": "pass",
+    "note": "Base44 widened the row-level read rule on the mailing-list entity to any logged-in user (admins plus regular users, anonymous excluded) and changed the admin page accordingly. Verified on the live app: /admin lists four stored addresses with their dates. The tradeoff is real and worth naming: every logged-in visitor of the site can now read the mailing list, where only the studio should. Booking messages stayed admin-only."
   }
 }
